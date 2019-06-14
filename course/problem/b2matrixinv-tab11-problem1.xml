@@ -29,7 +29,10 @@ Let [mathjaxinline]T: \mathbb R^3 \rightarrow \mathbb R^3[/mathjaxinline] be a l
     <p>
       <solution>
         <font color="blue">Answer: </font>
-        <font color="blue"/>
+        <font color="blue">
+          <p>
+ The matrix equation stated above has a solution because [mathjaxinline]T[/mathjaxinline] is onto, and it has a unique solution because [mathjaxinline]T[/mathjaxinline] is into. The other parts of the answer are directly from the IMT.  </p>
+        </font>
       </solution>
     </p>
   </text>

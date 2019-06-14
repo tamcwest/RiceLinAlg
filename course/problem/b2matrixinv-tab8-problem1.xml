@@ -1,4 +1,4 @@
-<problem display_name="Invert a Matrix" linenum="267" tex_filename="./block2/matrixinv.tex" showanswer="finished" attempts="3" rerandomize="per_student">
+<problem display_name="Invert a Matrix" linenum="266" tex_filename="./block2/matrixinv.tex" showanswer="finished" attempts="3" rerandomize="per_student">
   <text>
     <p>
 The following [mathjaxinline]3\times 3[/mathjaxinline] matrix is invertible: </p>
@@ -53,7 +53,10 @@ def MatrixEntry(expect, ans):
     <p>
       <solution>
         <font color="blue">Answer: </font>
-        <font color="blue"/>
+        <font color="blue">
+          <p>
+ Row reduce [mathjaxinline]\left[ \begin{array}{c:c} A &amp;  I \end{array} \right][/mathjaxinline] to get the inverse.  </p>
+        </font>
       </solution>
     </p>
   </text>

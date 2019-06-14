@@ -71,7 +71,10 @@ def VectorEntry(expect, ans):
     <p>
       <solution>
         <font color="blue">Answer: </font>
-        <font color="blue"/>
+        <font color="blue">
+          <p>
+ Multiply [mathjaxinline]A^{-1}\left[ \begin{array}{c} 100 \\ 0 \\ 10 \end{array} \right].[/mathjaxinline] </p>
+        </font>
       </solution>
     </p>
   </text>

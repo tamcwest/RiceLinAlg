@@ -87,7 +87,7 @@
       <problem url_name="b2matrixinv-tab11-problem1"/>
     </vertical>
   </sequential>
-  <sequential display_name="More Matrix Operations" linenum="468" tex_filename="testcourse.tex" refnum="3" due="2019-12-13T14:15" graded="true" format="Exercises" url_name="b2matrixops-sequential">
+  <sequential display_name="More Matrix Operations" linenum="466" tex_filename="testcourse.tex" refnum="3" due="2019-12-13T14:15" graded="true" format="Exercises" url_name="b2matrixops-sequential">
     <vertical display_name="Page One" refnum="1" url_name="b2matrixops-vertical1">
       <html url_name="b2matrixops-tab1-text1"/>
     </vertical>
@@ -129,7 +129,7 @@
       <problem url_name="b2matrixops-tab10-problem2"/>
     </vertical>
   </sequential>
-  <sequential display_name="Leontief Input-Output System" linenum="503" tex_filename="testcourse.tex" refnum="4" due="2019-12-13T14:15" graded="true" format="Exercises" url_name="b2leontief-sequential">
+  <sequential display_name="Leontief Input-Output System" linenum="501" tex_filename="testcourse.tex" refnum="4" due="2019-12-13T14:15" graded="true" format="Exercises" url_name="b2leontief-sequential">
     <vertical display_name="Page One" refnum="1" url_name="b2leontief-vertical1">
       <html url_name="b2leontief-tab1-text1"/>
     </vertical>

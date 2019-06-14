@@ -31,7 +31,10 @@ If [mathjaxinline]n&gt;m[/mathjaxinline], what can we conclude about [mathjaxinl
     <p>
       <solution>
         <font color="blue">Answer: </font>
-        <font color="blue"/>
+        <font color="blue">
+          <p>
+ If [mathjaxinline]n&lt;m[/mathjaxinline], [mathjaxinline]T[/mathjaxinline] might or might not be into. However, we have shown that it cannot be onto. If [mathjaxinline]n&gt;m[/mathjaxinline], the reverse is true. You may wish to review the section on Into and Onto if this is unfamiliar.  </p>
+        </font>
       </solution>
     </p>
   </text>

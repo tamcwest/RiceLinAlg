@@ -1,161 +1,139 @@
 <xbundle>
   <metadata/>
   <course number="Test" display_name="Test LinAlg" semester="2018_Summer" info_sidebar_name="Other Documents" start="2018-01-11T12:00" end="2019-12-18T18:00" course_image="rice-logo.jpg" display_coursenumber="TestLinAlg" course_organization="TestRice" graceperiod="1800 seconds" invitation_only="true" allow_anonymous="false" mobile_available="true" org="Rice">
-    <chapter display_name="Vectors and Matrices" linenum="73" tex_filename="testcourse2.tex" refnum="1" url_name="block1" start="2018-01-11T16:00">
-      <sequential display_name="LinInd" linenum="89" tex_filename="testcourse2.tex" refnum="1" due="2019-12-13T14:15" graded="true" format="Exercises" url_name="b2matrixops-sequential">
-        <vertical display_name="Page One" refnum="1" url_name="b2matrixops-vertical1">
-          <html display_name="Preliminaries" linenum="7" tex_filename="./block1/linearindependence2.tex" url_name="b2matrixops-tab1-text1">
+    <chapter display_name="Matrix Operations" linenum="71" tex_filename="testcourse2.tex" refnum="1" url_name="block2" start="2018-01-11T16:00">
+      <sequential display_name="Matrix Multiplication" linenum="83" tex_filename="testcourse2.tex" refnum="1" due="2019-12-13T14:15" graded="true" format="Exercises" url_name="b2matrixmult-sequential">
+        <vertical display_name="Wait for it" refnum="1" url_name="b2matrixmult-vertical1">
+          <html display_name="Coming Soon" linenum="5" tex_filename="./comingsoon.tex" url_name="b2matrixmult-tab1-text1">
             <p>
-At the end of this sequence, and after some practice, you should be able to: </p>
-            <ul class="itemize">
-              <li>
-                <p>
-Understand the definition of linear independence. </p>
-              </li>
-              <li>
-                <p>
-Be able to determine whether a list of vectors is linearly independent. </p>
-              </li>
-              <li>
-                <p>
-Know conditions on whether a list of vectors in [mathjaxinline]\mathbb R^ n[/mathjaxinline] can be linearly independent. </p>
-              </li>
-            </ul>
-            <p>
-For time budgeting purposes, this sequence has X videos totaling X minutes, plus some questions. </p>
+Coming soon! </p>
           </html>
         </vertical>
-        <vertical display_name="Linear Independence" refnum="2" url_name="b2matrixops-vertical2">
-          <vertical display_name="Linear Independence Problems" refnum="3" url_name="b2matrixops-vertical3">
-            <html display_name="Definitions of Linearly Independent and Dependent" linenum="39" tex_filename="./block1/linearindependence2.tex" url_name="b2matrixops-tab3-text1">
-              <p><span style="color:#27408C"><b class="bf">Definition.</b></span> We say that a list of vectors [mathjaxinline]\{ v_1; v_2; \ldots v_ n\}[/mathjaxinline] in a vector space [mathjaxinline]V[/mathjaxinline] is <span style="color:#99182C"><b class="bf">linearly independent</b></span> if the only way to pick scalars [mathjaxinline]a_1, a_2, \ldots a_ n[/mathjaxinline] such that [mathjaxinline]a_1v_1 + a_2v_2 + \ldots + a_ nv_ n = \mathbf{0}[/mathjaxinline] is if [mathjaxinline]a_1 = a_2 = \ldots = a_ n = 0[/mathjaxinline]. </p>
-              <p><span style="color:#27408C"><b class="bf">Definition.</b></span> A list of vectors [mathjaxinline]\{ v_1; v_2; \ldots v_ n\}[/mathjaxinline] in a vector space [mathjaxinline]V[/mathjaxinline] is <span style="color:#99182C"><b class="bf">linearly dependent</b></span> if there are scalars [mathjaxinline]a_1, a_2, \ldots a_ n[/mathjaxinline], not all zero, such that [mathjaxinline]a_1v_1 + a_2v_2 + \ldots + a_ nv_ n = \mathbf{0}[/mathjaxinline]. </p>
+        <sequential display_name="Matrix Inverses" linenum="119" tex_filename="testcourse2.tex" refnum="2" due="2019-12-13T14:15" graded="true" format="Exercises" url_name="b2matrixinv-sequential">
+          <vertical display_name="Page One" refnum="1" url_name="b2matrixinv-vertical1">
+            <html display_name="Preliminaries" linenum="5" tex_filename="./block2/matrixinv2.tex" url_name="b2matrixinv-tab1-text1">
+              <p>
+At the end of this sequence, and after some practice, you should be able to: </p>
+              <ul class="itemize">
+                <li>
+                  <p>
+Calculate the inverse of a matrix. </p>
+                </li>
+                <li>
+                  <p>
+Recognize conditions under which a matrix is invertible. </p>
+                </li>
+                <li>
+                  <p>
+Use inverses to solve matrix equations. </p>
+                </li>
+              </ul>
+              <p>
+For time budgeting purposes, this sequence has X videos totaling X minutes, plus some questions. </p>
             </html>
-            <problem display_name="List 1" linenum="52" tex_filename="./block1/linearindependence2.tex" url_name="b2matrixops-tab3-problem1" showanswer="finished" attempts="5" rerandomize="per_student">
+          </vertical>
+          <vertical display_name="What is an inverse function?" refnum="2" url_name="b2matrixinv-vertical2">
+            <problem display_name="Cube roots" linenum="34" tex_filename="./block2/matrixinv2.tex" url_name="b2matrixinv-tab2-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
               <text>
-                <script linenum="54" filename="./block1/linearindependence2.tex" type="text/python" system_path="python_lib">
-
-def test_ld_1(expect,ans):
-    import ast
-    import numpy as np 
-    if (ans=='No') or (ans=='NO') or (ans=='no'):
-        return {'ok': False, 'msg': 'The answer is not no'}
-    list_expect = ast.literal_eval('[[1,-1,0,0],[2,-1,3,5],[-3,3,0,0]]')
-    list_vec = []
-    for vec in list_expect:
-        list_vec.append(np.array(vec))
-    list_scalars = [float(s) for s in ans.split(',')]
-    ret = {'ok':False}
-    # check scalars are not all zero
-    max_sca = max(list_scalars)
-    min_sca = min(list_scalars)
-    if (max_sca == 0) and (min_sca ==0):
-        ret['msg'] = 'Your answer should contain at least one non-zero scalar.'
-        return ret
-    # check there are enough scalars
-    if (len(list_scalars) != len(list_vec)):
-        ret['msg'] = 'Your answer contains too many/too few scalars.'
-        return ret    
-    # check if a0*v0 + a1*v1 + ... + a_n*vn = 0
-    n = len(list_scalars)
-    sum = 0
-    for i in range(0,n):
-        sum += list_scalars[i] * list_vec[i]
-    print(sum)
-    if np.allclose(sum, np.zeros(4)):
-        ret['ok'] = True
-    return ret  
-</script>
                 <p>
-Consider the list of vectors [mathjaxinline]\{ v_1; v_2; v_3\}[/mathjaxinline], where </p>
-                <table id="a0000000002" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
-                  <tr>
-                    <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]v_1 = \left[\begin{array}{c} 1 \\ -1 \\ 0 \\ 0 \end{array} \right], v_2 = \left[\begin{array}{c} 2 \\ -1 \\ 3 \\ 5 \end{array} \right], v_3 = \left[\begin{array}{c} -3 \\ 3 \\ 0 \\ 0 \end{array} \right].[/mathjax]</td>
-                    <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+If [mathjaxinline]\  f(x) = x^3[/mathjaxinline], then here are some values of [mathjaxinline]\  f[/mathjaxinline]: </p>
+                <table id="a0000000002" cellpadding="7" width="100%" cellspacing="0" class="eqnarray" style="table-layout:auto">
+                  <tr id="a0000000003">
+                    <td style="width:40%; border:none">&#xA0;</td>
+                    <td style="vertical-align:middle;                                    text-align:right; border:none">
+	    [mathjaxinline]\displaystyle  f(-11)[/mathjaxinline]
+        </td>
+                    <td style="vertical-align:middle;                                    text-align:left; border:none">
+	    [mathjaxinline]\displaystyle = -1331[/mathjaxinline]
+        </td>
+                    <td style="width:40%; border:none">&#xA0;</td>
+                    <td style="width:20%; border:none" class="eqnnum"/>
+                  </tr>
+                  <tr id="a0000000004">
+                    <td style="width:40%; border:none">&#xA0;</td>
+                    <td style="vertical-align:middle;                                    text-align:right; border:none">
+	    [mathjaxinline]\displaystyle f(12)[/mathjaxinline]
+        </td>
+                    <td style="vertical-align:middle;                                    text-align:left; border:none">
+	    [mathjaxinline]\displaystyle = 1728[/mathjaxinline]
+        </td>
+                    <td style="width:40%; border:none">&#xA0;</td>
+                    <td style="width:20%; border:none" class="eqnnum"/>
+                  </tr>
+                  <tr id="a0000000005">
+                    <td style="width:40%; border:none">&#xA0;</td>
+                    <td style="vertical-align:middle;                                    text-align:right; border:none">
+	    [mathjaxinline]\displaystyle f(-13)[/mathjaxinline]
+        </td>
+                    <td style="vertical-align:middle;                                    text-align:left; border:none">
+	    [mathjaxinline]\displaystyle = -2197.[/mathjaxinline]
+        </td>
+                    <td style="width:40%; border:none">&#xA0;</td>
+                    <td style="width:20%; border:none" class="eqnnum"/>
                   </tr>
                 </table>
                 <p>
-Can you find scalars [mathjaxinline]a_1, a_2, a_3[/mathjaxinline], not all zero, such that [mathjaxinline]a_1v_1 + a_2 v_2 + a_3 v_3 = \mathbf{0}[/mathjaxinline]? If so, enter an example of such scalars below. If not, enter &#x2018;No' </p>
+Let [mathjaxinline]g(y) = \displaystyle {\sqrt [3]{y}}[/mathjaxinline]. What is [mathjaxinline]g(-2197)[/mathjaxinline]? </p>
                 <p>
-                  <customresponse cfn="test_ld_1" expect="3,0,1">
-                    <textline correct_answer="3,0,1"/>
-                  </customresponse>
-                </p>
-                <p>
-Is the list [mathjaxinline]\{ v_1; v_2; v_3\}[/mathjaxinline] linearly dependent or linearly independent? </p>
-                <p>
-                  <optionresponse>
-                    <optioninput options="('Linearly dependent','Linearly independent')" correct="Linearly dependent"/>
-                  </optionresponse>
+                  <numericalresponse answer="-13">
+                    <textline>
+                      <responseparam type="tolerance" default="0.00001"/>
+                    </textline>
+                  </numericalresponse>
                 </p>
                 <p>
                   <solution>
                     <font color="blue">Answer: </font>
                     <font color="blue">
                       <p>
- We notice that [mathjaxinline]-3v_1 = v_3[/mathjaxinline], so that [mathjaxinline]3 v_1 + 0 v_2 + 1 v_3 = \mathbf{0}[/mathjaxinline]. Therefore, [mathjaxinline]a_1 = 3[/mathjaxinline], [mathjaxinline]a_2 = 0[/mathjaxinline], and [mathjaxinline]a_3 = 1[/mathjaxinline] is a possible set of scalars that satisfies the equation. (Any scalar multiple of that triple is also a set that satisfies the equation.) </p>
-                      <p>
-The list [mathjaxinline]\{ v_1; v_2; v_3\}[/mathjaxinline] is linearly dependent because, as we've just seen, there exist sets of coefficients, not all zero, that yield [mathjaxinline]a_1v_1 + a_2 v_2 + a_3 v_3 = \mathbf{0}[/mathjaxinline].  </p>
+ [mathjaxinline]f(x)[/mathjaxinline] and [mathjaxinline]g(y)[/mathjaxinline] are inverse functions. We see above that [mathjaxinline]f(x)[/mathjaxinline] evaluated at -13 is -2197. Since [mathjaxinline]g(y)[/mathjaxinline] and [mathjaxinline]f(x)[/mathjaxinline] perform opposite actions, we know that g evaluated at -2197 is -13.  </p>
                     </font>
                   </solution>
                 </p>
               </text>
             </problem>
-            <problem display_name="List 2" linenum="120" tex_filename="./block1/linearindependence2.tex" url_name="b2matrixops-tab3-problem2" showanswer="finished" attempts="1" rerandomize="per_student">
+            <video display_name="Inverse Transformations and Matrices" youtube_id_1_0="gv2efnioewc" url_name="b2matrixinv-tab2-video1"/>
+          </vertical>
+          <vertical display_name="Inverse Definitions" refnum="3" url_name="b2matrixinv-vertical3">
+            <html display_name="Inverse Definitions" linenum="57" tex_filename="./block2/matrixinv2.tex" url_name="b2matrixinv-tab3-text1">
+              <p><span style="color:#27408C"><b class="bf">Definition.</b></span> If [mathjaxinline]T: V \rightarrow W[/mathjaxinline] and [mathjaxinline]S: W \rightarrow V[/mathjaxinline] are linear transformations, we say that [mathjaxinline]S[/mathjaxinline] and [mathjaxinline]T[/mathjaxinline] are <span style="color:#99182C"><b class="bf">inverses</b></span> of one another if [mathjaxinline]S(T(v)) = v[/mathjaxinline] for all [mathjaxinline]v\in V[/mathjaxinline], and [mathjaxinline]T(S(w)) = w[/mathjaxinline] for all [mathjaxinline]w\in W[/mathjaxinline]. If this is the case, we can write [mathjaxinline]S = T^{-1}[/mathjaxinline] and [mathjaxinline]T = S^{-1}[/mathjaxinline]. </p>
+              <p>
+If [mathjaxinline]S = T^{-1}[/mathjaxinline] exists we say that [mathjaxinline]T[/mathjaxinline] is <span style="color:#99182C"><b class="bf">invertible</b></span>. </p>
+              <p><span style="color:#27408C"><b class="bf">Proposition.</b></span> A linear transformation [mathjaxinline]T[/mathjaxinline] is invertible if and only if it is both into and onto. </p>
+              <p><span style="color:#27408C"><b class="bf">Definition.</b></span> If [mathjaxinline]A[/mathjaxinline] is an [mathjaxinline]m\times n[/mathjaxinline] matrix and [mathjaxinline]B[/mathjaxinline] is an [mathjaxinline]n\times m[/mathjaxinline] matrix, we say that [mathjaxinline]A[/mathjaxinline] and [mathjaxinline]B[/mathjaxinline] are <span style="color:#99182C"><b class="bf">inverses</b></span> of one another if [mathjaxinline]AB = I_ m[/mathjaxinline] and [mathjaxinline]BA = I_ n[/mathjaxinline]. If this is the case, we can write [mathjaxinline]B = A^{-1}[/mathjaxinline] and [mathjaxinline]B = A^{-1}[/mathjaxinline]. </p>
+              <p>
+If [mathjaxinline]B = A^{-1}[/mathjaxinline] exists we say that [mathjaxinline]A[/mathjaxinline] is <span style="color:#99182C"><b class="bf">invertible</b></span>. </p>
+            </html>
+          </vertical>
+          <vertical display_name="Into, Onto, and Invertibility" refnum="4" url_name="b2matrixinv-vertical4">
+            <problem display_name="Into and Onto" linenum="93" tex_filename="./block2/matrixinv2.tex" url_name="b2matrixinv-tab4-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
               <text>
-                <script linenum="123" filename="./block1/linearindependence2.tex" type="text/python" system_path="python_lib">
-
-def test_ld_12(expect,ans):
-    import ast
-    import numpy as np 
-    if (ans=='No') or (ans=='NO') or (ans=='no'):
-        return {'ok': False, 'msg': 'The answer is not no'}
-    list_expect = ast.literal_eval('[[1,-1,3,4,5],[0,0,0,0,0],[-3,3,3,5,1]]')
-    list_vec = []
-    for vec in list_expect:
-        list_vec.append(np.array(vec))
-    list_scalars = [float(s) for s in ans.split(',')]
-    ret = {'ok':False}
-    # check scalars are not all zero
-    max_sca = max(list_scalars)
-    min_sca = min(list_scalars)
-    if (max_sca == 0) and (min_sca ==0):
-        ret['msg'] = 'Your answer should contain at least one non-zero scalar.'
-        return ret
-    # check there are enough scalars
-    if (len(list_scalars) != len(list_vec)):
-        ret['msg'] = 'Your answer contains too many/too few scalars.'
-        return ret    
-    # check if a0*v0 + a1*v1 + ... + a_n*vn = 0
-    n = len(list_scalars)
-    sum = 0
-    for i in range(0,n):
-        sum += list_scalars[i] * list_vec[i]
-    print(sum)
-    if np.allclose(sum, np.zeros(5)):
-        ret['ok'] = True
-    return ret  
-</script>
                 <p>
-Consider the list of vectors [mathjaxinline]\{ v_1; v_2; v_3\}[/mathjaxinline], where </p>
-                <table id="a0000000003" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
-                  <tr>
-                    <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]v_1 = \left[\begin{array}{c} 1 \\ -1 \\ 3 \\ 4 \\ 5 \end{array} \right], v_2 = \left[\begin{array}{c} 0 \\ 0 \\ 0 \\ 0 \\ 0 \end{array} \right], v_3 = \left[\begin{array}{c} -3 \\ 3 \\ 3 \\ 5 \\ 1 \end{array} \right].[/mathjax]</td>
-                    <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
-                  </tr>
-                </table>
+We've noted that a linear transformation has an inverse if and only if it is both into and onto. Let's recall our results about when a linear transformation from [mathjaxinline]\mathbb R^ n[/mathjaxinline] to [mathjaxinline]\mathbb R^ m[/mathjaxinline] can or must be into or onto. </p>
                 <p>
-Can you find scalars [mathjaxinline]a_1, a_2, a_3[/mathjaxinline], not all zero, such that [mathjaxinline]a_1v_1 + a_2 v_2 + a_3 v_3 = \mathbf{0}[/mathjaxinline]? If so, enter an example of such scalars below. If not, enter &#x2018;No'. </p>
+Suppose [mathjaxinline]T: \mathbb R^ n \rightarrow \mathbb R^ m[/mathjaxinline] is a linear transformation. </p>
                 <p>
-                  <customresponse cfn="test_ld_12" expect="0,1,0">
-                    <textline correct_answer="0,1,0"/>
-                  </customresponse>
-                </p>
-                <p>
-Is the list [mathjaxinline]\{ v_1; v_2; v_3\}[/mathjaxinline] linearly dependent or linearly independent? </p>
+If [mathjaxinline]n&lt;m[/mathjaxinline], what can we conclude about [mathjaxinline]T[/mathjaxinline]? </p>
                 <p>
                   <optionresponse>
-                    <optioninput options="('Linearly dependent','Linearly independent')" correct="Linearly dependent"/>
+                    <optioninput options="('T must be into','T might be into, or might not','T cannot be into')" correct="T might be into, or might not"/>
+                  </optionresponse>
+                </p>
+                <p>
+                  <optionresponse>
+                    <optioninput options="('T must be onto','T might be onto, or might not','T cannot be onto')" correct="T cannot be onto"/>
+                  </optionresponse>
+                </p>
+                <p>
+If [mathjaxinline]n&gt;m[/mathjaxinline], what can we conclude about [mathjaxinline]T[/mathjaxinline]? </p>
+                <p>
+                  <optionresponse>
+                    <optioninput options="('T must be into','T might be into, or might not','T cannot be into')" correct="T cannot be into"/>
+                  </optionresponse>
+                </p>
+                <p>
+                  <optionresponse>
+                    <optioninput options="('T must be onto','T might be onto, or might not','T cannot be onto')" correct="T might be onto, or might not"/>
                   </optionresponse>
                 </p>
                 <p>
@@ -163,14 +141,328 @@ Is the list [mathjaxinline]\{ v_1; v_2; v_3\}[/mathjaxinline] linearly dependent
                     <font color="blue">Answer: </font>
                     <font color="blue">
                       <p>
- The first answer is immediately "yes" because we have the zero vector in our set; we can choose any non-zero value for [mathjaxinline]a_2[/mathjaxinline], and with [mathjaxinline]a_1 = 0[/mathjaxinline] and [mathjaxinline]a_3 = 0[/mathjaxinline], the above equation will still be true. Because there exist sets of coefficients, not all zero, that make the above equation true, the list [mathjaxinline]\{ v_1; v_2; v_3\}[/mathjaxinline] is linearly dependent.  </p>
+ If [mathjaxinline]n&lt;m[/mathjaxinline], our codomain is greater than our domain. Therefore, it may be true that [mathjaxinline]T[/mathjaxinline] maps any distinct [mathjaxinline]u[/mathjaxinline], [mathjaxinline]v[/mathjaxinline] [mathjaxinline]\in V[/mathjaxinline] to different points ([mathjaxinline]T(u) \neq T(v)[/mathjaxinline]); i.e., our codomain will accommodate this. So [mathjaxinline]T[/mathjaxinline] might be into. However, this is merely allowed, not required, by the circumstances. ([mathjaxinline]T[/mathjaxinline] could map everything to zero, for example.) So [mathjaxinline]T[/mathjaxinline] might or might not be into. </p>
+                      <p>
+[mathjaxinline]T[/mathjaxinline] can only map each point of the domain to a single point in the codomain. We see that with [mathjaxinline]n&lt;m[/mathjaxinline], the image of the domain can't equal the codomain. [mathjaxinline]T[/mathjaxinline] can't be onto. </p>
+                      <p>
+If [mathjaxinline]n&gt;m[/mathjaxinline], our domain is greater than our codomain. Every point in our domain must be mapped to something in the codomain by [mathjaxinline]T[/mathjaxinline]. Therefore we must have at least one pair of distinct points [mathjaxinline]u[/mathjaxinline], [mathjaxinline]v[/mathjaxinline] [mathjaxinline]\in V[/mathjaxinline] such that [mathjaxinline]T(u) = T(v)[/mathjaxinline]. [mathjaxinline]T[/mathjaxinline] can't be into. </p>
+                      <p>
+Furthermore, if [mathjaxinline]n&gt;m[/mathjaxinline], we have sufficient points in our domain to map to every point in the codomain, so the image of the domain could be the codomain. However, this is merely allowed by the circumstances, not required, so [mathjaxinline]T[/mathjaxinline] might or might not be onto.  </p>
+                    </font>
+                  </solution>
+                </p>
+              </text>
+            </problem>
+            <problem display_name="When is invertible possible?" linenum="134" tex_filename="./block2/matrixinv2.tex" url_name="b2matrixinv-tab4-problem2" showanswer="finished" attempts="1" rerandomize="per_student">
+              <text>
+                <p>
+Again, let [mathjaxinline]T: \mathbb R^ n \rightarrow \mathbb R^ m[/mathjaxinline] be a linear transformation. Given the above, if [mathjaxinline]n&lt;m[/mathjaxinline], is it possible for [mathjaxinline]T[/mathjaxinline] to be invertible? </p>
+                <p>
+                  <optionresponse>
+                    <optioninput options="('Yes','No')" correct="No"/>
+                  </optionresponse>
+                </p>
+                <p>
+If [mathjaxinline]n&gt;m[/mathjaxinline], is it possible for [mathjaxinline]T[/mathjaxinline] to be invertible? </p>
+                <p>
+                  <optionresponse>
+                    <optioninput options="('Yes','No')" correct="No"/>
+                  </optionresponse>
+                </p>
+                <p>
+                  <solution>
+                    <font color="blue">Answer: </font>
+                    <font color="blue">
+                      <p>
+ We've seen that, if [mathjaxinline]n&lt;m[/mathjaxinline] or if [mathjaxinline]n&gt;m[/mathjaxinline], T can't be both into and onto. Therefore, in neither case could T be invertible.  </p>
                     </font>
                   </solution>
                 </p>
               </text>
             </problem>
           </vertical>
-        </vertical>
+          <vertical display_name="Conditions for Invertibility" refnum="5" url_name="b2matrixinv-vertical5">
+            <video display_name="Conditions for Invertibility" youtube_id_1_0="pYqavDw0wt4" url_name="b2matrixinv-tab5-video1"/>
+            <problem display_name="Square Matrices" linenum="162" tex_filename="./block2/matrixinv2.tex" url_name="b2matrixinv-tab5-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
+              <text>
+                <p>
+True or False: If a matrix [mathjaxinline]A[/mathjaxinline] is not square, it cannot be invertible. </p>
+                <p>
+                  <optionresponse>
+                    <optioninput options="('True','False')" correct="True"/>
+                  </optionresponse>
+                </p>
+                <p>
+True or False: If a matrix [mathjaxinline]A[/mathjaxinline] is square, it must be invertible. </p>
+                <p>
+                  <optionresponse>
+                    <optioninput options="('True','False')" correct="False"/>
+                  </optionresponse>
+                </p>
+                <p>
+                  <solution>
+                    <font color="blue">Answer: </font>
+                    <font color="blue"> Watch the last video again! Non-square matrices cannot be invertible, but not every square matrix is invertible. For instance, a square matrix of all zeros is not invertible.  </font>
+                  </solution>
+                </p>
+              </text>
+            </problem>
+          </vertical>
+          <vertical display_name="Invertible Matrix Theorem" refnum="6" url_name="b2matrixinv-vertical6">
+            <html display_name="Inverse Definitions" linenum="187" tex_filename="./block2/matrixinv2.tex" url_name="b2matrixinv-tab6-text1">
+              <p><span style="color:#27408C"><b class="bf">Invertible Matrix Theorem.</b></span> Suppose that [mathjaxinline]T: \mathbb R^ n \rightarrow \mathbb R^ n[/mathjaxinline] is a linear transformation with (square) standard matrix [mathjaxinline]A[/mathjaxinline]. Then the following conditions are all equivalent (i.e., either all of them are true, or all of them are false): </p>
+              <ol class="enumerate">
+                <li value="1">
+                  <p>
+[mathjaxinline]T[/mathjaxinline] is into. </p>
+                </li>
+                <li value="2">
+                  <p>
+[mathjaxinline]\mathrm{Ker}(T) = \{  \mathbf{0}\}[/mathjaxinline]. </p>
+                </li>
+                <li value="3">
+                  <p>
+The columns of [mathjaxinline]A[/mathjaxinline] are linearly independent. </p>
+                </li>
+                <li value="4">
+                  <p>
+[mathjaxinline]Ax = \mathbf{0}[/mathjaxinline] has only the trivial solution. </p>
+                </li>
+                <li value="5">
+                  <p>
+[mathjaxinline]A[/mathjaxinline] row reduces to have a pivot in every column (has no free variables). </p>
+                </li>
+                <li value="6">
+                  <p>
+[mathjaxinline]A[/mathjaxinline] row reduces to the identity matrix. </p>
+                </li>
+                <li value="7">
+                  <p>
+[mathjaxinline]A[/mathjaxinline] row reduces to have a pivot in every row. </p>
+                </li>
+                <li value="8">
+                  <p>
+For every [mathjaxinline]v\in \mathbb R^ n[/mathjaxinline], the equation [mathjaxinline]Ax = v[/mathjaxinline] is consistent. </p>
+                </li>
+                <li value="9">
+                  <p>
+The columns of [mathjaxinline]A[/mathjaxinline] span [mathjaxinline]\mathbb R^ n[/mathjaxinline]. </p>
+                </li>
+                <li value="10">
+                  <p>
+[mathjaxinline]T[/mathjaxinline] is onto. </p>
+                </li>
+                <li value="11">
+                  <p>
+[mathjaxinline]T[/mathjaxinline] is invertible. </p>
+                </li>
+                <li value="12">
+                  <p>
+[mathjaxinline]A[/mathjaxinline] is invertible. </p>
+                </li>
+              </ol>
+              <p>
+Note: There will be more equivalent conditions added to this list in the near future! </p>
+            </html>
+            <problem display_name="Using the Invertible Matrix Theorem" linenum="216" tex_filename="./block2/matrixinv2.tex" url_name="b2matrixinv-tab6-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
+              <text>
+                <p>
+Suppose [mathjaxinline]A[/mathjaxinline] is an [mathjaxinline]m\times n[/mathjaxinline] matrix which has at least one free variable. Can we conclude that the columns of [mathjaxinline]A[/mathjaxinline] do not span [mathjaxinline]\mathbb R^ m[/mathjaxinline]? </p>
+                <p>
+                  <optionresponse>
+                    <optioninput options="('Yes','No')" correct="No"/>
+                  </optionresponse>
+                </p>
+                <p>
+Suppose [mathjaxinline]A[/mathjaxinline] is an [mathjaxinline]n\times n[/mathjaxinline] matrix which has at least one free variable. Can we conclude that the columns of [mathjaxinline]A[/mathjaxinline] do not span [mathjaxinline]\mathbb R^ n[/mathjaxinline]? </p>
+                <p>
+                  <optionresponse>
+                    <optioninput options="('Yes','No')" correct="Yes"/>
+                  </optionresponse>
+                </p>
+                <p>
+                  <solution>
+                    <font color="blue">Answer: </font>
+                    <font color="blue"> For the first question, we cannot make that conclusion, since we are not told the matrix is square. For instance, [mathjaxinline]\left[ \begin{array}{ccc} 1 &amp;  0 &amp;  0 \\ 0 &amp;  1 &amp;  0 \end{array} \right][/mathjaxinline] has a free variable, but its columns span [mathjaxinline]\mathbb R^2[/mathjaxinline]. For the second question, we know the matrix is square, so the Invertible Matrix Theorem applies. Since [mathjaxinline]A[/mathjaxinline] has a free variable, we can conclude that none of the conditions in the Invertible Matrix Theorem are true. In particular, its columns do not span [mathjaxinline]\mathbb R^ n[/mathjaxinline].  </font>
+                  </solution>
+                </p>
+              </text>
+            </problem>
+          </vertical>
+          <vertical display_name="Calculating the Inverse" refnum="7" url_name="b2matrixinv-vertical7">
+            <problem display_name="Is it Invertible?" linenum="245" tex_filename="./block2/matrixinv2.tex" url_name="b2matrixinv-tab7-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
+              <text>
+                <p>
+Let [mathjaxinline]A = \left[ \begin{array}{cc} 1 &amp;  2 \\ 2 &amp;  5 \end{array} \right][/mathjaxinline]. By row-reducing [mathjaxinline]A[/mathjaxinline], answer the question, is [mathjaxinline]A[/mathjaxinline] invertible? </p>
+                <p>
+                  <optionresponse>
+                    <optioninput options="('Yes','No')" correct="Yes"/>
+                  </optionresponse>
+                </p>
+                <p>
+                  <solution>
+                    <font color="blue">Answer: </font>
+                    <font color="blue">
+                      <p>
+ [mathjaxinline]A[/mathjaxinline] row reduces to the identity matrix, so it is invertible.  </p>
+                    </font>
+                  </solution>
+                </p>
+              </text>
+            </problem>
+            <video display_name="Calculating the Inverse" youtube_id_1_0="qraxzr8nb5o" url_name="b2matrixinv-tab7-video1"/>
+          </vertical>
+          <vertical display_name="Inverse Practice" refnum="8" url_name="b2matrixinv-vertical8">
+            <problem display_name="Invert a Matrix" linenum="271" tex_filename="./block2/matrixinv2.tex" url_name="b2matrixinv-tab8-problem1" showanswer="finished" attempts="3" rerandomize="per_student">
+              <text>
+                <p>
+The following [mathjaxinline]3\times 3[/mathjaxinline] matrix is invertible: </p>
+                <table id="a0000000006" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+                  <tr>
+                    <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]A = \left[ \begin{array}{ccc} 1 &amp;  1 &amp;  2 \\ 3 &amp;  0 &amp;  -2 \\ -1 &amp;  1 &amp;  0 \end{array} \right][/mathjax]</td>
+                    <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+                  </tr>
+                </table>
+                <p>
+Find [mathjaxinline]A^{-1}[/mathjaxinline]. </p>
+                <p>
+                  <div class="hideshowbox">
+                    <h4 onclick="hideshow(this);" style="margin: 0px">How to Enter a Matrix<span class="icon-caret-down toggleimage"/></h4>
+                    <div class="hideshowcontent">
+                      <p>
+To enter the matrix [mathjaxinline]\left[ \begin{array}{ccc} 0&amp; 1&amp; 2 \\ 1&amp; 2&amp; 3 \end{array} \right][/mathjaxinline], type [[0,1,2],[1,2,3]]. (Type the same thing if you want to enter the augmented matrix [mathjaxinline]\left[ \begin{array}{cc:c} 0&amp; 1&amp; 2 \\ 1&amp; 2&amp; 3 \end{array} \right][/mathjaxinline].) </p>
+                      <p>
+Use decimals only. </p>
+                    </div>
+                    <p class="hideshowbottom" onclick="hideshow(this);" style="margin: 0px">
+                      <a href="javascript: {return false;}">Show</a>
+                    </p>
+                  </div>
+                </p>
+                <script linenum="1" filename="./matrixentry2.tex" type="text/python" system_path="python_lib">
+def MatrixEntry(expect, ans):
+  	import ast
+	import numpy as np 
+	ret= {'ok':False}
+  	atol = 0.01
+  	try:
+		list_ans = ast.literal_eval(ans)
+		list_expect = ast.literal_eval(expect)
+  		matrix_ans = np.matrix(list_ans)
+  		matrix_expect = np.matrix(list_expect) 
+  		if matrix_ans.shape != matrix_expect.shape:
+  			ret['msg'] = 'Wrong shape of matrix'
+  		elif np.allclose(matrix_ans, matrix_expect,0.01,1e-08):
+  			ret['ok'] = True
+  		else:
+  			ret['msg'] = 'Something is wrong'
+	except SyntaxError:
+		ret['msg'] = 'Wrong input format'
+  	return ret
+</script>
+                <p>
+                  <customresponse cfn="MatrixEntry" expect="[[0.2,0.2,-0.2],[0.2,0.2,0.8],[0.3,-0.2,-0.3]]">
+                    <textline correct_answer="[[0.2,0.2,-0.2],[0.2,0.2,0.8],[0.3,-0.2,-0.3]]"/>
+                  </customresponse>
+                </p>
+                <p>
+                  <solution>
+                    <font color="blue">Answer: </font>
+                    <font color="blue">
+                      <p>
+ Row reduce [mathjaxinline]\left[ \begin{array}{c:c} A &amp;  I \end{array} \right][/mathjaxinline] to get the inverse.  </p>
+                    </font>
+                  </solution>
+                </p>
+              </text>
+              <SCRIPT src="/static/latex2edx.js" type="text/javascript"/>
+              <LINK href="/static/latex2edx.css" rel="stylesheet" type="text/css"/>
+            </problem>
+            <problem display_name="Solve Using Inverse" linenum="295" tex_filename="./block2/matrixinv2.tex" url_name="b2matrixinv-tab8-problem2" showanswer="finished" attempts="1" rerandomize="per_student">
+              <text>
+                <p>
+Let [mathjaxinline]A[/mathjaxinline] be the matrix from above. Without doing any further row-reduction, find the solution to [mathjaxinline]Ax = \left[ \begin{array}{c} 100 \\ 0 \\ 10 \end{array} \right].[/mathjaxinline] </p>
+                <p>
+                  <div class="hideshowbox">
+                    <h4 onclick="hideshow(this);" style="margin: 0px">How to Enter a Column Vector in R^n<span class="icon-caret-down toggleimage"/></h4>
+                    <div class="hideshowcontent">
+                      <p>
+To enter a vector in [mathjaxinline]\mathbb R^ n[/mathjaxinline] such as [mathjaxinline]\left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right][/mathjaxinline], you can either: </p>
+                      <ul class="itemize">
+                        <li>
+                          <p>
+enter it as you would a [mathjaxinline]3\times 1[/mathjaxinline] matrix: [[1],[2],[3]] </p>
+                        </li>
+                        <li>
+                          <p>
+or, you can enter it as &lt;1,2,3&gt; </p>
+                        </li>
+                      </ul>
+                      <p>
+Use decimals only. </p>
+                    </div>
+                    <p class="hideshowbottom" onclick="hideshow(this);" style="margin: 0px">
+                      <a href="javascript: {return false;}">Show</a>
+                    </p>
+                  </div>
+                </p>
+                <script linenum="2" filename="./vectorentry2.tex" type="text/python" system_path="python_lib">
+def VectorEntry(expect, ans):
+	import ast
+	import numpy as np 
+  	atol = 0.01
+	list_expect = ast.literal_eval(expect)
+	vec_expect = np.matrix(list_expect)
+  	ret = {"ok":False}
+	try:
+  		# input format [[1],[2],[3]]
+		list_ans = ast.literal_eval(ans)
+		vec_ans = np.matrix(list_ans)
+  		if vec_ans.shape != vec_expect.shape:
+  			ret['msg'] = 'Wrong shape of vector!'
+  		elif np.allclose(vec_ans, vec_expect,atol,1e-08):
+  			ret['ok'] = True
+  		else:
+  		# More error message. Will improve this part
+  			ret['msg'] = 'something is wrong'   			
+	#except SyntaxError:
+		#ret['msg'] = 'Wrong input format'
+	except SyntaxError:
+  		# input format &amp;lt;1,2,3&amp;gt;
+		list_ans = ans.replace('&amp;lt;', '[').replace('&amp;gt;', ']')
+		list_ans = ast.literal_eval(list_ans)
+		vec_ans = np.transpose(np.matrix(list_ans))
+  		if vec_ans.shape != vec_expect.shape:
+  			ret['msg'] = 'Wrong shape of vector!'
+  		elif np.allclose(vec_ans, vec_expect,0.01,1e-08):
+  			ret['ok'] = True
+  		else:
+    		# More error message. Will improve this part
+  			ret['msg'] = 'something is wrong' 
+  	except:
+  		ret['msg'] = 'Wrong input format'
+  	return ret 
+</script>
+                <p>
+                  <customresponse cfn="VectorEntry" expect="[[18],[28],[27]]">
+                    <textline correct_answer="[[18],[28],[27]]"/>
+                  </customresponse>
+                </p>
+                <p>
+                  <solution>
+                    <font color="blue">Answer: </font>
+                    <font color="blue">
+                      <p>
+ Multiply [mathjaxinline]A^{-1}\left[ \begin{array}{c} 100 \\ 0 \\ 10 \end{array} \right].[/mathjaxinline] </p>
+                    </font>
+                  </solution>
+                </p>
+              </text>
+              <SCRIPT src="/static/latex2edx.js" type="text/javascript"/>
+              <LINK href="/static/latex2edx.css" rel="stylesheet" type="text/css"/>
+            </problem>
+          </vertical>
+        </sequential>
       </sequential>
     </chapter>
   </course>

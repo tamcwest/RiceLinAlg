@@ -1,4 +1,4 @@
-<problem display_name="More IMT" linenum="384" tex_filename="./block2/morematrixops.tex" showanswer="finished" attempts="3" rerandomize="per_student">
+<problem display_name="More IMT" linenum="393" tex_filename="./block2/morematrixops.tex" showanswer="finished" attempts="3" rerandomize="per_student">
   <text>
     <p>
 Let [mathjaxinline]T: \mathbb R^4 \rightarrow \mathbb R^4[/mathjaxinline] be a linear transformation with standard matrix [mathjaxinline]A[/mathjaxinline]. Suppose the second row of [mathjaxinline]A[/mathjaxinline] is equal to three times the last row of [mathjaxinline]A[/mathjaxinline] minus the first row of [mathjaxinline]A[/mathjaxinline]. Which of the following must be true? Click all that apply. </p>
