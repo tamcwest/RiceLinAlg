@@ -120,8 +120,13 @@ If $n>m$, what can we conclude about $T$?
 
 % \edXabox{expect="T might be onto, or might not" options="T must be onto","T might be onto, or might not","T cannot be onto}
 
-\edXsolution{ 	If $n<m$,  $T$ might or might not be into.  However, we have shown that it cannot be onto.
-If $n>m$, the reverse is true.  You may wish to review the section on Into and Onto if this is unfamiliar.  
+\edXsolution{ 	If $n<m$, our codomain is greater than our domain. Therefore, it may be true that $T$ maps any distinct $u$, $v$ $\in V$ to different points ($T(u) \neq T(v)$); i.e., our codomain will accommodate this. So $T$ might be into. However, this is merely allowed, not required, by the circumstances. ($T$ could map everything to zero, for example.) So $T$ might or might not be into.
+	
+	$T$ can only map each point of the domain to a single point in the codomain. We see that with $n<m$, the image of the domain can't equal the codomain. $T$ can't be onto.
+	
+	If $n>m$, our domain is greater than our codomain. Every point in our domain must be mapped to something in the codomain by $T$. Therefore we must have at least one pair of distinct points $u$, $v$ $\in V$ such that $T(u) = T(v)$. $T$ can't be into.
+	
+	Furthermore, if $n>m$, we have sufficient points in our domain to map to every point in the codomain, so the image of the domain could be the codomain. However, this is merely allowed by the circumstances, not required, so $T$ might or might not be onto.
 }
 
 \endedxproblem
@@ -137,7 +142,7 @@ If $n>m$, is it possible for $T$ to be invertible?
 
 \edXabox{expect="No" options="Yes","No"}
 
-\edXsolution{ We know that, if $n<m$ or if $n>m$, $T$ can't be both into and onto. Therefore, in neither case could $T$ be invertible. }
+\edXsolution{ We've seen that, if $n<m$ or if $n>m$, T can't be both into and onto. Therefore, in neither case could T be invertible. }
 
 \endedxproblem
 
@@ -311,118 +316,118 @@ Multiply  $A\inv \left[ \begin{array}{c} 100 \\ 0 \\ 10 \end{array} \right].$
 
 
 
-\beginedxvertical{One-Sided Inverses?}
+% \beginedxvertical{One-Sided Inverses?}
 
 
-\beginedxproblem{Non-square inverse? 1}{\dpa1}
+% \beginedxproblem{Non-square inverse? 1}{\dpa1}
 
-Is it possible for a $2\times 3$ matrix to be invertible?  
+% Is it possible for a $2\times 3$ matrix to be invertible?  
 
-\edXabox{expect="No" options="Yes","No"}
-
-
-\edXsolution{ We have shown that non-square matrices cannot be invertible.  
-}
-
-\endedxproblem
-
-\beginedxproblem{An Interesting Product}{\dpa3}
-
-Given 
-\[A = \left[ \begin{array}{ccc} 1 & 2 & 0  \\
-0 & 1 & 1
- \end{array} \right], \  \mathrm{and} \ B = \left[ \begin{array}{cc} 1 & 0  \\
-0 & 0 \\
-0 & 1
- \end{array} \right], \]
-calculate $AB$.  
+% \edXabox{expect="No" options="Yes","No"}
 
 
-\input{matrixentry2.tex}
+% \edXsolution{ We have shown that non-square matrices cannot be invertible.  
+% }
 
-\edXabox{type="custom" cfn="MatrixEntry" expect="[[1,0],[0,1]]"}
+% \endedxproblem
 
-\edXsolution{
+% \beginedxproblem{An Interesting Product}{\dpa3}
 
-}
-
-\endedxproblem
-
-\beginedxproblem{Non-square inverse? 2}{\dpa1}
-
-Look at the result of the previous problem.  
-Does this mean that $A$ and $B$ are inverses of one another?
-
-\edXabox{expect="No" options="Yes","No"}
-
-
-\edXsolution{ No.  For $A$ and $B$ to be inverses, {\keyb{\bf{both}}}  $AB$ and $BA$ must be the identity.  
-}
-
-\endedxproblem
+% Given 
+% \[A = \left[ \begin{array}{ccc} 1 & 2 & 0  \\
+% 0 & 1 & 1
+%  \end{array} \right], \  \mathrm{and} \ B = \left[ \begin{array}{cc} 1 & 0  \\
+% 0 & 0 \\
+% 0 & 1
+%  \end{array} \right], \]
+% calculate $AB$.  
 
 
-\endedxvertical
+% \input{matrixentry2.tex}
+
+% \edXabox{type="custom" cfn="MatrixEntry" expect="[[1,0],[0,1]]"}
+
+% \edXsolution{
+
+% }
+
+% \endedxproblem
+
+% \beginedxproblem{Non-square inverse? 2}{\dpa1}
+
+% Look at the result of the previous problem.  
+% Does this mean that $A$ and $B$ are inverses of one another?
+
+% \edXabox{expect="No" options="Yes","No"}
 
 
-\beginedxvertical{One Side Only}
+% \edXsolution{ No.  For $A$ and $B$ to be inverses, {\keyb{\bf{both}}}  $AB$ and $BA$ must be the identity.  
+% }
 
-\doedxvideo{One-Sided Inverses}{X5sMleqtvAk}
-
-\beginedxtext{One-Sided Inverses}
-
-{\keya{\bf{Proposition.}}}  If  $A$ and $B$ are square matrices, and 
-$AB = I$, then $BA = I$, and the two matrices are inverses of each other.  
+% \endedxproblem
 
 
-This allows us to add two lines to the Invertible Matrix Theorem: 
-
-{\keya{\bf{Invertible Matrix Theorem (updated).}}}  
-Suppose that $T: \R^n \rightarrow \R^n$ is a linear transformation
-with (square) standard matrix $A$.  Then the following conditions are all equivalent (i.e., either all of
-them are true, or all of them are false):
-
-\begin{enumerate}
-\item $T$ is into.
-\item $\mathrm{Ker}(T) = \{ \veco \}$.  
-\item The columns of $A$ are linearly independent. 
-\item $Ax = \veco$ has only the trivial solution.
-\item $A$ row reduces to have a pivot in every column (has no free variables).  
-\item $A$ row reduces to the identity matrix.  
-\item $A$ row reduces to have a pivot in every row.  
-\item For every $v\in \R^n$, the equation $Ax = v$ is consistent.
-\item The columns of $A$ span $\R^n$.  
-\item $T$ is onto.  
-\item $T$ is invertible.
-\item $A$ is invertible.
-\item There is a matrix $B$ such that $AB = I_n$.  ($A$ has a right inverse.)
-\item There is a matrix $B$ such that $BA = I_n$.  ($A$ has a left inverse.)  
-
-\end{enumerate}
+% \endedxvertical
 
 
+% \beginedxvertical{One Side Only}
 
-\endedxtext
+% \doedxvideo{One-Sided Inverses}{X5sMleqtvAk}
 
+% \beginedxtext{One-Sided Inverses}
 
-\endedxvertical
-
-
-\beginedxvertical{Some IMT Practice}
-
-\beginedxproblem{Using the IMT}{\dpa1}
-
-Let $T: \R^3 \rightarrow \R^3$ be a linear transformation with standard matrix $A$.  Suppose the columns of $A$ are linearly
-independent.  Which of the following must be true?  Click all that apply.  
-
-\edXabox{type="oldmultichoice" expect="$T$ is onto","$A$ is invertible","The equation $Ax = \left[\begin{array}{c} 1 \\ 3 \\ 5 \end{array} \right]$ has a unique solution","$T$ is into","$A$ row reduces to the identity matrix" options="$T$ is onto","$A$ is invertible","$A$ has a free variable","The equation $Ax = \left[\begin{array}{c} 1 \\ 3 \\ 5 \end{array} \right]$ has exactly one solution","$T$ is into","$A$ row reduces to the identity matrix"}
+% {\keya{\bf{Proposition.}}}  If  $A$ and $B$ are square matrices, and 
+% $AB = I$, then $BA = I$, and the two matrices are inverses of each other.  
 
 
-\edXsolution{
-The matrix equation stated above has a solution because $T$ is onto, and it has a unique solution because $T$ is into. The other parts of the answer are directly from the IMT.  
-}
+% This allows us to add two lines to the Invertible Matrix Theorem: 
 
-\endedxproblem
+% {\keya{\bf{Invertible Matrix Theorem (updated).}}}  
+% Suppose that $T: \R^n \rightarrow \R^n$ is a linear transformation
+% with (square) standard matrix $A$.  Then the following conditions are all equivalent (i.e., either all of
+% them are true, or all of them are false):
+
+% \begin{enumerate}
+% \item $T$ is into.
+% \item $\mathrm{Ker}(T) = \{ \veco \}$.  
+% \item The columns of $A$ are linearly independent. 
+% \item $Ax = \veco$ has only the trivial solution.
+% \item $A$ row reduces to have a pivot in every column (has no free variables).  
+% \item $A$ row reduces to the identity matrix.  
+% \item $A$ row reduces to have a pivot in every row.  
+% \item For every $v\in \R^n$, the equation $Ax = v$ is consistent.
+% \item The columns of $A$ span $\R^n$.  
+% \item $T$ is onto.  
+% \item $T$ is invertible.
+% \item $A$ is invertible.
+% \item There is a matrix $B$ such that $AB = I_n$.  ($A$ has a right inverse.)
+% \item There is a matrix $B$ such that $BA = I_n$.  ($A$ has a left inverse.)  
+
+% \end{enumerate}
 
 
-\endedxvertical
+
+% \endedxtext
+
+
+% \endedxvertical
+
+
+% \beginedxvertical{Some IMT Practice}
+
+% \beginedxproblem{Using the IMT}{\dpa1}
+
+% Let $T: \R^3 \rightarrow \R^3$ be a linear transformation with standard matrix $A$.  Suppose the columns of $A$ are linearly
+% independent.  Which of the following must be true?  Click all that apply.  
+
+% \edXabox{type="oldmultichoice" expect="$T$ is onto","$A$ is invertible","The equation $Ax = \left[\begin{array}{c} 1 \\ 3 \\ 5 \end{array} \right]$ has a unique solution","$T$ is into","$A$ row reduces to the identity matrix" options="$T$ is onto","$A$ is invertible","$A$ has a free variable","The equation $Ax = \left[\begin{array}{c} 1 \\ 3 \\ 5 \end{array} \right]$ has exactly one solution","$T$ is into","$A$ row reduces to the identity matrix"}
+
+
+% \edXsolution{
+% The matrix equation stated above has a solution because $T$ is onto, and it has a unique solution because $T$ is into. The other parts of the answer are directly from the IMT.  
+% }
+
+% \endedxproblem
+
+
+% \endedxvertical

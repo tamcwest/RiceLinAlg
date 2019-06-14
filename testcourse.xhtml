@@ -1883,13 +1883,13 @@ Is the list [mathjaxinline]\{ v_1; v_2; v_3\}[/mathjaxinline] linearly dependent
 </optionresponse> </p><p>
 <solution><font color="blue">Answer: </font><font color="blue"><p>
  The first answer is immediately "yes" because we have the zero vector in our set; we can choose any non-zero value for [mathjaxinline]a_2[/mathjaxinline], and with [mathjaxinline]a_1 = 0[/mathjaxinline] and [mathjaxinline]a_3 = 0[/mathjaxinline], the above equation will still be true. Because there exist sets of coefficients, not all zero, that make the above equation true, the list [mathjaxinline]\{ v_1; v_2; v_3\}[/mathjaxinline] is linearly dependent.  </p></font></solution></p></text></problem></p><p>
-<problem display_name="List 3" attrib_string="url_name=&quot;b1linind-tab3-problem3&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="226" tex_filename="./block1/linearindependence.tex"><text><script linenum="230" filename="./block1/linearindependence.tex" type="text/python" system_path="python_lib">
+<problem display_name="List 3" attrib_string="url_name=&quot;b1linind-tab3-problem3&quot; showanswer=&quot;finished&quot; attempts=&quot;5&quot; rerandomize=&quot;per_student&quot;" linenum="226" tex_filename="./block1/linearindependence.tex"><text><script linenum="230" filename="./block1/linearindependence.tex" type="text/python" system_path="python_lib">
 
 def test_ld_no(expect,ans):
     import ast
     import numpy as np 
     if (ans=='No') or (ans=='NO') or (ans=='no'):
-        ret['ok'] = True
+        ret = {'ok':True}
         return ret    
     list_expect = ast.literal_eval('[[1,-1,3,4,5],[0,0,0,0,0],[-3,3,3,5,1]]')
     list_vec = []
@@ -3363,7 +3363,7 @@ Let [mathjaxinline]g(y) = \displaystyle {\sqrt [3]{y}}[/mathjaxinline]. What is 
   </textline>
 </numericalresponse> </p><p>
 <solution><font color="blue">Answer: </font><font color="blue"><p>
- [mathjaxinline]f(x)[/mathjaxinline] and [mathjaxinline]g(y)[/mathjaxinline] are inverse functions. We see above that [mathjaxinline]f(x)[/mathjaxinline] evaluated at -13 has an output of -2197. Since [mathjaxinline]g(y)[/mathjaxinline] and [mathjaxinline]f(x)[/mathjaxinline] perform opposite actions, we know that g evaluated at -2197 has an output of -13.  </p></font></solution></p></text></problem></p><p>
+ [mathjaxinline]f(x)[/mathjaxinline] and [mathjaxinline]g(y)[/mathjaxinline] are inverse functions. We see above that [mathjaxinline]f(x)[/mathjaxinline] evaluated at -13 is -2197. Since [mathjaxinline]g(y)[/mathjaxinline] and [mathjaxinline]f(x)[/mathjaxinline] perform opposite actions, we know that g evaluated at -2197 is -13.  </p></font></solution></p></text></problem></p><p>
 <video display_name="Inverse Transformations and Matrices" youtube_id_1_0="gv2efnioewc" attrib_string="url_name=&quot;b2matrixinv-tab2-video1&quot; "></video></p></vertical>   </p><p>
 <vertical display_name="Inverse Definitions" attrib_string="url_name=&quot;b2matrixinv-vertical3&quot;" refnum="3"><p>
 <html display_name="Inverse Definitions" attrib_string="url_name=&quot;b2matrixinv-tab3-text1&quot;" linenum="57" tex_filename="./block2/matrixinv.tex"><p>
@@ -3390,8 +3390,9 @@ If [mathjaxinline]n&gt;m[/mathjaxinline], what can we conclude about [mathjaxinl
 <optionresponse>
   <optioninput options="('T must be onto','T might be onto, or might not','T cannot be onto')" correct="T might be onto, or might not"/>
 </optionresponse> </p><p>
-<solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p><p>
-<problem display_name="When is invertible possible?" attrib_string="url_name=&quot;b2matrixinv-tab4-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="128" tex_filename="./block2/matrixinv.tex"><text><p>
+<solution><font color="blue">Answer: </font><font color="blue"><p>
+ If [mathjaxinline]n&lt;m[/mathjaxinline], [mathjaxinline]T[/mathjaxinline] might or might not be into. However, we have shown that it cannot be onto. If [mathjaxinline]n&gt;m[/mathjaxinline], the reverse is true. You may wish to review the section on Into and Onto if this is unfamiliar.  </p></font></solution></p></text></problem></p><p>
+<problem display_name="When is invertible possible?" attrib_string="url_name=&quot;b2matrixinv-tab4-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="129" tex_filename="./block2/matrixinv.tex"><text><p>
 Again, let [mathjaxinline]T: \mathbb R^ n \rightarrow \mathbb R^ m[/mathjaxinline] be a linear transformation. Given the above, if [mathjaxinline]n&lt;m[/mathjaxinline], is it possible for [mathjaxinline]T[/mathjaxinline] to be invertible? </p><p>
 <optionresponse>
   <optioninput options="('Yes','No')" correct="No"/>
@@ -3400,9 +3401,10 @@ If [mathjaxinline]n&gt;m[/mathjaxinline], is it possible for [mathjaxinline]T[/m
 <optionresponse>
   <optioninput options="('Yes','No')" correct="No"/>
 </optionresponse> </p><p>
-<solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p></vertical>   </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"><p>
+ We know that, if [mathjaxinline]n&lt;m[/mathjaxinline] or if [mathjaxinline]n&gt;m[/mathjaxinline], [mathjaxinline]T[/mathjaxinline] can't be both into and onto. Therefore, in neither case could [mathjaxinline]T[/mathjaxinline] be invertible.  </p></font></solution></p></text></problem></p></vertical>   </p><p>
 <vertical display_name="Conditions for Invertibility" attrib_string="url_name=&quot;b2matrixinv-vertical5&quot;" refnum="5"><p>
-<video display_name="Conditions for Invertibility" youtube_id_1_0="pYqavDw0wt4" attrib_string="url_name=&quot;b2matrixinv-tab5-video1&quot; "></video><problem display_name="Square Matrices" attrib_string="url_name=&quot;b2matrixinv-tab5-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="158" tex_filename="./block2/matrixinv.tex"><text><p>
+<video display_name="Conditions for Invertibility" youtube_id_1_0="pYqavDw0wt4" attrib_string="url_name=&quot;b2matrixinv-tab5-video1&quot; "></video><problem display_name="Square Matrices" attrib_string="url_name=&quot;b2matrixinv-tab5-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="157" tex_filename="./block2/matrixinv.tex"><text><p>
 True or False: If a matrix [mathjaxinline]A[/mathjaxinline] is not square, it cannot be invertible. </p><p>
 <optionresponse>
   <optioninput options="('True','False')" correct="True"/>
@@ -3413,7 +3415,7 @@ True or False: If a matrix [mathjaxinline]A[/mathjaxinline] is square, it must b
 </optionresponse> </p><p>
 <solution><font color="blue">Answer: </font><font color="blue"> Watch the last video again! Non-square matrices cannot be invertible, but not every square matrix is invertible. For instance, a square matrix of all zeros is not invertible.  </font></solution></p></text></problem></p></vertical>   </p><p>
 <vertical display_name="Invertible Matrix Theorem" attrib_string="url_name=&quot;b2matrixinv-vertical6&quot;" refnum="6"><p>
-<html display_name="Inverse Definitions" attrib_string="url_name=&quot;b2matrixinv-tab6-text1&quot;" linenum="183" tex_filename="./block2/matrixinv.tex"><p>
+<html display_name="Inverse Definitions" attrib_string="url_name=&quot;b2matrixinv-tab6-text1&quot;" linenum="182" tex_filename="./block2/matrixinv.tex"><p>
 <span style="color:#27408C"><b class="bf">Invertible Matrix Theorem.</b></span> Suppose that [mathjaxinline]T: \mathbb R^ n \rightarrow \mathbb R^ n[/mathjaxinline] is a linear transformation with (square) standard matrix [mathjaxinline]A[/mathjaxinline]. Then the following conditions are all equivalent (i.e., either all of them are true, or all of them are false): </p><ol class="enumerate">
 <li value="1"><p>
 [mathjaxinline]T[/mathjaxinline] is into. </p></li><li value="2"><p>
@@ -3430,7 +3432,7 @@ The columns of [mathjaxinline]A[/mathjaxinline] span [mathjaxinline]\mathbb R^ n
 [mathjaxinline]A[/mathjaxinline] is invertible. </p></li>
 </ol><p>
 Note: There will be more equivalent conditions added to this list in the near future! </p></html></p><p>
-<problem display_name="Using the Invertible Matrix Theorem" attrib_string="url_name=&quot;b2matrixinv-tab6-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="212" tex_filename="./block2/matrixinv.tex"><text><p>
+<problem display_name="Using the Invertible Matrix Theorem" attrib_string="url_name=&quot;b2matrixinv-tab6-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="211" tex_filename="./block2/matrixinv.tex"><text><p>
 Suppose [mathjaxinline]A[/mathjaxinline] is an [mathjaxinline]m\times n[/mathjaxinline] matrix which has at least one free variable. Can we conclude that the columns of [mathjaxinline]A[/mathjaxinline] do not span [mathjaxinline]\mathbb R^ m[/mathjaxinline]? </p><p>
 <optionresponse>
   <optioninput options="('Yes','No')" correct="No"/>
@@ -3441,7 +3443,7 @@ Suppose [mathjaxinline]A[/mathjaxinline] is an [mathjaxinline]n\times n[/mathjax
 </optionresponse> </p><p>
 <solution><font color="blue">Answer: </font><font color="blue"> For the first question, we cannot make that conclusion, since we are not told the matrix is square. For instance, [mathjaxinline]\left[ \begin{array}{ccc} 1 &amp;  0 &amp;  0 \\ 0 &amp;  1 &amp;  0 \end{array} \right][/mathjaxinline] has a free variable, but its columns span [mathjaxinline]\mathbb R^2[/mathjaxinline]. For the second question, we know the matrix is square, so the Invertible Matrix Theorem applies. Since [mathjaxinline]A[/mathjaxinline] has a free variable, we can conclude that none of the conditions in the Invertible Matrix Theorem are true. In particular, its columns do not span [mathjaxinline]\mathbb R^ n[/mathjaxinline].  </font></solution></p></text></problem></p></vertical>   </p><p>
 <vertical display_name="Calculating the Inverse" attrib_string="url_name=&quot;b2matrixinv-vertical7&quot;" refnum="7"><p>
-<problem display_name="Is it Invertible?" attrib_string="url_name=&quot;b2matrixinv-tab7-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="241" tex_filename="./block2/matrixinv.tex"><text><p>
+<problem display_name="Is it Invertible?" attrib_string="url_name=&quot;b2matrixinv-tab7-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="240" tex_filename="./block2/matrixinv.tex"><text><p>
 Let [mathjaxinline]A = \left[ \begin{array}{cc} 1 &amp;  2 \\ 2 &amp;  5 \end{array} \right][/mathjaxinline]. By row-reducing [mathjaxinline]A[/mathjaxinline], answer the question, is [mathjaxinline]A[/mathjaxinline] invertible? </p><p>
 <optionresponse>
   <optioninput options="('Yes','No')" correct="Yes"/>
@@ -3450,7 +3452,7 @@ Let [mathjaxinline]A = \left[ \begin{array}{cc} 1 &amp;  2 \\ 2 &amp;  5 \end{ar
  [mathjaxinline]A[/mathjaxinline] row reduces to the identity matrix, so it is invertible.  </p></font></solution></p></text></problem></p><p>
 <video display_name="Calculating the Inverse" youtube_id_1_0="qraxzr8nb5o" attrib_string="url_name=&quot;b2matrixinv-tab7-video1&quot; "></video></p></vertical>   </p><p>
 <vertical display_name="Inverse Practice" attrib_string="url_name=&quot;b2matrixinv-vertical8&quot;" refnum="8"><p>
-<problem display_name="Invert a Matrix" attrib_string="url_name=&quot;b2matrixinv-tab8-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;3&quot; rerandomize=&quot;per_student&quot;" linenum="267" tex_filename="./block2/matrixinv.tex"><text><p>
+<problem display_name="Invert a Matrix" attrib_string="url_name=&quot;b2matrixinv-tab8-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;3&quot; rerandomize=&quot;per_student&quot;" linenum="266" tex_filename="./block2/matrixinv.tex"><text><p>
 The following [mathjaxinline]3\times 3[/mathjaxinline] matrix is invertible: </p><table id="a0000000094" class="equation" width="100%" cellspacing="0" cellpadding="7">
 <tr>
     <td class="equation">[mathjax]A = \left[ \begin{array}{ccc} 1 &amp;  1 &amp;  2 \\ 3 &amp;  0 &amp;  -2 \\ -1 &amp;  1 &amp;  0 \end{array} \right][/mathjax]</td>
@@ -3483,7 +3485,8 @@ def MatrixEntry(expect, ans):
 <customresponse cfn="MatrixEntry" expect="[[0.2,0.2,-0.2],[0.2,0.2,0.8],[0.3,-0.2,-0.3]]">
   <textline correct_answer="[[0.2,0.2,-0.2],[0.2,0.2,0.8],[0.3,-0.2,-0.3]]"/>
 </customresponse> </p><p>
-<solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p><p>
+<solution><font color="blue">Answer: </font><font color="blue"><p>
+ Row reduce [mathjaxinline]\left[ \begin{array}{c:c} A &amp;  I \end{array} \right][/mathjaxinline] to get the inverse.  </p></font></solution></p></text></problem></p><p>
 <problem display_name="Solve Using Inverse" attrib_string="url_name=&quot;b2matrixinv-tab8-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="290" tex_filename="./block2/matrixinv.tex"><text><p>
 Let [mathjaxinline]A[/mathjaxinline] be the matrix from above. Without doing any further row-reduction, find the solution to [mathjaxinline]Ax = \left[ \begin{array}{c} 100 \\ 0 \\ 10 \end{array} \right].[/mathjaxinline] </p><p>
 <edxshowhide description="How to Enter a Column Vector in R^n"><p>
@@ -3534,7 +3537,8 @@ def VectorEntry(expect, ans):
 <customresponse cfn="VectorEntry" expect="[[18],[28],[27]]">
   <textline correct_answer="[[18],[28],[27]]"/>
 </customresponse> </p><p>
-<solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p></vertical>   </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"><p>
+ Multiply [mathjaxinline]A^{-1}\left[ \begin{array}{c} 100 \\ 0 \\ 10 \end{array} \right].[/mathjaxinline] </p></font></solution></p></text></problem></p></vertical>   </p><p>
 <vertical display_name="One-Sided Inverses?" attrib_string="url_name=&quot;b2matrixinv-vertical9&quot;" refnum="9"><p>
 <problem display_name="Non-square inverse? 1" attrib_string="url_name=&quot;b2matrixinv-tab9-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="317" tex_filename="./block2/matrixinv.tex"><text><p>
 Is it possible for a [mathjaxinline]2\times 3[/mathjaxinline] matrix to be invertible? </p><p>
@@ -3627,8 +3631,9 @@ Let [mathjaxinline]T: \mathbb R^3 \rightarrow \mathbb R^3[/mathjaxinline] be a l
     </choice>
   </checkboxgroup>
 </choiceresponse> </p><p>
-<solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p></vertical>    </p></sequential> </p><p>
-<sequential display_name="More Matrix Operations" attrib_string="due=&quot;2019-12-13T14:15&quot; graded=&quot;true&quot; format=&quot;Exercises&quot; url_name=&quot;b2matrixops-sequential&quot;" linenum="468" tex_filename="testcourse.tex" refnum="3"><p>
+<solution><font color="blue">Answer: </font><font color="blue"><p>
+ The matrix equation stated above has a solution because [mathjaxinline]T[/mathjaxinline] is onto, and it has a unique solution because [mathjaxinline]T[/mathjaxinline] is into. The other parts of the answer are directly from the IMT.  </p></font></solution></p></text></problem></p></vertical>    </p></sequential> </p><p>
+<sequential display_name="More Matrix Operations" attrib_string="due=&quot;2019-12-13T14:15&quot; graded=&quot;true&quot; format=&quot;Exercises&quot; url_name=&quot;b2matrixops-sequential&quot;" linenum="466" tex_filename="testcourse.tex" refnum="3"><p>
 <vertical display_name="Page One" attrib_string="url_name=&quot;b2matrixops-vertical1&quot;" refnum="1"><p>
 <html display_name="Preliminaries" attrib_string="url_name=&quot;b2matrixops-tab1-text1&quot;" linenum="5" tex_filename="./block2/morematrixops.tex"><p>
 At the end of this sequence, and after some practice, you should be able to: </p><ul class="itemize">
@@ -3735,9 +3740,15 @@ def MatrixEntry(expect, ans):
 <customresponse cfn="MatrixEntry" expect="[[1,0,0],[0,1,0],[0,0,4]]">
   <textline correct_answer="[[1,0,0],[0,1,0],[0,0,4]]"/>
 </customresponse> </p><p>
-<solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p><p>
-<video display_name="Introducing Elementary Matrices" youtube_id_1_0="20gbxsXOooY" attrib_string="url_name=&quot;b2matrixops-tab4-video1&quot; "></video><problem display_name="Find another matrix" attrib_string="url_name=&quot;b2matrixops-tab4-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;3&quot; rerandomize=&quot;per_student&quot;" linenum="136" tex_filename="./block2/morematrixops.tex"><text><p>
-Find a matrix [mathjaxinline]E[/mathjaxinline] such that, for any matrix [mathjaxinline]A = \left[ \begin{array}{cc} a_{11} &amp;  a_{12} \\ a_{21} &amp;  a_{22} \\ a_{31} &amp;  a_{32} \end{array} \right],[/mathjaxinline] we get </p><table id="a0000000101" class="equation" width="100%" cellspacing="0" cellpadding="7">
+<solution><font color="blue">Answer: </font><font color="blue"><p>
+ We need a [mathjaxinline]3\times 3[/mathjaxinline] matrix that scales the third row of [mathjaxinline]A[/mathjaxinline] by 4. The matrix </p><table id="a0000000101" class="equation" width="100%" cellspacing="0" cellpadding="7">
+<tr>
+    <td class="equation">[mathjax]\left[ \begin{array}{ccc} 1 &amp;  0 &amp;  0 \\ 0 &amp;  1 &amp;  0 \\ 0 &amp;  0 &amp;  4 \end{array} \right][/mathjax]</td>
+</tr>
+</table><p>
+ will do the trick. </p></font></solution></p></text></problem></p><p>
+<video display_name="Introducing Elementary Matrices" youtube_id_1_0="20gbxsXOooY" attrib_string="url_name=&quot;b2matrixops-tab4-video1&quot; "></video><problem display_name="Find another matrix" attrib_string="url_name=&quot;b2matrixops-tab4-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;3&quot; rerandomize=&quot;per_student&quot;" linenum="141" tex_filename="./block2/morematrixops.tex"><text><p>
+Find a matrix [mathjaxinline]E[/mathjaxinline] such that, for any matrix [mathjaxinline]A = \left[ \begin{array}{cc} a_{11} &amp;  a_{12} \\ a_{21} &amp;  a_{22} \\ a_{31} &amp;  a_{32} \end{array} \right],[/mathjaxinline] we get </p><table id="a0000000102" class="equation" width="100%" cellspacing="0" cellpadding="7">
 <tr>
     <td class="equation">[mathjax]EA = \left[ \begin{array}{cc} a_{21} &amp;  a_{22} \\ a_{11} &amp;  a_{12} \\ a_{31} &amp;  a_{32} \end{array} \right].[/mathjax]</td>
 </tr>
@@ -3765,21 +3776,27 @@ def MatrixEntry(expect, ans):
 <customresponse cfn="MatrixEntry" expect="[[0,1,0],[1,0,0],[0,0,1]]">
   <textline correct_answer="[[0,1,0],[1,0,0],[0,0,1]]"/>
 </customresponse> </p><p>
-<solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p></vertical>   </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"><p>
+ We need a [mathjaxinline]3\times 3[/mathjaxinline] matrix that moves the first row to the second and vice versa. The matrix </p><table id="a0000000103" class="equation" width="100%" cellspacing="0" cellpadding="7">
+<tr>
+    <td class="equation">[mathjax]\left[ \begin{array}{ccc} 0 &amp;  1 &amp;  0 \\ 1 &amp;  0 &amp;  0 \\ 0 &amp;  0 &amp;  1 \end{array} \right][/mathjax]</td>
+</tr>
+</table><p>
+ will do the trick.  </p></font></solution></p></text></problem></p></vertical>   </p><p>
 <vertical display_name="Elementary Matrices" attrib_string="url_name=&quot;b2matrixops-vertical5&quot;" refnum="5"><p>
-<html display_name="Elementary Matrices" attrib_string="url_name=&quot;b2matrixops-tab5-text1&quot;" linenum="166" tex_filename="./block2/morematrixops.tex"><p>
+<html display_name="Elementary Matrices" attrib_string="url_name=&quot;b2matrixops-tab5-text1&quot;" linenum="175" tex_filename="./block2/morematrixops.tex"><p>
 <span style="color:#27408C"><b class="bf">Definition.</b></span> An <span style="color:#99182C"><b class="bf">elementary matrix</b></span> is a square matrix of one of three types. </p><p>
-<edxshowhide description="Elementary Matrix of the First Type">An elementary matrix of the first type is one obtained from the identity matrix by changing the diagonal entry in the [mathjaxinline]i[/mathjaxinline]th row and column to a number [mathjaxinline]c[/mathjaxinline], where [mathjaxinline]c \ne 0[/mathjaxinline]: <table id="a0000000102" class="equation" width="100%" cellspacing="0" cellpadding="7">
+<edxshowhide description="Elementary Matrix of the First Type">An elementary matrix of the first type is one obtained from the identity matrix by changing the diagonal entry in the [mathjaxinline]i[/mathjaxinline]th row and column to a number [mathjaxinline]c[/mathjaxinline], where [mathjaxinline]c \ne 0[/mathjaxinline]: <table id="a0000000104" class="equation" width="100%" cellspacing="0" cellpadding="7">
 <tr>
     <td class="equation">[mathjax]E_1 = \left[ \begin{array}{ccccccc} 1 &amp; &amp; &amp; &amp; &amp; &amp; \\ &amp;  \ddots &amp; &amp; &amp; &amp; &amp; \\ &amp; &amp;  1&amp; &amp; &amp; &amp; \\ &amp; &amp; &amp;  c &amp; &amp; &amp; \\ &amp; &amp; &amp; &amp;  1 &amp; &amp; \\ &amp; &amp; &amp; &amp; &amp;  \ddots &amp; \\ &amp; &amp; &amp; &amp; &amp; &amp;  1 \end{array} \right].[/mathjax]</td>
 </tr>
 </table> Multiplying a matrix [mathjaxinline]A[/mathjaxinline] by [mathjaxinline]E_1[/mathjaxinline] (where [mathjaxinline]E_1[/mathjaxinline] is on the left) has the same effect as scaling row [mathjaxinline]i[/mathjaxinline] of [mathjaxinline]A[/mathjaxinline] by the scalar [mathjaxinline]c[/mathjaxinline]. </edxshowhide> </p><p>
-<edxshowhide description="Elementary Matrix of the Second Type">An elementary matrix of the second type is one obtained from the identity matrix by changing the non-diagonal entry in the [mathjaxinline]i[/mathjaxinline]th row and [mathjaxinline]j[/mathjaxinline]th column ([mathjaxinline]i\ne j[/mathjaxinline]) to a number [mathjaxinline]c \ne 0[/mathjaxinline]: <table id="a0000000103" class="equation" width="100%" cellspacing="0" cellpadding="7">
+<edxshowhide description="Elementary Matrix of the Second Type">An elementary matrix of the second type is one obtained from the identity matrix by changing the non-diagonal entry in the [mathjaxinline]i[/mathjaxinline]th row and [mathjaxinline]j[/mathjaxinline]th column ([mathjaxinline]i\ne j[/mathjaxinline]) to a number [mathjaxinline]c \ne 0[/mathjaxinline]: <table id="a0000000105" class="equation" width="100%" cellspacing="0" cellpadding="7">
 <tr>
     <td class="equation">[mathjax]E_2 = \left[ \begin{array}{ccccccc} 1 &amp; &amp; &amp; &amp; &amp; &amp; \\ &amp;  \ddots &amp; &amp; &amp; &amp; &amp; \\ &amp; &amp;  1&amp; &amp; &amp; &amp; \\ &amp; &amp; &amp;  \ddots &amp; &amp; &amp; \\ &amp; &amp;  c &amp; &amp;  1 &amp; &amp; \\ &amp; &amp; &amp; &amp; &amp;  \ddots &amp; \\ &amp; &amp; &amp; &amp; &amp; &amp;  1 \end{array} \right].[/mathjax]</td>
 </tr>
 </table> Multiplying a matrix [mathjaxinline]A[/mathjaxinline] by [mathjaxinline]E_2[/mathjaxinline] (where [mathjaxinline]E_2[/mathjaxinline] is on the left) has the same effect as adding [mathjaxinline]c[/mathjaxinline] times the [mathjaxinline]j[/mathjaxinline]th row of [mathjaxinline]A[/mathjaxinline] to row [mathjaxinline]i[/mathjaxinline]. </edxshowhide> </p><p>
-<edxshowhide description="Elementary Matrix of the Third Type">An elementary matrix of the third type is one obtained from the identity matrix by changing the [mathjaxinline]i[/mathjaxinline]th and [mathjaxinline]j[/mathjaxinline]th diagonal entries to 0, and changing the entries in the [mathjaxinline]i[/mathjaxinline]th row and [mathjaxinline]j[/mathjaxinline]th column, and the [mathjaxinline]j[/mathjaxinline]th row and [mathjaxinline]i[/mathjaxinline]th column, to 1: <table id="a0000000104" class="equation" width="100%" cellspacing="0" cellpadding="7">
+<edxshowhide description="Elementary Matrix of the Third Type">An elementary matrix of the third type is one obtained from the identity matrix by changing the [mathjaxinline]i[/mathjaxinline]th and [mathjaxinline]j[/mathjaxinline]th diagonal entries to 0, and changing the entries in the [mathjaxinline]i[/mathjaxinline]th row and [mathjaxinline]j[/mathjaxinline]th column, and the [mathjaxinline]j[/mathjaxinline]th row and [mathjaxinline]i[/mathjaxinline]th column, to 1: <table id="a0000000106" class="equation" width="100%" cellspacing="0" cellpadding="7">
 <tr>
     <td class="equation">[mathjax]E_3 = \left[ \begin{array}{ccccccccccc} 1 &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; \\ &amp;  \ddots &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; \\ &amp; &amp;  1&amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; \\ &amp; &amp; &amp;  0 &amp; &amp; &amp; &amp;  1 &amp; &amp; &amp; \\ &amp; &amp; &amp; &amp;  1 &amp; &amp; &amp; &amp; &amp; &amp; \\ &amp; &amp; &amp; &amp; &amp;  \ddots &amp; &amp; &amp; &amp; &amp; \\ &amp; &amp; &amp; &amp; &amp; &amp;  1 &amp; &amp; &amp; &amp; \\ &amp; &amp; &amp;  1 &amp; &amp; &amp; &amp;  0 &amp; &amp; &amp; \\ &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp;  1 &amp; &amp; \\ &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp;  \ddots &amp; \\ &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp;  1 \end{array} \right].[/mathjax]</td>
 </tr>
@@ -3787,20 +3804,20 @@ def MatrixEntry(expect, ans):
 <vertical display_name="Elementary Matrices and Inverses" attrib_string="url_name=&quot;b2matrixops-vertical6&quot;" refnum="6"><p>
 <video display_name="Elementary Matrices and Inverses" youtube_id_1_0="EtoZ2FyFKS4" attrib_string="url_name=&quot;b2matrixops-tab6-video1&quot; "></video></p></vertical>   </p><p>
 <vertical display_name="Transposes" attrib_string="url_name=&quot;b2matrixops-vertical7&quot;" refnum="7"><p>
-<html display_name="Transposes" attrib_string="url_name=&quot;b2matrixops-tab7-text1&quot;" linenum="243" tex_filename="./block2/morematrixops.tex"><p>
+<html display_name="Transposes" attrib_string="url_name=&quot;b2matrixops-tab7-text1&quot;" linenum="252" tex_filename="./block2/morematrixops.tex"><p>
 The last matrix operation we will introduce in this section is the transpose. The transpose of a matrix [mathjaxinline]A[/mathjaxinline] is essentially the matrix whose columns are the rows of [mathjaxinline]A[/mathjaxinline] (and whose rows are the columns of [mathjaxinline]A[/mathjaxinline]). Essentially, [mathjaxinline]A[/mathjaxinline] gets flipped across its diagonal. More formally: </p><p>
 <span style="color:#27408C"><b class="bf">Definition.</b></span> Given an [mathjaxinline]m\times n[/mathjaxinline] matrix [mathjaxinline]A[/mathjaxinline], the <span style="color:#99182C"><b class="bf">transpose</b></span> of [mathjaxinline]A[/mathjaxinline] is the [mathjaxinline]n\times m[/mathjaxinline] matrix denoted [mathjaxinline]A^ t[/mathjaxinline] whose entry in the [mathjaxinline]i[/mathjaxinline]th row and [mathjaxinline]j[/mathjaxinline]th column is the same as the entry in the [mathjaxinline]j[/mathjaxinline]th row and [mathjaxinline]i[/mathjaxinline]th column of [mathjaxinline]A[/mathjaxinline]. </p><p>
-For instance, if </p><table id="a0000000105" class="equation" width="100%" cellspacing="0" cellpadding="7">
+For instance, if </p><table id="a0000000107" class="equation" width="100%" cellspacing="0" cellpadding="7">
 <tr>
     <td class="equation">[mathjax]A = \left[ \begin{array}{ccc} 1 &amp;  2 &amp;  0 \\ 3 &amp;  4 &amp;  -1 \end{array} \right],[/mathjax]</td>
 </tr>
 </table><p>
- then </p><table id="a0000000106" class="equation" width="100%" cellspacing="0" cellpadding="7">
+ then </p><table id="a0000000108" class="equation" width="100%" cellspacing="0" cellpadding="7">
 <tr>
     <td class="equation">[mathjax]A^ t = \left[ \begin{array}{cc} 1 &amp;  3 \\ 2 &amp;  4 \\ 0 &amp;  -1 \end{array} \right].[/mathjax]</td>
 </tr>
 </table></html></p><p>
-<problem display_name="Find a Transpose" attrib_string="url_name=&quot;b2matrixops-tab7-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;3&quot; rerandomize=&quot;per_student&quot;" linenum="262" tex_filename="./block2/morematrixops.tex"><text><p>
+<problem display_name="Find a Transpose" attrib_string="url_name=&quot;b2matrixops-tab7-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;3&quot; rerandomize=&quot;per_student&quot;" linenum="271" tex_filename="./block2/morematrixops.tex"><text><p>
 Suppose [mathjaxinline]B = \left[ \begin{array}{cc} 2 &amp;  0 \\ 1 &amp;  3 \\ -2 &amp;  -1 \\ 5 &amp;  0 \end{array} \right].[/mathjaxinline] </p><p>
 What is [mathjaxinline]B^ t[/mathjaxinline]? </p><script linenum="1" filename="./matrixentry2.tex" type="text/python" system_path="python_lib">
 def MatrixEntry(expect, ans):
@@ -3828,7 +3845,7 @@ def MatrixEntry(expect, ans):
 </customresponse> </p><p>
 <solution><font color="blue">Answer: </font><font color="blue"><p>
 The first column of [mathjaxinline]B[/mathjaxinline] becomes the first row of [mathjaxinline]B^ t[/mathjaxinline]. The second column of [mathjaxinline]B[/mathjaxinline] becomes the second row of [mathjaxinline]B^ t[/mathjaxinline].  </p></font></solution></p></text></problem></p><p>
-<problem display_name="Double Transpose" attrib_string="url_name=&quot;b2matrixops-tab7-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="282" tex_filename="./block2/morematrixops.tex"><text><p>
+<problem display_name="Double Transpose" attrib_string="url_name=&quot;b2matrixops-tab7-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="291" tex_filename="./block2/morematrixops.tex"><text><p>
 True or false: Any matrix [mathjaxinline]A[/mathjaxinline] is equal to the transpose of its transpose. In other words, [mathjaxinline]A = (A^ t)^ t[/mathjaxinline]. </p><p>
 <optionresponse>
   <optioninput options="('True','False')" correct="True"/>
@@ -3836,7 +3853,7 @@ True or false: Any matrix [mathjaxinline]A[/mathjaxinline] is equal to the trans
 <solution><font color="blue">Answer: </font><font color="blue"><p>
  Switching the rows and columns of the transpose gives the original matrix.  </p></font></solution></p></text></problem></p></vertical>   </p><p>
 <vertical display_name="Transposes and Products" attrib_string="url_name=&quot;b2matrixops-vertical8&quot;" refnum="8"><p>
-<problem display_name="Possible Product" attrib_string="url_name=&quot;b2matrixops-tab8-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="298" tex_filename="./block2/morematrixops.tex"><text><p>
+<problem display_name="Possible Product" attrib_string="url_name=&quot;b2matrixops-tab8-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="307" tex_filename="./block2/morematrixops.tex"><text><p>
 Suppose [mathjaxinline]A[/mathjaxinline] is a [mathjaxinline]4\times 3[/mathjaxinline] matrix, and [mathjaxinline]B[/mathjaxinline] is an [mathjaxinline]3 \times 5[/mathjaxinline] matrix, so that [mathjaxinline]AB[/mathjaxinline] is a [mathjaxinline]4\times 5[/mathjaxinline] matrix. </p><p>
 Which of the following matrix products is defined? </p><p>
 <multiplechoiceresponse>
@@ -3859,7 +3876,7 @@ Which of the following matrix products is defined? </p><p>
  [mathjaxinline]A^ t[/mathjaxinline] is a [mathjaxinline]3\times 4[/mathjaxinline] matrix, and [mathjaxinline]B^ t[/mathjaxinline] is a [mathjaxinline]5 \times 3[/mathjaxinline] matrix. For the product to be defined, the first matrix must have as many columns as the second matrix has rows. This is true in one arrangement, but not the other.  </p></font></solution></p></text></problem></p><p>
 <video display_name="Transposes and Products" youtube_id_1_0="AT6y-Q3TI_w" attrib_string="url_name=&quot;b2matrixops-tab8-video1&quot; "></video></p></vertical>   </p><p>
 <vertical display_name="Transposes and Inverses" attrib_string="url_name=&quot;b2matrixops-vertical9&quot;" refnum="9"><p>
-<problem display_name="Symmetric Matrices" attrib_string="url_name=&quot;b2matrixops-tab9-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="320" tex_filename="./block2/morematrixops.tex"><text><p>
+<problem display_name="Symmetric Matrices" attrib_string="url_name=&quot;b2matrixops-tab9-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="329" tex_filename="./block2/morematrixops.tex"><text><p>
 <span style="color:#27408C"><b class="bf">Definition.</b></span> A matrix [mathjaxinline]A[/mathjaxinline] is <span style="color:#99182C"><b class="bf">symmetric</b></span> if [mathjaxinline]A = A^ t[/mathjaxinline]. </p><p>
 Of the following matrices, which ones are symmetric? Click all that apply. </p><p>
 <choiceresponse>
@@ -3882,7 +3899,7 @@ Of the following matrices, which ones are symmetric? Click all that apply. </p><
  Note that only a square matrix can be symmetric. A [mathjaxinline]2\times 3[/mathjaxinline] matrix has a transpose which is [mathjaxinline]3\times 2[/mathjaxinline], so it can never be equal to its transpose.  </p></font></solution></p></text></problem></p><p>
 <video display_name="Transposes and Inverses" youtube_id_1_0="bg1nsJJS-ZY" attrib_string="url_name=&quot;b2matrixops-tab9-video1&quot; "></video></p></vertical>   </p><p>
 <vertical display_name="Summary of Results" attrib_string="url_name=&quot;b2matrixops-vertical10&quot;" refnum="10"><p>
-<html display_name="Transpose Results Summary" attrib_string="url_name=&quot;b2matrixops-tab10-text1&quot;" linenum="343" tex_filename="./block2/morematrixops.tex"><p>
+<html display_name="Transpose Results Summary" attrib_string="url_name=&quot;b2matrixops-tab10-text1&quot;" linenum="352" tex_filename="./block2/morematrixops.tex"><p>
 <span style="color:#27408C"><b class="bf">Proposition.</b></span> If [mathjaxinline]A[/mathjaxinline] and [mathjaxinline]B[/mathjaxinline] are matrices such that the product [mathjaxinline]AB[/mathjaxinline] is defined, then [mathjaxinline](AB)^ t = B^ t A^ t[/mathjaxinline]. </p><p>
 <span style="color:#27408C"><b class="bf">Proposition.</b></span> If [mathjaxinline]A[/mathjaxinline] is invertible, then [mathjaxinline]A^ t[/mathjaxinline] is invertible, and [mathjaxinline](A^ t)^{-1}= (A^{-1})^ t[/mathjaxinline]. </p><p>
 <span style="color:#27408C"><b class="bf">Invertible Matrix Theorem (extended).</b></span> For a square ([mathjaxinline]n\times n[/mathjaxinline]) matrix [mathjaxinline]A[/mathjaxinline], the following statements are all equivalent to one another, and to the conditions previously stated in the Invertible Matrix Theorem: </p><ul class="itemize">
@@ -3896,7 +3913,7 @@ The rows of [mathjaxinline]A[/mathjaxinline] (viewed as vectors in [mathjaxinlin
 <li><p>
 The rows of [mathjaxinline]A[/mathjaxinline] are linearly independent. </p></li>
 </ul></html></p><p>
-<problem display_name="Solve for A, again" attrib_string="url_name=&quot;b2matrixops-tab10-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="363" tex_filename="./block2/morematrixops.tex"><text><p>
+<problem display_name="Solve for A, again" attrib_string="url_name=&quot;b2matrixops-tab10-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="372" tex_filename="./block2/morematrixops.tex"><text><p>
 Suppose that [mathjaxinline]A,B,C,D[/mathjaxinline] are all invertible [mathjaxinline]n\times n[/mathjaxinline] matrices such that [mathjaxinline]B^ t (A^{-1})^ t = D^ t C^{-1}[/mathjaxinline]. Solve for [mathjaxinline]A[/mathjaxinline]. </p><p>
 <multiplechoiceresponse>
   <choicegroup direction="vertical">
@@ -3930,22 +3947,22 @@ Suppose that [mathjaxinline]A,B,C,D[/mathjaxinline] are all invertible [mathjaxi
   </choicegroup>
 </multiplechoiceresponse> </p><p>
 <solution><font color="blue">Answer: </font><font color="blue"><p>
- One possible procedure: left-multiply on both sides of the equation by [mathjaxinline](B^ t)^{-1}[/mathjaxinline] to obtain </p><table id="a0000000107" class="equation" width="100%" cellspacing="0" cellpadding="7">
+ One possible procedure: left-multiply on both sides of the equation by [mathjaxinline](B^ t)^{-1}[/mathjaxinline] to obtain </p><table id="a0000000109" class="equation" width="100%" cellspacing="0" cellpadding="7">
 <tr>
     <td class="equation">[mathjax](A^{-1})^ t = (B^ t)^{-1}D^ t C^{-1}.[/mathjax]</td>
 </tr>
 </table><p>
- Take the transpose of both sides: </p><table id="a0000000108" class="equation" width="100%" cellspacing="0" cellpadding="7">
+ Take the transpose of both sides: </p><table id="a0000000110" class="equation" width="100%" cellspacing="0" cellpadding="7">
 <tr>
     <td class="equation">[mathjax]A^{-1}= ((B^ t)^{-1}D^ t C^{-1})^ t = (C^{-1})^ t D ((B^ t)^{-1})^ t = (C^ t)^{-1}D B^{-1}.[/mathjax]</td>
 </tr>
 </table><p>
- Now we can take the inverse of both sides, and we get </p><table id="a0000000109" class="equation" width="100%" cellspacing="0" cellpadding="7">
+ Now we can take the inverse of both sides, and we get </p><table id="a0000000111" class="equation" width="100%" cellspacing="0" cellpadding="7">
 <tr>
     <td class="equation">[mathjax]A = B D^{-1}C^ t.[/mathjax]</td>
 </tr>
 </table></font></solution></p></text></problem></p><p>
-<problem display_name="More IMT" attrib_string="url_name=&quot;b2matrixops-tab10-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;3&quot; rerandomize=&quot;per_student&quot;" linenum="384" tex_filename="./block2/morematrixops.tex"><text><p>
+<problem display_name="More IMT" attrib_string="url_name=&quot;b2matrixops-tab10-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;3&quot; rerandomize=&quot;per_student&quot;" linenum="393" tex_filename="./block2/morematrixops.tex"><text><p>
 Let [mathjaxinline]T: \mathbb R^4 \rightarrow \mathbb R^4[/mathjaxinline] be a linear transformation with standard matrix [mathjaxinline]A[/mathjaxinline]. Suppose the second row of [mathjaxinline]A[/mathjaxinline] is equal to three times the last row of [mathjaxinline]A[/mathjaxinline] minus the first row of [mathjaxinline]A[/mathjaxinline]. Which of the following must be true? Click all that apply. </p><p>
 <choiceresponse>
   <checkboxgroup>
@@ -3971,7 +3988,7 @@ Let [mathjaxinline]T: \mathbb R^4 \rightarrow \mathbb R^4[/mathjaxinline] be a l
 </choiceresponse> </p><p>
 <solution><font color="blue">Answer: </font><font color="blue"><p>
  Because one of the rows is a linear combination of the others, the rows are not linearly independent and the matrix is not invertible. If we row reduce this matrix, we will not get the identity matrix, but will instead have a row of all zeros and at least one free variable. Therefore none of the conditions of the Invertible Matrix Theorem are satisfied: [mathjaxinline]T[/mathjaxinline] is neither onto nor into, etc. Since [mathjaxinline]A[/mathjaxinline] has a free variable, no [mathjaxinline]Ax = v[/mathjaxinline] equation can have a unique solution (it might have zero solutions, or infinitely many).  </p></font></solution></p></text></problem></p></vertical>   </p></sequential> </p><p>
-<sequential display_name="Leontief Input-Output System" attrib_string="due=&quot;2019-12-13T14:15&quot; graded=&quot;true&quot; format=&quot;Exercises&quot; url_name=&quot;b2leontief-sequential&quot;" linenum="503" tex_filename="testcourse.tex" refnum="4"><p>
+<sequential display_name="Leontief Input-Output System" attrib_string="due=&quot;2019-12-13T14:15&quot; graded=&quot;true&quot; format=&quot;Exercises&quot; url_name=&quot;b2leontief-sequential&quot;" linenum="501" tex_filename="testcourse.tex" refnum="4"><p>
 <vertical display_name="Page One" attrib_string="url_name=&quot;b2leontief-vertical1&quot;" refnum="1"><p>
 <html display_name="Preliminaries" attrib_string="url_name=&quot;b2leontief-tab1-text1&quot;" linenum="5" tex_filename="./block2/leontief.tex"><p>
 The goal of this sequence is to introduce an application of matrix algebra to economics, called the Leontief Input-Output Model. This will not be covered on the midterm. </p><p>
@@ -4000,8 +4017,8 @@ How much gasoline will be required to put this race on? </p><p>
  See the next video!  </p></font></solution></p></text></problem></p></vertical>   </p><p>
 <vertical display_name="Leontief Input-Output Model" attrib_string="url_name=&quot;b2leontief-vertical3&quot;" refnum="3"><p>
 <video display_name="Leontief Input-Output Model" youtube_id_1_0="m0yU2P6Lv-0" attrib_string="url_name=&quot;b2leontief-tab3-video1&quot; "></video></p></vertical>    </p></sequential> </p></chapter> </p><p>
-<chapter display_name="Basis and Dimension" attrib_string="url_name=&quot;block3&quot; start=&quot;2018-01-11T16:00&quot;" linenum="542" tex_filename="testcourse.tex" refnum="3"><p>
-<sequential display_name="Subspaces" attrib_string="due=&quot;2019-12-13T14:15&quot; graded=&quot;true&quot; format=&quot;Exercises&quot; url_name=&quot;b3subspaces-sequential&quot;" linenum="550" tex_filename="testcourse.tex" refnum="1"><p>
+<chapter display_name="Basis and Dimension" attrib_string="url_name=&quot;block3&quot; start=&quot;2018-01-11T16:00&quot;" linenum="536" tex_filename="testcourse.tex" refnum="3"><p>
+<sequential display_name="Subspaces" attrib_string="due=&quot;2019-12-13T14:15&quot; graded=&quot;true&quot; format=&quot;Exercises&quot; url_name=&quot;b3subspaces-sequential&quot;" linenum="544" tex_filename="testcourse.tex" refnum="1"><p>
 <vertical display_name="Page One" attrib_string="url_name=&quot;b3subspaces-vertical1&quot;" refnum="1"><p>
 <html display_name="Preliminaries" attrib_string="url_name=&quot;b3subspaces-tab1-text1&quot;" linenum="5" tex_filename="./block3/subspaces.tex"><p>
 At the end of this sequence, and after some practice, you should be able to: </p><ul class="itemize">
@@ -4034,7 +4051,7 @@ Is [mathjaxinline]\mathbb R^4[/mathjaxinline] a subspace of [mathjaxinline]\math
 </ul></html></p></vertical>   </p><p>
 <vertical display_name="Subspace Examples" attrib_string="url_name=&quot;b3subspaces-vertical4&quot;" refnum="4"><p>
 <problem display_name="First Quadrant" attrib_string="url_name=&quot;b3subspaces-tab4-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="96" tex_filename="./block3/subspaces.tex"><text><p>
-Let [mathjaxinline]W[/mathjaxinline] be the set of vectors in [mathjaxinline]\mathbb R^2[/mathjaxinline] which lie in (or on the boundary of) the first quadrant. That is, </p><table id="a0000000110" class="equation" width="100%" cellspacing="0" cellpadding="7">
+Let [mathjaxinline]W[/mathjaxinline] be the set of vectors in [mathjaxinline]\mathbb R^2[/mathjaxinline] which lie in (or on the boundary of) the first quadrant. That is, </p><table id="a0000000112" class="equation" width="100%" cellspacing="0" cellpadding="7">
 <tr>
     <td class="equation">[mathjax]W = \left\{  \left[ \begin{array}{c} x_1 \\ x_2 \end{array} \right] : x_1, x_2 \ge 0\right\} .[/mathjax]</td>
 </tr>
@@ -4058,7 +4075,7 @@ Is [mathjaxinline]W[/mathjaxinline] a subspace of [mathjaxinline]\mathbb R^2[/ma
 <solution><font color="blue">Answer: </font><font color="blue"><p>
  [mathjaxinline]W[/mathjaxinline] contains [mathjaxinline]\mathbf{0}[/mathjaxinline] and is closed under vector addition, but if you scale a vector such as [mathjaxinline]\left[ \begin{array}{c} 1 \\ 1 \end{array} \right][/mathjaxinline] in [mathjaxinline]W[/mathjaxinline] by, say, [mathjaxinline]-2[/mathjaxinline], the result is not in [mathjaxinline]W[/mathjaxinline]. Thus [mathjaxinline]W[/mathjaxinline] is not closed under scalar multiplication and is not a subspace of [mathjaxinline]\mathbb R^2[/mathjaxinline].  </p></font></solution></p></text></problem></p><p>
 <problem display_name="First and Third Quadrant" attrib_string="url_name=&quot;b3subspaces-tab4-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="133" tex_filename="./block3/subspaces.tex"><text><p>
-Let [mathjaxinline]U[/mathjaxinline] be the set of vectors in [mathjaxinline]\mathbb R^2[/mathjaxinline] which lie in (or on the boundary of) the first quadrant or the third quadrant. That is, </p><table id="a0000000111" class="equation" width="100%" cellspacing="0" cellpadding="7">
+Let [mathjaxinline]U[/mathjaxinline] be the set of vectors in [mathjaxinline]\mathbb R^2[/mathjaxinline] which lie in (or on the boundary of) the first quadrant or the third quadrant. That is, </p><table id="a0000000113" class="equation" width="100%" cellspacing="0" cellpadding="7">
 <tr>
     <td class="equation">[mathjax]U = \left\{  \left[ \begin{array}{c} x_1 \\ x_2 \end{array} \right] : x_1, x_2 \ge 0 \  \mathrm{or} \  x_1,x_2 \le 0\right\} .[/mathjax]</td>
 </tr>
@@ -4082,7 +4099,7 @@ Is [mathjaxinline]U[/mathjaxinline] a subspace of [mathjaxinline]\mathbb R^2[/ma
 <solution><font color="blue">Answer: </font><font color="blue"><p>
  [mathjaxinline]U[/mathjaxinline] contains [mathjaxinline]\mathbf{0}[/mathjaxinline] and is closed under scalar multiplication, but if you add [mathjaxinline]\left[ \begin{array}{c} 3 \\ 1 \end{array} \right][/mathjaxinline] to [mathjaxinline]\left[ \begin{array}{c} -1 \\ -3 \end{array} \right][/mathjaxinline], the result is not in [mathjaxinline]U[/mathjaxinline]. Thus [mathjaxinline]U[/mathjaxinline] is not closed under addition and is not a subspace of [mathjaxinline]\mathbb R^2[/mathjaxinline].  </p></font></solution></p></text></problem></p><p>
 <problem display_name="Diagonal Line" attrib_string="url_name=&quot;b3subspaces-tab4-problem3&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="170" tex_filename="./block3/subspaces.tex"><text><p>
-Let [mathjaxinline]Y[/mathjaxinline] be the set of vectors in [mathjaxinline]\mathbb R^2[/mathjaxinline] which lie on the line [mathjaxinline]x_1 = x_2[/mathjaxinline] That is, </p><table id="a0000000112" class="equation" width="100%" cellspacing="0" cellpadding="7">
+Let [mathjaxinline]Y[/mathjaxinline] be the set of vectors in [mathjaxinline]\mathbb R^2[/mathjaxinline] which lie on the line [mathjaxinline]x_1 = x_2[/mathjaxinline] That is, </p><table id="a0000000114" class="equation" width="100%" cellspacing="0" cellpadding="7">
 <tr>
     <td class="equation">[mathjax]Y = \left\{  \left[ \begin{array}{c} c \\ c \end{array} \right] : c \in \mathbb R\right\} .[/mathjax]</td>
 </tr>
@@ -4106,7 +4123,7 @@ Is [mathjaxinline]Y[/mathjaxinline] a subspace of [mathjaxinline]\mathbb R^2[/ma
 <solution><font color="blue">Answer: </font><font color="blue"><p>
  If you add or scale vectors in [mathjaxinline]Y[/mathjaxinline], the result is still in [mathjaxinline]Y[/mathjaxinline]. [mathjaxinline]Y[/mathjaxinline] also contains the zero vector. Thus [mathjaxinline]Y[/mathjaxinline] is a subspace of [mathjaxinline]\mathbb R^2[/mathjaxinline].  </p></font></solution></p></text></problem></p><p>
 <problem display_name="Horizontal Plane" attrib_string="url_name=&quot;b3subspaces-tab4-problem4&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="203" tex_filename="./block3/subspaces.tex"><text><p>
-Let [mathjaxinline]Z[/mathjaxinline] be the set of vectors in [mathjaxinline]\mathbb R^3[/mathjaxinline] whose third coordinate is -1. That is, </p><table id="a0000000113" class="equation" width="100%" cellspacing="0" cellpadding="7">
+Let [mathjaxinline]Z[/mathjaxinline] be the set of vectors in [mathjaxinline]\mathbb R^3[/mathjaxinline] whose third coordinate is -1. That is, </p><table id="a0000000115" class="equation" width="100%" cellspacing="0" cellpadding="7">
 <tr>
     <td class="equation">[mathjax]Z = \left\{  \left[ \begin{array}{c} x_1 \\ x_2 \\ -1 \end{array} \right] : x_1, x_2 \in \mathbb R\right\} .[/mathjax]</td>
 </tr>

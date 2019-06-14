@@ -1,4 +1,4 @@
-<problem display_name="When is invertible possible?" linenum="128" tex_filename="./block2/matrixinv.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="When is invertible possible?" linenum="129" tex_filename="./block2/matrixinv.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
     <p>
 Again, let [mathjaxinline]T: \mathbb R^ n \rightarrow \mathbb R^ m[/mathjaxinline] be a linear transformation. Given the above, if [mathjaxinline]n&lt;m[/mathjaxinline], is it possible for [mathjaxinline]T[/mathjaxinline] to be invertible? </p>
@@ -17,7 +17,10 @@ If [mathjaxinline]n&gt;m[/mathjaxinline], is it possible for [mathjaxinline]T[/m
     <p>
       <solution>
         <font color="blue">Answer: </font>
-        <font color="blue"/>
+        <font color="blue">
+          <p>
+ We know that, if [mathjaxinline]n&lt;m[/mathjaxinline] or if [mathjaxinline]n&gt;m[/mathjaxinline], [mathjaxinline]T[/mathjaxinline] can't be both into and onto. Therefore, in neither case could [mathjaxinline]T[/mathjaxinline] be invertible.  </p>
+        </font>
       </solution>
     </p>
   </text>
