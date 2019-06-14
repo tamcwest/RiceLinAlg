@@ -89,11 +89,13 @@ $DA\inv B\inv = C\inv$.  Solve for $A$.
 \edXabox{type="multichoice" expect="$A=B\inv CD$" options="$A=DCB\inv$","$A=DB\inv C$","$A=B\inv CD$","$A=BCD\inv$","$A=D\inv CB$","$A=CB\inv D$","None of the above"}
 
 \edXsolution{ 
- Multiply on both sides of the equation by $AD\inv$ from the left, and then by $CD$ from the right.
- 
+If we multiply on both sides of the equation by $D\inv$ from the left, we obtain
+\[A\inv B\inv = D\inv C\inv.\]
+Multiplying by $B$ on the right yields
+\[A\inv = D\inv C\inv B.\]
+Finally, we invert both sides:
+\[ A =  (D\inv C\inv B)\inv = B\inv CD.\]
  }
- 
- 
  
 \endedxproblem
 
@@ -122,7 +124,7 @@ a_{21} & a_{22}  \\
 \edXabox{type="custom" cfn="MatrixEntry" expect="[[1,0,0],[0,1,0],[0,0,4]]"}
 
 \edXsolution{
-Our matrix $E$ scales a single row of $A$, so it's similar to the identity matrix, but with the necessary scalar 4 in its own last row.
+
 }
 
 \endedxproblem
@@ -150,7 +152,7 @@ a_{31} & a_{32}
 \edXabox{type="custom" cfn="MatrixEntry" expect="[[0,1,0],[1,0,0],[0,0,1]]"}
 
 \edXsolution{
-This is a permutation matrix; it swaps the first and second rows of $A$, so it is simply the identity matrix, but with its first and second rows swapped.
+
 }
 
 \endedxproblem
@@ -295,7 +297,7 @@ True or false: Any matrix $A$ is equal to the transpose of its transpose.  In ot
 
 \beginedxproblem{Possible Product}{\dpa1}
 
-Suppose $A$ is a $4\times 3$ matrix, and $B$ is a $3 \times 5$ matrix, so that $AB$ is a $4\times 5$ matrix.  
+Suppose $A$ is a $4\times 3$ matrix, and $B$ is an $3 \times 5$ matrix, so that $AB$ is a $4\times 5$ matrix.  
 
 Which of the following matrix products is defined?  
 
@@ -324,7 +326,8 @@ Of the following matrices, which ones are symmetric?  Click all that apply.
 \edXabox{type="oldmultichoice" expect="$\left[ \begin{array}{cc} \pi & 1   \\ 1 & 4 \end{array} \right]$","$I_n$" options="$\left[ \begin{array}{ccc} 1 & 0 & 0  \\ 0 & 2 & 0 \end{array} \right]$","$\left[ \begin{array}{cc} 1 & 1   \\ 2 & 2 \end{array} \right]$","$\left[ \begin{array}{cc} \pi & 1   \\ 1 & 4 \end{array} \right]$","$I_n$"}
 
 \edXsolution{ 
- Note that only a square matrix can be symmetric.
+ Note that only a square matrix can be symmetric.  A $2\times 3$ matrix has a transpose which is $3\times 2$,
+ so it can never be equal to its transpose.  
  }
 
 \endedxproblem
@@ -367,9 +370,13 @@ $B^t (A\inv)^t = D^t C\inv$.  Solve for $A$.
 
 
 \edXsolution{ 
-One possible procedure: left-multiply on both sides of the equation by $(B^t)\inv$. Take the transpose of both sides. Then you have $A\inv = (C\inv)^t D B\inv$, and you can take the inverse of both sides.
-
-}
+One possible procedure: left-multiply on both sides of the equation by $(B^t)\inv$ to obtain 
+\[(A\inv)^t = (B^t)\inv D^t C\inv .\] 
+Take the transpose of both sides:
+\[A\inv = ((B^t)\inv D^t C\inv)^t = (C\inv)^t D ((B^t)\inv)^t = (C^t)\inv D B\inv.\] 
+Now we can take the inverse of both sides, and we get
+\[A = B D\inv C^t.\]
+ }
  
 \endedxproblem
 
@@ -385,7 +392,9 @@ to three times the last row of $A$ minus the first row of $A$.  Which of the fol
 
 
 \edXsolution{
-Because one of the rows is a linear combination of the others, the rows are not linearly independent. If we row reduce this matrix, we will get a row of zeros, not the identity matrix. Therefore $T$ is not onto, $A$ has a free variable, etc. Note that the matrix equation stated above does not necessarily have more than one solution, because the vector on the right hand side might not be in the span of the columns of $A$ (i.e. the equation could have no solution). 
+Because one of the rows is a linear combination of the others, the rows are not linearly independent and 
+the matrix is not invertible.  If we row reduce this matrix, we will not get the identity matrix, but will instead have a row of all zeros and  at least one free variable.  Therefore none of the conditions of the Invertible Matrix Theorem are satisfied:  $T$ is neither onto nor into, etc.  Since $A$ has a free variable,
+no $Ax = v$ equation can have a unique solution (it might have zero solutions, or infinitely many).  
 }
 
 \endedxproblem
