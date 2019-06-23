@@ -1,0 +1,19 @@
+<problem display_name="Question" linenum="249" tex_filename="./block3/rankandnullity.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+  <text>
+    <p>
+Suppose [mathjaxinline]\dim V = 14[/mathjaxinline] and let [mathjaxinline]W[/mathjaxinline] be a subspace of [mathjaxinline]V[/mathjaxinline]. </p>
+    <p>
+True or false: If we construct a linear transformation [mathjaxinline]T: V \rightarrow \mathbb R^2[/mathjaxinline] such that [mathjaxinline]W = \mathrm{Ker}(T)[/mathjaxinline], then [mathjaxinline]\dim W[/mathjaxinline] must be 12. </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('True','False')" correct="False"/>
+      </optionresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue"/>
+      </solution>
+    </p>
+  </text>
+</problem>

@@ -1,0 +1,33 @@
+<html display_name="Dimension Propositions" linenum="195" tex_filename="./block3/dimension.tex">
+  <p><span style="color:#27408C"><b class="bf">Proposition (A).</b></span> If [mathjaxinline]\dim V = n &lt; \infty[/mathjaxinline], and [mathjaxinline]W[/mathjaxinline] is any subspace of [mathjaxinline]V[/mathjaxinline], then any linearly independent list of vectors in [mathjaxinline]W[/mathjaxinline] can be extended to form a basis of [mathjaxinline]W[/mathjaxinline]. </p>
+  <p><span style="color:#27408C"><b class="bf">Proposition.</b></span> If [mathjaxinline]\dim V = n[/mathjaxinline], then any linearly independent list of vectors in [mathjaxinline]V[/mathjaxinline] has at most [mathjaxinline]n[/mathjaxinline] vectors. Any linearly independent list of vectors in [mathjaxinline]V[/mathjaxinline] that has exactly [mathjaxinline]n[/mathjaxinline] vectors must be a basis of [mathjaxinline]V[/mathjaxinline]. </p>
+  <p><span style="color:#27408C"><b class="bf">Proposition.</b></span> If [mathjaxinline]\dim V = n[/mathjaxinline], then any subspace [mathjaxinline]W[/mathjaxinline] of [mathjaxinline]V[/mathjaxinline] has dimension at most [mathjaxinline]n[/mathjaxinline]. If [mathjaxinline]\dim W = n[/mathjaxinline], then [mathjaxinline]W = V[/mathjaxinline]. </p>
+  <p><span style="color:#27408C"><b class="bf">Proposition (B).</b></span> Any finite list of vectors that spans a vector space [mathjaxinline]V[/mathjaxinline] contains a basis of [mathjaxinline]V[/mathjaxinline]. </p>
+  <p><span style="color:#27408C"><b class="bf">Proposition.</b></span> If [mathjaxinline]\dim V = n[/mathjaxinline], then any list of vectors that spans [mathjaxinline]V[/mathjaxinline] has at least [mathjaxinline]n[/mathjaxinline] vectors. Any list of vectors that spans [mathjaxinline]V[/mathjaxinline] that has exactly [mathjaxinline]n[/mathjaxinline] vectors must be a basis of [mathjaxinline]V[/mathjaxinline]. </p>
+  <p>
+    <div class="hideshowbox">
+      <h4 onclick="hideshow(this);" style="margin: 0px">Proof of Proposition (A)<span class="icon-caret-down toggleimage"/></h4>
+      <div class="hideshowcontent">
+        <p>
+stuff </p>
+      </div>
+      <p class="hideshowbottom" onclick="hideshow(this);" style="margin: 0px">
+        <a href="javascript: {return false;}">Show</a>
+      </p>
+    </div>
+  </p>
+  <p>
+    <div class="hideshowbox">
+      <h4 onclick="hideshow(this);" style="margin: 0px">Proof of Proposition (B)<span class="icon-caret-down toggleimage"/></h4>
+      <div class="hideshowcontent">
+        <p>
+stuff </p>
+      </div>
+      <p class="hideshowbottom" onclick="hideshow(this);" style="margin: 0px">
+        <a href="javascript: {return false;}">Show</a>
+      </p>
+    </div>
+  </p>
+  <SCRIPT src="/static/latex2edx.js" type="text/javascript"/>
+  <LINK href="/static/latex2edx.css" rel="stylesheet" type="text/css"/>
+</html>

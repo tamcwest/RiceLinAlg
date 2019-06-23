@@ -1,0 +1,5 @@
+<html display_name="Definitions" linenum="42" tex_filename="./block3/rankandnullity.tex">
+  <p><span style="color:#27408C"><b class="bf">Definitions.</b></span> Given a linear transformation [mathjaxinline]T: V\rightarrow W[/mathjaxinline], the <span style="color:#99182C"><b class="bf">nullity</b></span> of [mathjaxinline]T[/mathjaxinline] is the dimension of the kernel of [mathjaxinline]T[/mathjaxinline], and the <span style="color:#99182C"><b class="bf">rank</b></span> of [mathjaxinline]T[/mathjaxinline] is the dimension of the image of [mathjaxinline]T[/mathjaxinline]. </p>
+  <p>
+If a matrix [mathjaxinline]A[/mathjaxinline] is the standard matrix for a linear transformation [mathjaxinline]T:\mathbb R^ n \rightarrow \mathbb R^ m[/mathjaxinline], then the rank and nullity of [mathjaxinline]A[/mathjaxinline] are the same as the rank and nullity of [mathjaxinline]T[/mathjaxinline]. </p>
+</html>

@@ -1,0 +1,22 @@
+<problem display_name="Example 1" linenum="276" tex_filename="./block3/rankandnullity.tex" showanswer="finished" attempts="2" rerandomize="per_student">
+  <text>
+    <p>
+Let [mathjaxinline]T: \mathbb R^{8}\rightarrow \mathbb R^{11}[/mathjaxinline] be a linear transformation with standard matrix [mathjaxinline]A[/mathjaxinline]. If there are six pivots when [mathjaxinline]A[/mathjaxinline] is row-reduced, what is the nullity of [mathjaxinline]T[/mathjaxinline]? </p>
+    <p>
+      <numericalresponse answer="2">
+        <textline>
+          <responseparam type="tolerance" default="0.00001"/>
+        </textline>
+      </numericalresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue">
+          <p>
+ We showed in the video that the nullity of [mathjaxinline]T[/mathjaxinline] equals the number of free variables in [mathjaxinline]A[/mathjaxinline]. [mathjaxinline]A[/mathjaxinline] has eight columns, and six pivots when row reduce, so there must be [mathjaxinline]8-6[/mathjaxinline], or 2, free variables.  </p>
+        </font>
+      </solution>
+    </p>
+  </text>
+</problem>

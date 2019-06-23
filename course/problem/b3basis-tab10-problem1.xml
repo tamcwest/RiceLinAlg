@@ -1,0 +1,36 @@
+<problem display_name="Where does it live? 2" linenum="369" tex_filename="./block3/basis.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+  <text>
+    <p>
+Let [mathjaxinline]W[/mathjaxinline] be a subspace of [mathjaxinline]\mathbb R^9[/mathjaxinline]. Suppose [mathjaxinline]\mathcal{B} = \{ v_1; v_2; \ldots v_5\}[/mathjaxinline] is a basis of [mathjaxinline]W[/mathjaxinline]. Let [mathjaxinline]w \in W[/mathjaxinline]. Then [mathjaxinline][w]_{\mathcal{B}}[/mathjaxinline] is an element of what space? </p>
+    <p>
+      <multiplechoiceresponse>
+        <choicegroup direction="vertical">
+          <choice correct="false" name="1">
+            <text> [mathjaxinline]W[/mathjaxinline]</text>
+          </choice>
+          <choice correct="false" name="2">
+            <text> [mathjaxinline]\mathbb R[/mathjaxinline]</text>
+          </choice>
+          <choice correct="true" name="3">
+            <text> [mathjaxinline]\mathbb R^5[/mathjaxinline]</text>
+          </choice>
+          <choice correct="false" name="4">
+            <text> [mathjaxinline]\mathbb R^9[/mathjaxinline]</text>
+          </choice>
+          <choice correct="false" name="5">
+            <text> None of the above</text>
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue">
+          <p>
+ [mathjaxinline][w]_{\mathcal{B}}[/mathjaxinline] is defined to be a column of five scalars; specifically, the five scalars [mathjaxinline]a_1, a_2, \ldots a_5[/mathjaxinline] such that [mathjaxinline]w = a_1 v_1 + \ldots a_5v_5[/mathjaxinline].  </p>
+        </font>
+      </solution>
+    </p>
+  </text>
+</problem>

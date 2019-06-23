@@ -1,0 +1,4 @@
+<html display_name="Dimension Definition" linenum="527" tex_filename="./block3/basisanddimension.tex">
+  <p><span style="color:#27408C"><b class="bf">Proposition.</b></span> All bases of a vector space [mathjaxinline]V[/mathjaxinline] must have the same number of vectors. </p>
+  <p><span style="color:#27408C"><b class="bf">Definition.</b></span> The <span style="color:#99182C"><b class="bf">dimension</b></span> of a vector space [mathjaxinline]V[/mathjaxinline] is defined to be the number of vectors in a basis of [mathjaxinline]V[/mathjaxinline]. If [mathjaxinline]V[/mathjaxinline] has no finite basis, we say that [mathjaxinline]V[/mathjaxinline] is infinite-dimensional. </p>
+</html>

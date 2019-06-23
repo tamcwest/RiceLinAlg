@@ -1,0 +1,19 @@
+<problem display_name="Rank and Nullity 3" linenum="109" tex_filename="./block3/rankandnullity.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+  <text>
+    <p>
+Suppose [mathjaxinline]\dim V = 5[/mathjaxinline]. Let [mathjaxinline]T: V\rightarrow V[/mathjaxinline] be a linear transformation. If we know that [mathjaxinline]T[/mathjaxinline] is not onto, what is the largest possible rank of [mathjaxinline]T[/mathjaxinline]? </p>
+    <p>
+      <numericalresponse answer="4">
+        <textline>
+          <responseparam type="tolerance" default="0.00001"/>
+        </textline>
+      </numericalresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue"/>
+      </solution>
+    </p>
+  </text>
+</problem>

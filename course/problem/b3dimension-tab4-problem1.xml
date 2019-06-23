@@ -1,0 +1,17 @@
+<problem display_name="Dimension Question 1" linenum="129" tex_filename="./block3/dimension.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+  <text>
+    <p>
+True or False: If the dimension of [mathjaxinline]V[/mathjaxinline] is 4, then every list of 4 vectors in [mathjaxinline]V[/mathjaxinline] must be a basis of [mathjaxinline]V[/mathjaxinline]. </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('True','False')" correct="False"/>
+      </optionresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue"/>
+      </solution>
+    </p>
+  </text>
+</problem>

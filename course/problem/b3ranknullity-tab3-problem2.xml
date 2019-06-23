@@ -1,0 +1,30 @@
+<problem display_name="Rank and Nullity 2" linenum="86" tex_filename="./block3/rankandnullity.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+  <text>
+    <p>
+Let [mathjaxinline]T: \mathbb R^2 \rightarrow \mathbb R^2[/mathjaxinline] be the transformation that sends all vectors to [mathjaxinline]\mathbf{0}[/mathjaxinline]. </p>
+    <p>
+What is the rank of [mathjaxinline]T[/mathjaxinline]? </p>
+    <p>
+      <numericalresponse answer="0">
+        <textline>
+          <responseparam type="tolerance" default="0.00001"/>
+        </textline>
+      </numericalresponse>
+    </p>
+    <p>
+What is the nullity of [mathjaxinline]T[/mathjaxinline]? </p>
+    <p>
+      <numericalresponse answer="2">
+        <textline>
+          <responseparam type="tolerance" default="0.00001"/>
+        </textline>
+      </numericalresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue"/>
+      </solution>
+    </p>
+  </text>
+</problem>

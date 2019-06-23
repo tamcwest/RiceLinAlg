@@ -1,0 +1,38 @@
+<problem display_name="Is it a basis? 2" linenum="88" tex_filename="./block3/basis.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+  <text>
+    <p>
+Now consider the matrix [mathjaxinline]A = \left[ \begin{array}{ccc} 1 &amp;  1 &amp;  2 \\ 0 &amp;  1 &amp;  -1 \\ 1 &amp;  0 &amp;  4 \end{array}\right].[/mathjaxinline] </p>
+    <p>
+[mathjaxinline]A[/mathjaxinline] is a vector in the vector space of [mathjaxinline]3\times 3[/mathjaxinline] matrices [mathjaxinline]M_{3\times 3}[/mathjaxinline]. </p>
+    <p>
+Is the list [mathjaxinline]\{ A\}[/mathjaxinline] linearly independent in [mathjaxinline]M_{3\times 3}[/mathjaxinline]? </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('Yes','No')" correct="Yes"/>
+      </optionresponse>
+    </p>
+    <p>
+Does [mathjaxinline]\{ A\}[/mathjaxinline] span [mathjaxinline]M_{3\times 3}[/mathjaxinline]? </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('Yes','No')" correct="No"/>
+      </optionresponse>
+    </p>
+    <p>
+Is the list [mathjaxinline]\{ A\}[/mathjaxinline] a basis of [mathjaxinline]M_{3\times 3}[/mathjaxinline]? </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('Yes','No')" correct="No"/>
+      </optionresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue">
+          <p>
+ A list which only has one non-zero vector in it is automatically linearly independent. However, [mathjaxinline]\{ A\}[/mathjaxinline] does not span the space [mathjaxinline]M_{3\times 3}[/mathjaxinline], since there are many matrices that cannot be expressed as [mathjaxinline]cA[/mathjaxinline] for some scalar [mathjaxinline]c[/mathjaxinline]. Hence the list is not a basis of [mathjaxinline]M_{3\times 3}[/mathjaxinline].  </p>
+        </font>
+      </solution>
+    </p>
+  </text>
+</problem>
