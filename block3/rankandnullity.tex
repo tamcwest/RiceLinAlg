@@ -17,6 +17,7 @@ At the end of this sequence, and after some practice, you should be able to:
 \item Determine the rank and nullity of a linear transformation $T: \R^n \rightarrow \R^m$, given its
 standard matrix
 \item Find bases for the image and kernel of  a linear transformation $T: \R^n \rightarrow \R^m$, given its standard matrix
+\item Apply the Rank-Nullity Theorem.  
 \end{itemize}
 
 
@@ -33,6 +34,9 @@ plus some questions.
 
 
 \beginedxvertical{Rank and Nullity}
+
+
+\doedxvideo{Defining Rank and Nullity}{uinL2McUGAA}
 
 
 \beginedxtext{Definitions}
@@ -54,7 +58,216 @@ then the rank and nullity of $A$ are the same as the rank and nullity of $T$.
 
 
 
+\beginedxvertical{Rank and Nullity Questions}
+
+
+\beginedxproblem{Rank and Nullity 1}{\dpa1}
+
+Let $T: \R^2 \rightarrow \R^2$ be the transformation that rotates vectors by $90^\circ$ counterclockwise.
+
+What is the rank of $T$?  
+
+\edXabox{type="numerical" expect="2"}
+
+
+What is the nullity of $T$?  
+
+\edXabox{type="numerical" expect="0"}
+
+
+\edXsolution{
+}
+
+\endedxproblem
+
+
+
+
+\beginedxproblem{Rank and Nullity 2}{\dpa1}
+
+Let $T: \R^2 \rightarrow \R^2$ be the transformation that sends all vectors to $\veco$.  
+
+
+What is the rank of $T$?  
+
+\edXabox{type="numerical" expect="0"}
+
+
+What is the nullity of $T$?  
+
+\edXabox{type="numerical" expect="2"}
+
+
+\edXsolution{
+}
+
+\endedxproblem
+
+
+
+
+\beginedxproblem{Rank and Nullity 3}{\dpa1}
+
+Suppose $\dim V = 5$.  Let $T: V\rightarrow V$ be a linear transformation.  If we know that $T$ is
+not onto, what is the largest possible rank of $T$?  
+
+\edXabox{type="numerical" expect="4"}
+
+
+\edXsolution{
+}
+
+\endedxproblem
+
+
+\endedxvertical
+
+
+\beginedxvertical{Rank-Nullity Theorem}
+
+\doedxvideo{Rank-Nullity Theorem}{la7BvLezg1I}
+
+
+\beginedxtext{Rank-Nullity Theorem}
+
+{\keya{\bf{Rank-Nullity Theorem.}}}  If $T:V\rightarrow W$ is a linear transformation and $\dim V = n < \infty$, then $\dim V - \mathrm{Nullity}(T) = \mathrm{Rank}(T)$.  
+
+
+
+
+\begin{edXshowhide}{Proof of Theorem}
+
+stuff
+
+\end{edXshowhide}
+
+
+
+\endedxtext
+
+
+\endedxvertical
+
+
+\beginedxvertical{Examples}
+
+\beginedxproblem{Rank-Nullity Question 1}{\dpa1}
+
+Let $T: \R^9 \rightarrow \R^3$ be a linear transformation.  If the image of $T$ is a two-dimensional 
+subspace of $\R^3$, what is the dimension of its kernel?
+
+\edXabox{type="numerical" expect="7"}
+
+
+\edXsolution{
+}
+
+\endedxproblem
+
+\beginedxproblem{Rank-Nullity Question 2}{\dpa1}
+
+Let $T: P_4 \rightarrow \R^7$ be a linear transformation.  What is the largest possible rank of $T$?
+
+\edXabox{type="numerical" expect="5"}
+
+Is is possible for $T$ to be onto?  
+
+\edXabox{expect="No" options="Yes","No"}
+
+
+\edXsolution{
+}
+
+\endedxproblem
+
+
+\beginedxproblem{Rank-Nullity Question 3}{\dpa1}
+
+Let $T: \R^4 \rightarrow P_6$ be a linear transformation which is not into.  What is the maximum possible
+dimension of the image of $T$?    
+
+\edXabox{type="numerical" expect="3"}
+
+
+\edXsolution{
+}
+
+\endedxproblem
+
+
+\beginedxproblem{Rank-Nullity Question 4}{\dpa1}
+
+Suppose $V$ and $W$ are vector spaces with the same (finite) dimension $n$.  
+
+If $T: V\rightarrow W$ is a linear transformation which is onto, what is the rank of $T$?  
+
+
+\edXabox{type="formula" expect="n" samples="n@1:2#5" feqin="1" tolerance=".001"}
+
+Therefore, what is the nullity of $T$?  
+
+\edXabox{type="formula" expect="0" samples="n@1:2#5" feqin="1" tolerance=".001"}
+
+Therefore, we can conclude that $T$ must be what?  (Answer yourself.)  
+
+\edXsolution{
+}
+
+\endedxproblem
+
+
+\beginedxproblem{Rank-Nullity Question 5}{\dpa1}
+
+Suppose $V$ and $W$ are vector spaces with the same (finite) dimension $n$.  
+
+If $T: V\rightarrow W$ is a linear transformation which is into, what is the nullity of $T$?  
+
+
+\edXabox{type="formula" expect="0" samples="n@1:2#5" feqin="1" tolerance=".001"}
+
+Therefore, what is the rank of $T$?  
+
+\edXabox{type="formula" expect="n" samples="n@1:2#5" feqin="1" tolerance=".001"}
+
+Therefore, we can conclude that $T$ must be what?  (Answer yourself.)  
+
+\edXsolution{
+}
+
+\endedxproblem
+
+
+
+\endedxvertical
+
+
+\beginedxvertical{One Last Example}
+
+\doedxvideo{Another Rank-Nullity Example}{EOJeHCQHxRw}
+
+
+\beginedxproblem{Question}{\dpa1}
+
+Suppose $\dim V = 14$ and let $W$ be a subspace of $V$. 
+
+True or false: If we construct a linear transformation $T: V \rightarrow \R^2$ such that $W = \mathrm{Ker}(T)$,
+then $\dim W$ must be 12.  
+
+
+\edXabox{expect="False" options="True","False"}
+
+
+\edXsolution{
+}
+
+\endedxproblem
+
+
+\endedxvertical
+
+
 \beginedxvertical{Nullity}
+
 
 
 \doedxvideo{Calculating Nullity}{vKR7ciBTuCc}
@@ -121,7 +334,7 @@ the first, third, and fourth columns of $R$.}
 
 \beginedxvertical{Summary}
 
-\beginedxtext{Summary}
+\beginedxtext{Summary of Rank and Nullity for Linear Transformations from R^n to R^m}
 
 
 Let $T: \R^{n}\rightarrow \R^{m}$ be a linear transformation with standard matrix $A$. 

@@ -1,0 +1,20 @@
+<html display_name="Coordinatization as Linear Transformation" linenum="226" tex_filename="./block3/dimension.tex">
+  <p><span style="color:#27408C"><b class="bf">Proposition.</b></span> If [mathjaxinline]\mathcal{B} = \{ v_1; v_2; \ldots ; v_ n\}[/mathjaxinline] is a basis of [mathjaxinline]V[/mathjaxinline], then the coordinatization map [mathjaxinline]C: V \rightarrow \mathbb R^ n[/mathjaxinline] given by [mathjaxinline]C(w) = [w]_{\mathcal{B}}[/mathjaxinline] is a linear transformation which is both into and onto. </p>
+  <p>
+    <div class="hideshowbox">
+      <h4 onclick="hideshow(this);" style="margin: 0px">Proof of Proposition<span class="icon-caret-down toggleimage"/></h4>
+      <div class="hideshowcontent">
+        <p>
+To show that [mathjaxinline]C[/mathjaxinline] is a linear transformation... </p>
+        <p>
+In the video, we proved that [mathjaxinline]C[/mathjaxinline] is into and onto. </p>
+      </div>
+      <p class="hideshowbottom" onclick="hideshow(this);" style="margin: 0px">
+        <a href="javascript: {return false;}">Show</a>
+      </p>
+    </div>
+  </p>
+  <p><span style="color:#27408C"><b class="bf">Proposition.</b></span> If [mathjaxinline]\mathcal{B} = \{ v_1; v_2; \ldots ; v_ n\}[/mathjaxinline] is a basis of [mathjaxinline]V[/mathjaxinline], and [mathjaxinline]k&gt;n[/mathjaxinline], then any list of [mathjaxinline]k[/mathjaxinline] vectors in [mathjaxinline]V[/mathjaxinline] must be linearly dependent. </p>
+  <SCRIPT src="/static/latex2edx.js" type="text/javascript"/>
+  <LINK href="/static/latex2edx.css" rel="stylesheet" type="text/css"/>
+</html>

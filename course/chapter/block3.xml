@@ -22,4 +22,114 @@
       <problem url_name="b3subspaces-tab5-problem1"/>
     </vertical>
   </sequential>
+  <sequential display_name="Bases" linenum="579" tex_filename="testcourse.tex" refnum="2" due="2019-12-13T14:15" graded="true" format="Exercises" url_name="b3basis-sequential">
+    <vertical display_name="Page One" refnum="1" url_name="b3basis-vertical1">
+      <html url_name="b3basis-tab1-text1"/>
+    </vertical>
+    <vertical display_name="Basis" refnum="2" url_name="b3basis-vertical2">
+      <video url_name="b3basis-tab2-video1"/>
+      <html url_name="b3basis-tab2-text1"/>
+    </vertical>
+    <vertical display_name="Basis Questions" refnum="3" url_name="b3basis-vertical3">
+      <problem url_name="b3basis-tab3-problem1"/>
+      <problem url_name="b3basis-tab3-problem2"/>
+    </vertical>
+    <vertical display_name="Bases in R^n" refnum="4" url_name="b3basis-vertical4">
+      <problem url_name="b3basis-tab4-problem1"/>
+      <problem url_name="b3basis-tab4-problem2"/>
+    </vertical>
+    <vertical display_name="Finding Bases in R^n" refnum="5" url_name="b3basis-vertical5">
+      <video url_name="b3basis-tab5-video1"/>
+      <html url_name="b3basis-tab5-text1"/>
+    </vertical>
+    <vertical display_name="More Exercises" refnum="6" url_name="b3basis-vertical6">
+      <problem url_name="b3basis-tab6-problem1"/>
+      <problem url_name="b3basis-tab6-problem2"/>
+      <problem url_name="b3basis-tab6-problem3"/>
+      <problem url_name="b3basis-tab6-problem4"/>
+    </vertical>
+    <vertical display_name="Coordinates" refnum="7" url_name="b3basis-vertical7">
+      <video url_name="b3basis-tab7-video1"/>
+      <problem url_name="b3basis-tab7-problem1"/>
+    </vertical>
+    <vertical display_name="Coordinates Defined" refnum="8" url_name="b3basis-vertical8">
+      <html url_name="b3basis-tab8-text1"/>
+    </vertical>
+    <vertical display_name="Some Examples" refnum="9" url_name="b3basis-vertical9">
+      <problem url_name="b3basis-tab9-problem1"/>
+      <problem url_name="b3basis-tab9-problem2"/>
+    </vertical>
+    <vertical display_name="More Coordinates" refnum="10" url_name="b3basis-vertical10">
+      <video url_name="b3basis-tab10-video1"/>
+      <problem url_name="b3basis-tab10-problem1"/>
+      <problem url_name="b3basis-tab10-problem2"/>
+      <problem url_name="b3basis-tab10-problem3"/>
+      <problem url_name="b3basis-tab10-problem4"/>
+    </vertical>
+  </sequential>
+  <sequential display_name="Dimension" linenum="612" tex_filename="testcourse.tex" refnum="3" due="2019-12-13T14:15" graded="true" format="Exercises" url_name="b3dimension-sequential">
+    <vertical display_name="Page One" refnum="1" url_name="b3dimension-vertical1">
+      <html url_name="b3dimension-tab1-text1"/>
+    </vertical>
+    <vertical display_name="Consequences of Having Coordinates" refnum="2" url_name="b3dimension-vertical2">
+      <video url_name="b3dimension-tab2-video1"/>
+      <html url_name="b3dimension-tab2-text1"/>
+    </vertical>
+    <vertical display_name="Further Consequences" refnum="3" url_name="b3dimension-vertical3">
+      <problem url_name="b3dimension-tab3-problem1"/>
+      <problem url_name="b3dimension-tab3-problem2"/>
+    </vertical>
+    <vertical display_name="Dimension" refnum="4" url_name="b3dimension-vertical4">
+      <video url_name="b3dimension-tab4-video1"/>
+      <html url_name="b3dimension-tab4-text1"/>
+      <problem url_name="b3dimension-tab4-problem1"/>
+      <problem url_name="b3dimension-tab4-problem2"/>
+      <problem url_name="b3dimension-tab4-problem3"/>
+      <problem url_name="b3dimension-tab4-problem4"/>
+    </vertical>
+    <vertical display_name="Dimension and Subspaces" refnum="5" url_name="b3dimension-vertical5">
+      <video url_name="b3dimension-tab5-video1"/>
+      <html url_name="b3dimension-tab5-text1"/>
+    </vertical>
+  </sequential>
+  <sequential display_name="Rank and Nullity" linenum="647" tex_filename="testcourse.tex" refnum="4" due="2019-12-13T14:15" graded="true" format="Exercises" url_name="b3ranknullity-sequential">
+    <vertical display_name="Page One" refnum="1" url_name="b3ranknullity-vertical1">
+      <html url_name="b3ranknullity-tab1-text1"/>
+    </vertical>
+    <vertical display_name="Rank and Nullity" refnum="2" url_name="b3ranknullity-vertical2">
+      <video url_name="b3ranknullity-tab2-video1"/>
+      <html url_name="b3ranknullity-tab2-text1"/>
+    </vertical>
+    <vertical display_name="Rank and Nullity Questions" refnum="3" url_name="b3ranknullity-vertical3">
+      <problem url_name="b3ranknullity-tab3-problem1"/>
+      <problem url_name="b3ranknullity-tab3-problem2"/>
+      <problem url_name="b3ranknullity-tab3-problem3"/>
+    </vertical>
+    <vertical display_name="Rank-Nullity Theorem" refnum="4" url_name="b3ranknullity-vertical4">
+      <video url_name="b3ranknullity-tab4-video1"/>
+      <html url_name="b3ranknullity-tab4-text1"/>
+    </vertical>
+    <vertical display_name="Examples" refnum="5" url_name="b3ranknullity-vertical5">
+      <problem url_name="b3ranknullity-tab5-problem1"/>
+      <problem url_name="b3ranknullity-tab5-problem2"/>
+      <problem url_name="b3ranknullity-tab5-problem3"/>
+      <problem url_name="b3ranknullity-tab5-problem4"/>
+      <problem url_name="b3ranknullity-tab5-problem5"/>
+    </vertical>
+    <vertical display_name="One Last Example" refnum="6" url_name="b3ranknullity-vertical6">
+      <video url_name="b3ranknullity-tab6-video1"/>
+      <problem url_name="b3ranknullity-tab6-problem1"/>
+    </vertical>
+    <vertical display_name="Nullity" refnum="7" url_name="b3ranknullity-vertical7">
+      <video url_name="b3ranknullity-tab7-video1"/>
+      <problem url_name="b3ranknullity-tab7-problem1"/>
+    </vertical>
+    <vertical display_name="Rank" refnum="8" url_name="b3ranknullity-vertical8">
+      <video url_name="b3ranknullity-tab8-video1"/>
+      <problem url_name="b3ranknullity-tab8-problem1"/>
+    </vertical>
+    <vertical display_name="Summary" refnum="9" url_name="b3ranknullity-vertical9">
+      <html url_name="b3ranknullity-tab9-text1"/>
+    </vertical>
+  </sequential>
 </chapter>

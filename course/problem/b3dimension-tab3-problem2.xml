@@ -1,0 +1,17 @@
+<problem display_name="Two Bases? 2" linenum="93" tex_filename="./block3/dimension.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+  <text>
+    <p>
+Now suppose that [mathjaxinline]\mathcal{C}[/mathjaxinline] is a basis of [mathjaxinline]V[/mathjaxinline] with 7 vectors. Is it possible for there to be a basis [mathjaxinline]\mathcal{B}[/mathjaxinline] of [mathjaxinline]V[/mathjaxinline] with 5 vectors? </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('Yes','No')" correct="No"/>
+      </optionresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue"/>
+      </solution>
+    </p>
+  </text>
+</problem>
