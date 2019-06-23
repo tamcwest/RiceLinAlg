@@ -1,0 +1,19 @@
+<problem display_name="Rank-Nullity Question 1" linenum="154" tex_filename="./block3/rankandnullity.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+  <text>
+    <p>
+Let [mathjaxinline]T: \mathbb R^9 \rightarrow \mathbb R^3[/mathjaxinline] be a linear transformation. If the image of [mathjaxinline]T[/mathjaxinline] is a two-dimensional subspace of [mathjaxinline]\mathbb R^3[/mathjaxinline], what is the dimension of its kernel? </p>
+    <p>
+      <numericalresponse answer="7">
+        <textline>
+          <responseparam type="tolerance" default="0.00001"/>
+        </textline>
+      </numericalresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue"/>
+      </solution>
+    </p>
+  </text>
+</problem>

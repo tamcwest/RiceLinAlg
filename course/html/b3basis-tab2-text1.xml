@@ -1,0 +1,4 @@
+<html display_name="Basis Definition" linenum="36" tex_filename="./block3/basis.tex">
+  <p><span style="color:#27408C"><b class="bf">Definition.</b></span> Suppose [mathjaxinline]V[/mathjaxinline] is a vector space over a field [mathjaxinline]F[/mathjaxinline]. A list of vectors [mathjaxinline]\{ v_1; v_2; \ldots v_ n\}[/mathjaxinline] in [mathjaxinline]V[/mathjaxinline] is a <span style="color:#99182C"><b class="bf">basis</b></span> of [mathjaxinline]V[/mathjaxinline] if the list is linearly independent and spans [mathjaxinline]V[/mathjaxinline]. </p>
+  <p><span style="color:#27408C"><b class="bf">Definition.</b></span> The list [mathjaxinline]\{ e_1; e_2; \ldots e_ n\}[/mathjaxinline] in [mathjaxinline]\mathbb R^ n[/mathjaxinline] is called the <span style="color:#99182C"><b class="bf">standard basis</b></span> of [mathjaxinline]\mathbb R^ n[/mathjaxinline]. </p>
+</html>

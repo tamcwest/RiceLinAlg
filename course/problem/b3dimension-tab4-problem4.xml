@@ -1,0 +1,22 @@
+<problem display_name="Dimension Question 4" linenum="165" tex_filename="./block3/dimension.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+  <text>
+    <center>
+      <img src="/static/images/c3s2dimension.svg" width="450 px" style="margin: 10px 25px 25px 25px; border:0px"/>
+    </center>
+    <p>
+Let [mathjaxinline]W[/mathjaxinline] be the subspace of [mathjaxinline]\mathbb R^2[/mathjaxinline] drawn above. What is the dimension of [mathjaxinline]V[/mathjaxinline]? </p>
+    <p>
+      <numericalresponse answer="1">
+        <textline>
+          <responseparam type="tolerance" default="0.00001"/>
+        </textline>
+      </numericalresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue"/>
+      </solution>
+    </p>
+  </text>
+</problem>

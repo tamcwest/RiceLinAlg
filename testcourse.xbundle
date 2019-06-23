@@ -7201,6 +7201,1240 @@ True or false: Every non-zero vector space has at least two subspaces. </p>
           </problem>
         </vertical>
       </sequential>
+      <sequential display_name="Bases" linenum="579" tex_filename="testcourse.tex" refnum="2" due="2019-12-13T14:15" graded="true" format="Exercises" url_name="b3basis-sequential">
+        <vertical display_name="Page One" refnum="1" url_name="b3basis-vertical1">
+          <html display_name="Preliminaries" linenum="5" tex_filename="./block3/basis.tex" url_name="b3basis-tab1-text1">
+            <p>
+At the end of this sequence, and after some practice, you should be able to: </p>
+            <ul class="itemize">
+              <li>
+                <p>
+Determine when a list of vectors in [mathjaxinline]\mathbb R^ n[/mathjaxinline] is a basis of [mathjaxinline]\mathbb R^ n[/mathjaxinline]. </p>
+              </li>
+              <li>
+                <p>
+something... </p>
+              </li>
+            </ul>
+            <p>
+For time budgeting purposes, this sequence has x videos totaling X minutes, plus some questions. </p>
+          </html>
+        </vertical>
+        <vertical display_name="Basis" refnum="2" url_name="b3basis-vertical2">
+          <video display_name="Definition of Basis" youtube_id_1_0="cmx119UrFwg" url_name="b3basis-tab2-video1"/>
+          <html display_name="Basis Definition" linenum="36" tex_filename="./block3/basis.tex" url_name="b3basis-tab2-text1">
+            <p><span style="color:#27408C"><b class="bf">Definition.</b></span> Suppose [mathjaxinline]V[/mathjaxinline] is a vector space over a field [mathjaxinline]F[/mathjaxinline]. A list of vectors [mathjaxinline]\{ v_1; v_2; \ldots v_ n\}[/mathjaxinline] in [mathjaxinline]V[/mathjaxinline] is a <span style="color:#99182C"><b class="bf">basis</b></span> of [mathjaxinline]V[/mathjaxinline] if the list is linearly independent and spans [mathjaxinline]V[/mathjaxinline]. </p>
+            <p><span style="color:#27408C"><b class="bf">Definition.</b></span> The list [mathjaxinline]\{ e_1; e_2; \ldots e_ n\}[/mathjaxinline] in [mathjaxinline]\mathbb R^ n[/mathjaxinline] is called the <span style="color:#99182C"><b class="bf">standard basis</b></span> of [mathjaxinline]\mathbb R^ n[/mathjaxinline]. </p>
+          </html>
+        </vertical>
+        <vertical display_name="Basis Questions" refnum="3" url_name="b3basis-vertical3">
+          <problem display_name="Is it a basis? 1" linenum="58" tex_filename="./block3/basis.tex" url_name="b3basis-tab3-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
+            <text>
+              <p>
+Let [mathjaxinline]v_1 = \left[ \begin{array}{c} 1 \\ 0 \\ 1 \end{array} \right][/mathjaxinline], [mathjaxinline]v_2 = \left[ \begin{array}{c} 1 \\ 1 \\ 0 \end{array} \right][/mathjaxinline], and [mathjaxinline]v_3 = \left[ \begin{array}{c} 2 \\ -1 \\ 4 \end{array} \right][/mathjaxinline] be three vectors in [mathjaxinline]\mathbb R^3[/mathjaxinline]. </p>
+              <p>
+Is the list [mathjaxinline]\{ v_1; v_2; v_3\}[/mathjaxinline] linearly independent? (You may need to do some row reduction.) </p>
+              <p>
+                <optionresponse>
+                  <optioninput options="('Yes','No')" correct="Yes"/>
+                </optionresponse>
+              </p>
+              <p>
+Does the list [mathjaxinline]\{ v_1; v_2; v_3\}[/mathjaxinline] span [mathjaxinline]\mathbb R^3[/mathjaxinline]? </p>
+              <p>
+                <optionresponse>
+                  <optioninput options="('Yes','No')" correct="Yes"/>
+                </optionresponse>
+              </p>
+              <p>
+Is the list [mathjaxinline]\{ v_1; v_2; v_3\}[/mathjaxinline] a basis of [mathjaxinline]\mathbb R^3[/mathjaxinline]? </p>
+              <p>
+                <optionresponse>
+                  <optioninput options="('Yes','No')" correct="Yes"/>
+                </optionresponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue">
+                    <p>
+ We can answer these questions by row reducing the matrix with columns [mathjaxinline]v_1[/mathjaxinline], [mathjaxinline]v_2[/mathjaxinline], and [mathjaxinline]v_3[/mathjaxinline]. If we do this row reduction, we obtain the [mathjaxinline]3\times 3[/mathjaxinline] identity matrix. This has a pivot in every column (i.e., no free variables), so the list [mathjaxinline]\{ v_1; v_2; v_3\}[/mathjaxinline] is linearly independent. In addition, it has a pivot in every row, so the list spans [mathjaxinline]\mathbb R^3[/mathjaxinline]. Since both conditions hold, the list is a basis of [mathjaxinline]\mathbb R^3[/mathjaxinline].  </p>
+                  </font>
+                </solution>
+              </p>
+            </text>
+          </problem>
+          <problem display_name="Is it a basis? 2" linenum="88" tex_filename="./block3/basis.tex" url_name="b3basis-tab3-problem2" showanswer="finished" attempts="1" rerandomize="per_student">
+            <text>
+              <p>
+Now consider the matrix [mathjaxinline]A = \left[ \begin{array}{ccc} 1 &amp;  1 &amp;  2 \\ 0 &amp;  1 &amp;  -1 \\ 1 &amp;  0 &amp;  4 \end{array}\right].[/mathjaxinline] </p>
+              <p>
+[mathjaxinline]A[/mathjaxinline] is a vector in the vector space of [mathjaxinline]3\times 3[/mathjaxinline] matrices [mathjaxinline]M_{3\times 3}[/mathjaxinline]. </p>
+              <p>
+Is the list [mathjaxinline]\{ A\}[/mathjaxinline] linearly independent in [mathjaxinline]M_{3\times 3}[/mathjaxinline]? </p>
+              <p>
+                <optionresponse>
+                  <optioninput options="('Yes','No')" correct="Yes"/>
+                </optionresponse>
+              </p>
+              <p>
+Does [mathjaxinline]\{ A\}[/mathjaxinline] span [mathjaxinline]M_{3\times 3}[/mathjaxinline]? </p>
+              <p>
+                <optionresponse>
+                  <optioninput options="('Yes','No')" correct="No"/>
+                </optionresponse>
+              </p>
+              <p>
+Is the list [mathjaxinline]\{ A\}[/mathjaxinline] a basis of [mathjaxinline]M_{3\times 3}[/mathjaxinline]? </p>
+              <p>
+                <optionresponse>
+                  <optioninput options="('Yes','No')" correct="No"/>
+                </optionresponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue">
+                    <p>
+ A list which only has one non-zero vector in it is automatically linearly independent. However, [mathjaxinline]\{ A\}[/mathjaxinline] does not span the space [mathjaxinline]M_{3\times 3}[/mathjaxinline], since there are many matrices that cannot be expressed as [mathjaxinline]cA[/mathjaxinline] for some scalar [mathjaxinline]c[/mathjaxinline]. Hence the list is not a basis of [mathjaxinline]M_{3\times 3}[/mathjaxinline].  </p>
+                  </font>
+                </solution>
+              </p>
+            </text>
+          </problem>
+        </vertical>
+        <vertical display_name="Bases in R^n" refnum="4" url_name="b3basis-vertical4">
+          <problem display_name="Short list" linenum="125" tex_filename="./block3/basis.tex" url_name="b3basis-tab4-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
+            <text>
+              <p>
+Let's go back to [mathjaxinline]\mathbb R^ n[/mathjaxinline] and recall a few facts. </p>
+              <p>
+If a list of vectors in [mathjaxinline]\mathbb R^ n[/mathjaxinline] has [mathjaxinline]k[/mathjaxinline] vectors with [mathjaxinline]k&lt;n[/mathjaxinline], is it possible for the list to be linearly independent? </p>
+              <p>
+                <optionresponse>
+                  <optioninput options="('Yes','No')" correct="Yes"/>
+                </optionresponse>
+              </p>
+              <p>
+Is it possible for the list to span [mathjaxinline]\mathbb R^ n[/mathjaxinline]? </p>
+              <p>
+                <optionresponse>
+                  <optioninput options="('Yes','No')" correct="No"/>
+                </optionresponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue">
+                    <p>
+ We have shown in previous sections that [mathjaxinline]k[/mathjaxinline] vectors in [mathjaxinline]\mathbb R^ n[/mathjaxinline] cannot span [mathjaxinline]\mathbb R^ n[/mathjaxinline] if [mathjaxinline]k&lt;n[/mathjaxinline].  </p>
+                  </font>
+                </solution>
+              </p>
+            </text>
+          </problem>
+          <problem display_name="Long list" linenum="144" tex_filename="./block3/basis.tex" url_name="b3basis-tab4-problem2" showanswer="finished" attempts="1" rerandomize="per_student">
+            <text>
+              <p>
+If a list of vectors in [mathjaxinline]\mathbb R^ n[/mathjaxinline] has [mathjaxinline]k[/mathjaxinline] vectors with [mathjaxinline]k&gt;n[/mathjaxinline], is it possible for the list to be linearly independent? </p>
+              <p>
+                <optionresponse>
+                  <optioninput options="('Yes','No')" correct="No"/>
+                </optionresponse>
+              </p>
+              <p>
+Is it possible for the list to span [mathjaxinline]\mathbb R^ n[/mathjaxinline]? </p>
+              <p>
+                <optionresponse>
+                  <optioninput options="('Yes','No')" correct="Yes"/>
+                </optionresponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue">
+                    <p>
+ We have shown in previous sections that [mathjaxinline]k[/mathjaxinline] vectors in [mathjaxinline]\mathbb R^ n[/mathjaxinline] cannot be linearly independent if [mathjaxinline]k&gt;n[/mathjaxinline].  </p>
+                  </font>
+                </solution>
+              </p>
+            </text>
+          </problem>
+        </vertical>
+        <vertical display_name="Finding Bases in R^n" refnum="5" url_name="b3basis-vertical5">
+          <video display_name="Bases in R^n" youtube_id_1_0="NHgCtsjsArY" url_name="b3basis-tab5-video1"/>
+          <html display_name="Bases of R^n" linenum="172" tex_filename="./block3/basis.tex" url_name="b3basis-tab5-text1">
+            <p><span style="color:#27408C"><b class="bf">Proposition.</b></span> Every basis of [mathjaxinline]\mathbb R^ n[/mathjaxinline] has exactly [mathjaxinline]n[/mathjaxinline] vectors. </p>
+          </html>
+        </vertical>
+        <vertical display_name="More Exercises" refnum="6" url_name="b3basis-vertical6">
+          <problem display_name="Basis? 3" linenum="186" tex_filename="./block3/basis.tex" url_name="b3basis-tab6-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
+            <text>
+              <p>
+Consider the vector [mathjaxinline]v[/mathjaxinline] in [mathjaxinline]\mathbb R^2[/mathjaxinline] shown below. </p>
+              <center>
+                <img src="/static/images/c3s2basis1.svg" width="450 px" style="margin: 10px 25px 25px 25px; border:0px"/>
+              </center>
+              <p>
+Which of the following statements is true of the list [mathjaxinline]L = \{ v\}[/mathjaxinline]? </p>
+              <p>
+                <multiplechoiceresponse>
+                  <choicegroup direction="vertical">
+                    <choice correct="false" name="1">
+                      <text> [mathjaxinline]L[/mathjaxinline] is a basis of [mathjaxinline]\mathbb R^2[/mathjaxinline]</text>
+                    </choice>
+                    <choice correct="true" name="2">
+                      <text> [mathjaxinline]L[/mathjaxinline] is a basis of some subspace of [mathjaxinline]\mathbb R^2[/mathjaxinline], but not of [mathjaxinline]\mathbb R^2[/mathjaxinline] itself</text>
+                    </choice>
+                    <choice correct="false" name="3">
+                      <text> [mathjaxinline]L[/mathjaxinline] is not a basis of any subspace of [mathjaxinline]\mathbb R^2[/mathjaxinline]</text>
+                    </choice>
+                  </choicegroup>
+                </multiplechoiceresponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue"/>
+                </solution>
+              </p>
+            </text>
+          </problem>
+          <problem display_name="Basis? 4" linenum="206" tex_filename="./block3/basis.tex" url_name="b3basis-tab6-problem2" showanswer="finished" attempts="1" rerandomize="per_student">
+            <text>
+              <p>
+Consider the vectors [mathjaxinline]u,v,w[/mathjaxinline] in [mathjaxinline]\mathbb R^2[/mathjaxinline] shown below. </p>
+              <center>
+                <img src="/static/images/c3s2basis3.svg" width="450 px" style="margin: 10px 25px 25px 25px; border:0px"/>
+              </center>
+              <p>
+Which of the following statements is true of the list [mathjaxinline]L = \{ u; v; w\}[/mathjaxinline]? </p>
+              <p>
+                <multiplechoiceresponse>
+                  <choicegroup direction="vertical">
+                    <choice correct="false" name="1">
+                      <text> [mathjaxinline]L[/mathjaxinline] is a basis of [mathjaxinline]\mathbb R^2[/mathjaxinline]</text>
+                    </choice>
+                    <choice correct="false" name="2">
+                      <text> [mathjaxinline]L[/mathjaxinline] is a basis of some subspace of [mathjaxinline]\mathbb R^2[/mathjaxinline], but not of [mathjaxinline]\mathbb R^2[/mathjaxinline] itself</text>
+                    </choice>
+                    <choice correct="true" name="3">
+                      <text> [mathjaxinline]L[/mathjaxinline] is not a basis of any subspace of [mathjaxinline]\mathbb R^2[/mathjaxinline]</text>
+                    </choice>
+                  </choicegroup>
+                </multiplechoiceresponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue"/>
+                </solution>
+              </p>
+            </text>
+          </problem>
+          <problem display_name="Basis? 5" linenum="225" tex_filename="./block3/basis.tex" url_name="b3basis-tab6-problem3" showanswer="finished" attempts="1" rerandomize="per_student">
+            <text>
+              <p>
+Consider the vectors [mathjaxinline]v,w[/mathjaxinline] in [mathjaxinline]\mathbb R^2[/mathjaxinline] shown below. </p>
+              <center>
+                <img src="/static/images/c3s2basis2.svg" width="450 px" style="margin: 10px 25px 25px 25px; border:0px"/>
+              </center>
+              <p>
+Which of the following statements is true of the list [mathjaxinline]L = \{ v; w\}[/mathjaxinline]? </p>
+              <p>
+                <multiplechoiceresponse>
+                  <choicegroup direction="vertical">
+                    <choice correct="false" name="1">
+                      <text> [mathjaxinline]L[/mathjaxinline] is a basis of [mathjaxinline]\mathbb R^2[/mathjaxinline]</text>
+                    </choice>
+                    <choice correct="true" name="2">
+                      <text> [mathjaxinline]L[/mathjaxinline] is a basis of some subspace of [mathjaxinline]\mathbb R^2[/mathjaxinline], but not of [mathjaxinline]\mathbb R^2[/mathjaxinline] itself</text>
+                    </choice>
+                    <choice correct="false" name="3">
+                      <text> [mathjaxinline]L[/mathjaxinline] is not a basis of any subspace of [mathjaxinline]\mathbb R^2[/mathjaxinline]</text>
+                    </choice>
+                  </choicegroup>
+                </multiplechoiceresponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue"/>
+                </solution>
+              </p>
+            </text>
+          </problem>
+          <problem display_name="Basis? 6" linenum="245" tex_filename="./block3/basis.tex" url_name="b3basis-tab6-problem4" showanswer="finished" attempts="1" rerandomize="per_student">
+            <text>
+              <p>
+Consider the vectors [mathjaxinline]v,w[/mathjaxinline] in [mathjaxinline]\mathbb R^2[/mathjaxinline] shown below. </p>
+              <center>
+                <img src="/static/images/c3s2basis4.svg" width="450 px" style="margin: 10px 25px 25px 25px; border:0px"/>
+              </center>
+              <p>
+Which of the following statements is true of the list [mathjaxinline]L = \{ v; w\}[/mathjaxinline]? </p>
+              <p>
+                <multiplechoiceresponse>
+                  <choicegroup direction="vertical">
+                    <choice correct="false" name="1">
+                      <text> [mathjaxinline]L[/mathjaxinline] is a basis of [mathjaxinline]\mathbb R^2[/mathjaxinline]</text>
+                    </choice>
+                    <choice correct="false" name="2">
+                      <text> [mathjaxinline]L[/mathjaxinline] is a basis of some subspace of [mathjaxinline]\mathbb R^2[/mathjaxinline], but not of [mathjaxinline]\mathbb R^2[/mathjaxinline] itself</text>
+                    </choice>
+                    <choice correct="true" name="3">
+                      <text> [mathjaxinline]L[/mathjaxinline] is not a basis of any subspace of [mathjaxinline]\mathbb R^2[/mathjaxinline]</text>
+                    </choice>
+                  </choicegroup>
+                </multiplechoiceresponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue"/>
+                </solution>
+              </p>
+            </text>
+          </problem>
+        </vertical>
+        <vertical display_name="Coordinates" refnum="7" url_name="b3basis-vertical7">
+          <video display_name="Coordinates" youtube_id_1_0="_m8lE_c9L3I" url_name="b3basis-tab7-video1"/>
+          <problem display_name="Where does it live?" linenum="276" tex_filename="./block3/basis.tex" url_name="b3basis-tab7-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
+            <text>
+              <p>
+Suppose [mathjaxinline]\mathcal{B} = \{ v_1; v_2; \ldots v_9\}[/mathjaxinline] is a basis of a vector space [mathjaxinline]V[/mathjaxinline] (over the field [mathjaxinline]\mathbb R[/mathjaxinline]). Let [mathjaxinline]w \in V[/mathjaxinline]. Then [mathjaxinline][w]_{\mathcal{B}}[/mathjaxinline] is an element of what space? </p>
+              <p>
+                <multiplechoiceresponse>
+                  <choicegroup direction="vertical">
+                    <choice correct="false" name="1">
+                      <text> [mathjaxinline]V[/mathjaxinline]</text>
+                    </choice>
+                    <choice correct="false" name="2">
+                      <text> [mathjaxinline]\mathbb R[/mathjaxinline]</text>
+                    </choice>
+                    <choice correct="true" name="3">
+                      <text> [mathjaxinline]\mathbb R^9[/mathjaxinline]</text>
+                    </choice>
+                    <choice correct="false" name="4">
+                      <text> None of the above</text>
+                    </choice>
+                  </choicegroup>
+                </multiplechoiceresponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue">
+                    <p>
+ [mathjaxinline][w]_{\mathcal{B}}[/mathjaxinline] is defined to be a column of nine scalars; specifically, the nine scalars [mathjaxinline]a_1, a_2, \ldots a_9[/mathjaxinline] such that [mathjaxinline]w = a_1 v_1 + \ldots a_9v_9[/mathjaxinline].  </p>
+                  </font>
+                </solution>
+              </p>
+            </text>
+          </problem>
+        </vertical>
+        <vertical display_name="Coordinates Defined" refnum="8" url_name="b3basis-vertical8">
+          <html display_name="Subspaces" linenum="295" tex_filename="./block3/basis.tex" url_name="b3basis-tab8-text1">
+            <p><span style="color:#27408C"><b class="bf">Proposition.</b></span> If [mathjaxinline]\{ v_1; v_2; \ldots ; v_ n\}[/mathjaxinline] is a basis of [mathjaxinline]V[/mathjaxinline], then every [mathjaxinline]w\in V[/mathjaxinline] can be written as a linear combination of [mathjaxinline]v_1, v_2, \ldots v_ n[/mathjaxinline] in exactly one way. </p>
+            <p><span style="color:#27408C"><b class="bf">Definition.</b></span> If [mathjaxinline]\mathcal{B} = \{ v_1; v_2; \ldots ; v_ n\}[/mathjaxinline] is a basis of a vector space [mathjaxinline]V[/mathjaxinline] over the field [mathjaxinline]F[/mathjaxinline], and [mathjaxinline]w\in V[/mathjaxinline] can be written as [mathjaxinline]w = a_1v_1 + a_2v_2 + \ldots + a_ n v_ n[/mathjaxinline] for scalars [mathjaxinline]a_ i[/mathjaxinline], then the <span style="color:#99182C"><b class="bf">coordinates of [mathjaxinline]w[/mathjaxinline] relative to [mathjaxinline]\mathcal{B}[/mathjaxinline]</b></span> is the vector [mathjaxinline][w]_{\mathcal{B}} \in F^ n[/mathjaxinline] given by </p>
+            <table id="a0000000116" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+              <tr>
+                <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax][w]_{\mathcal{B}} = \left[ \begin{array}{c} a_1 \\ a_2 \\ \vdots \\ a_ n \end{array} \right].[/mathjax]</td>
+                <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+              </tr>
+            </table>
+          </html>
+        </vertical>
+        <vertical display_name="Some Examples" refnum="9" url_name="b3basis-vertical9">
+          <problem display_name="Example 1" linenum="318" tex_filename="./block3/basis.tex" url_name="b3basis-tab9-problem1" showanswer="finished" attempts="3" rerandomize="per_student">
+            <text>
+              <p>
+Suppose [mathjaxinline]\mathcal{B} = \{ v_1; v_2; v_3\}[/mathjaxinline] is a basis of a vector space [mathjaxinline]V[/mathjaxinline] (over [mathjaxinline]\mathbb R[/mathjaxinline]). </p>
+              <p>
+Let [mathjaxinline]w = 3v_3 - 2v_2[/mathjaxinline]. What is [mathjaxinline][w]_{\mathcal{B}}[/mathjaxinline]? </p>
+              <p>
+                <div class="hideshowbox">
+                  <h4 onclick="hideshow(this);" style="margin: 0px">How to Enter a Column Vector in R^n<span class="icon-caret-down toggleimage"/></h4>
+                  <div class="hideshowcontent">
+                    <p>
+To enter a vector in [mathjaxinline]\mathbb R^ n[/mathjaxinline] such as [mathjaxinline]\left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right][/mathjaxinline], you can either: </p>
+                    <ul class="itemize">
+                      <li>
+                        <p>
+enter it as you would a [mathjaxinline]3\times 1[/mathjaxinline] matrix: [[1],[2],[3]] </p>
+                      </li>
+                      <li>
+                        <p>
+or, you can enter it as &lt;1,2,3&gt; </p>
+                      </li>
+                    </ul>
+                    <p>
+Use decimals only. </p>
+                  </div>
+                  <p class="hideshowbottom" onclick="hideshow(this);" style="margin: 0px">
+                    <a href="javascript: {return false;}">Show</a>
+                  </p>
+                </div>
+              </p>
+              <script linenum="2" filename="./vectorentry2.tex" type="text/python" system_path="python_lib">
+def VectorEntry(expect, ans):
+	import ast
+	import numpy as np 
+  	atol = 0.01
+	list_expect = ast.literal_eval(expect)
+	vec_expect = np.matrix(list_expect)
+  	ret = {"ok":False}
+	try:
+  		# input format [[1],[2],[3]]
+		list_ans = ast.literal_eval(ans)
+		vec_ans = np.matrix(list_ans)
+  		if vec_ans.shape != vec_expect.shape:
+  			ret['msg'] = 'Wrong shape of vector!'
+  		elif np.allclose(vec_ans, vec_expect,atol,1e-08):
+  			ret['ok'] = True
+  		else:
+  		# More error message. Will improve this part
+  			ret['msg'] = 'something is wrong'   			
+	#except SyntaxError:
+		#ret['msg'] = 'Wrong input format'
+	except SyntaxError:
+  		# input format &amp;lt;1,2,3&amp;gt;
+		list_ans = ans.replace('&amp;lt;', '[').replace('&amp;gt;', ']')
+		list_ans = ast.literal_eval(list_ans)
+		vec_ans = np.transpose(np.matrix(list_ans))
+  		if vec_ans.shape != vec_expect.shape:
+  			ret['msg'] = 'Wrong shape of vector!'
+  		elif np.allclose(vec_ans, vec_expect,0.01,1e-08):
+  			ret['ok'] = True
+  		else:
+    		# More error message. Will improve this part
+  			ret['msg'] = 'something is wrong' 
+  	except:
+  		ret['msg'] = 'Wrong input format'
+  	return ret 
+</script>
+              <p>
+                <customresponse cfn="VectorEntry" expect="[[0],[-2],[3]]">
+                  <textline correct_answer="[[0],[-2],[3]]"/>
+                </customresponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue">
+                    <p>
+ We can write [mathjaxinline]w[/mathjaxinline] as a linear combination of the basis vectors in order: [mathjaxinline]w = 0 v_1 + (-2)v_2 + 3v_3[/mathjaxinline]. Hence [mathjaxinline][w]_{\mathcal{B}} =\left[\begin{array}{c} 0 \\ -2 \\ 3 \end{array} \right][/mathjaxinline]. </p>
+                  </font>
+                </solution>
+              </p>
+            </text>
+            <SCRIPT src="/static/latex2edx.js" type="text/javascript"/>
+            <LINK href="/static/latex2edx.css" rel="stylesheet" type="text/css"/>
+          </problem>
+          <problem display_name="Example 2" linenum="340" tex_filename="./block3/basis.tex" url_name="b3basis-tab9-problem2" showanswer="finished" attempts="3" rerandomize="per_student">
+            <text>
+              <p>
+Let [mathjaxinline]p_1 = 1+t[/mathjaxinline], [mathjaxinline]p_2 = 2+t^2[/mathjaxinline], and [mathjaxinline]p_3 = t-t^2[/mathjaxinline]. Fact: [mathjaxinline]\mathcal{B} = \{ p_1; p_2; p_3\}[/mathjaxinline] is a basis of [mathjaxinline]\mathbb {P}_2[/mathjaxinline]. </p>
+              <p>
+What polynomial [mathjaxinline]q[/mathjaxinline] has the property that [mathjaxinline][q]_{\mathcal{B}} = \left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right][/mathjaxinline]? </p>
+              <p>
+Remember to type * for multiplication (so to enter [mathjaxinline]3t^2[/mathjaxinline], type 3*t^2). </p>
+              <p>
+                <formularesponse type="cs" samples="t@1:10#10" answer="5+4*t-t^2">
+                  <formulaequationinput>
+                    <responseparam type="tolerance" default=".001"/>
+                  </formulaequationinput>
+                </formularesponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue">
+                    <p>
+ If [mathjaxinline][q]_{\mathcal{B}} = \left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right][/mathjaxinline], then [mathjaxinline]q = 1p_1 + 2p_2 + 3p_3.[/mathjaxinline] Thus we compute [mathjaxinline]q[/mathjaxinline] to be [mathjaxinline]5+4t -t^2[/mathjaxinline]. </p>
+                  </font>
+                </solution>
+              </p>
+            </text>
+          </problem>
+        </vertical>
+        <vertical display_name="More Coordinates" refnum="10" url_name="b3basis-vertical10">
+          <video display_name="More Coordinates" youtube_id_1_0="8v4ocK_SsL8" url_name="b3basis-tab10-video1"/>
+          <problem display_name="Where does it live? 2" linenum="369" tex_filename="./block3/basis.tex" url_name="b3basis-tab10-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
+            <text>
+              <p>
+Let [mathjaxinline]W[/mathjaxinline] be a subspace of [mathjaxinline]\mathbb R^9[/mathjaxinline]. Suppose [mathjaxinline]\mathcal{B} = \{ v_1; v_2; \ldots v_5\}[/mathjaxinline] is a basis of [mathjaxinline]W[/mathjaxinline]. Let [mathjaxinline]w \in W[/mathjaxinline]. Then [mathjaxinline][w]_{\mathcal{B}}[/mathjaxinline] is an element of what space? </p>
+              <p>
+                <multiplechoiceresponse>
+                  <choicegroup direction="vertical">
+                    <choice correct="false" name="1">
+                      <text> [mathjaxinline]W[/mathjaxinline]</text>
+                    </choice>
+                    <choice correct="false" name="2">
+                      <text> [mathjaxinline]\mathbb R[/mathjaxinline]</text>
+                    </choice>
+                    <choice correct="true" name="3">
+                      <text> [mathjaxinline]\mathbb R^5[/mathjaxinline]</text>
+                    </choice>
+                    <choice correct="false" name="4">
+                      <text> [mathjaxinline]\mathbb R^9[/mathjaxinline]</text>
+                    </choice>
+                    <choice correct="false" name="5">
+                      <text> None of the above</text>
+                    </choice>
+                  </choicegroup>
+                </multiplechoiceresponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue">
+                    <p>
+ [mathjaxinline][w]_{\mathcal{B}}[/mathjaxinline] is defined to be a column of five scalars; specifically, the five scalars [mathjaxinline]a_1, a_2, \ldots a_5[/mathjaxinline] such that [mathjaxinline]w = a_1 v_1 + \ldots a_5v_5[/mathjaxinline].  </p>
+                  </font>
+                </solution>
+              </p>
+            </text>
+          </problem>
+          <problem display_name="Example 3" linenum="384" tex_filename="./block3/basis.tex" url_name="b3basis-tab10-problem2" showanswer="finished" attempts="3" rerandomize="per_student">
+            <text>
+              <center>
+                <img src="/static/images/c3s2coords.svg" width="450 px" style="margin: 10px 25px 25px 25px; border:0px"/>
+              </center>
+              <p>
+Let [mathjaxinline]\mathcal{B} = \{ v_1; v_2\}[/mathjaxinline] as pictured; this is a basis of [mathjaxinline]\mathbb R^2[/mathjaxinline]. </p>
+              <p>
+Given the [mathjaxinline]w[/mathjaxinline] in the image, what is [mathjaxinline][w]_{\mathcal{B}}[/mathjaxinline]? </p>
+              <script linenum="2" filename="./vectorentry2.tex" type="text/python" system_path="python_lib">
+def VectorEntry(expect, ans):
+	import ast
+	import numpy as np 
+  	atol = 0.01
+	list_expect = ast.literal_eval(expect)
+	vec_expect = np.matrix(list_expect)
+  	ret = {"ok":False}
+	try:
+  		# input format [[1],[2],[3]]
+		list_ans = ast.literal_eval(ans)
+		vec_ans = np.matrix(list_ans)
+  		if vec_ans.shape != vec_expect.shape:
+  			ret['msg'] = 'Wrong shape of vector!'
+  		elif np.allclose(vec_ans, vec_expect,atol,1e-08):
+  			ret['ok'] = True
+  		else:
+  		# More error message. Will improve this part
+  			ret['msg'] = 'something is wrong'   			
+	#except SyntaxError:
+		#ret['msg'] = 'Wrong input format'
+	except SyntaxError:
+  		# input format &amp;lt;1,2,3&amp;gt;
+		list_ans = ans.replace('&amp;lt;', '[').replace('&amp;gt;', ']')
+		list_ans = ast.literal_eval(list_ans)
+		vec_ans = np.transpose(np.matrix(list_ans))
+  		if vec_ans.shape != vec_expect.shape:
+  			ret['msg'] = 'Wrong shape of vector!'
+  		elif np.allclose(vec_ans, vec_expect,0.01,1e-08):
+  			ret['ok'] = True
+  		else:
+    		# More error message. Will improve this part
+  			ret['msg'] = 'something is wrong' 
+  	except:
+  		ret['msg'] = 'Wrong input format'
+  	return ret 
+</script>
+              <p>
+                <customresponse cfn="VectorEntry" expect="[[-1],[2]]">
+                  <textline correct_answer="[[-1],[2]]"/>
+                </customresponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue">
+                    <p>
+ We can write [mathjaxinline]w[/mathjaxinline] as a linear combination of the basis vectors in order: [mathjaxinline]w = -1 v_1 + 2v_2[/mathjaxinline]. Hence [mathjaxinline][w]_{\mathcal{B}} =\left[\begin{array}{c} -1 \\ 2 \end{array} \right][/mathjaxinline]. </p>
+                  </font>
+                </solution>
+              </p>
+            </text>
+          </problem>
+          <problem display_name="Example 4" linenum="409" tex_filename="./block3/basis.tex" url_name="b3basis-tab10-problem3" showanswer="finished" attempts="3" rerandomize="per_student">
+            <text>
+              <p>
+Let [mathjaxinline]v_1=\left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right][/mathjaxinline] and [mathjaxinline]v_2 = \left[\begin{array}{c} 3 \\ 0 \\ 1 \end{array} \right][/mathjaxinline]. Then [mathjaxinline]\mathcal{B} = \{ v_1; v_2\}[/mathjaxinline] is a basis for some subspace [mathjaxinline]W[/mathjaxinline] in [mathjaxinline]\mathbb R^3[/mathjaxinline]. </p>
+              <p>
+What vector [mathjaxinline]w[/mathjaxinline] has the property that [mathjaxinline][w]_{\mathcal{B}} = \left[\begin{array}{c} 1 \\ 2 \end{array} \right][/mathjaxinline]? </p>
+              <script linenum="2" filename="./vectorentry2.tex" type="text/python" system_path="python_lib">
+def VectorEntry(expect, ans):
+	import ast
+	import numpy as np 
+  	atol = 0.01
+	list_expect = ast.literal_eval(expect)
+	vec_expect = np.matrix(list_expect)
+  	ret = {"ok":False}
+	try:
+  		# input format [[1],[2],[3]]
+		list_ans = ast.literal_eval(ans)
+		vec_ans = np.matrix(list_ans)
+  		if vec_ans.shape != vec_expect.shape:
+  			ret['msg'] = 'Wrong shape of vector!'
+  		elif np.allclose(vec_ans, vec_expect,atol,1e-08):
+  			ret['ok'] = True
+  		else:
+  		# More error message. Will improve this part
+  			ret['msg'] = 'something is wrong'   			
+	#except SyntaxError:
+		#ret['msg'] = 'Wrong input format'
+	except SyntaxError:
+  		# input format &amp;lt;1,2,3&amp;gt;
+		list_ans = ans.replace('&amp;lt;', '[').replace('&amp;gt;', ']')
+		list_ans = ast.literal_eval(list_ans)
+		vec_ans = np.transpose(np.matrix(list_ans))
+  		if vec_ans.shape != vec_expect.shape:
+  			ret['msg'] = 'Wrong shape of vector!'
+  		elif np.allclose(vec_ans, vec_expect,0.01,1e-08):
+  			ret['ok'] = True
+  		else:
+    		# More error message. Will improve this part
+  			ret['msg'] = 'something is wrong' 
+  	except:
+  		ret['msg'] = 'Wrong input format'
+  	return ret 
+</script>
+              <p>
+                <customresponse cfn="VectorEntry" expect="[[7],[2],[5]]">
+                  <textline correct_answer="[[7],[2],[5]]"/>
+                </customresponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue">
+                    <p>
+ If [mathjaxinline][w]_{\mathcal{B}} = \left[\begin{array}{c} 1 \\ 2 \end{array} \right][/mathjaxinline], then [mathjaxinline]w = 1v_1 + 2v_2.[/mathjaxinline] Thus we compute [mathjaxinline]q[/mathjaxinline] to be [mathjaxinline]\left[\begin{array}{c} 7 \\ 2 \\ 5 \end{array} \right].[/mathjaxinline]  </p>
+                  </font>
+                </solution>
+              </p>
+            </text>
+          </problem>
+          <problem display_name="Example 5" linenum="429" tex_filename="./block3/basis.tex" url_name="b3basis-tab10-problem4" showanswer="finished" attempts="3" rerandomize="per_student">
+            <text>
+              <p>
+Use the same [mathjaxinline]\mathcal{B}[/mathjaxinline] and [mathjaxinline]W[/mathjaxinline] as in the previous problem. The vector [mathjaxinline]z = \left[\begin{array}{c} -3 \\ 6 \\ 7 \end{array} \right][/mathjaxinline] is an element of [mathjaxinline]W[/mathjaxinline]. </p>
+              <p>
+What is [mathjaxinline][z]_{\mathcal{B}}[/mathjaxinline]? </p>
+              <script linenum="2" filename="./vectorentry2.tex" type="text/python" system_path="python_lib">
+def VectorEntry(expect, ans):
+	import ast
+	import numpy as np 
+  	atol = 0.01
+	list_expect = ast.literal_eval(expect)
+	vec_expect = np.matrix(list_expect)
+  	ret = {"ok":False}
+	try:
+  		# input format [[1],[2],[3]]
+		list_ans = ast.literal_eval(ans)
+		vec_ans = np.matrix(list_ans)
+  		if vec_ans.shape != vec_expect.shape:
+  			ret['msg'] = 'Wrong shape of vector!'
+  		elif np.allclose(vec_ans, vec_expect,atol,1e-08):
+  			ret['ok'] = True
+  		else:
+  		# More error message. Will improve this part
+  			ret['msg'] = 'something is wrong'   			
+	#except SyntaxError:
+		#ret['msg'] = 'Wrong input format'
+	except SyntaxError:
+  		# input format &amp;lt;1,2,3&amp;gt;
+		list_ans = ans.replace('&amp;lt;', '[').replace('&amp;gt;', ']')
+		list_ans = ast.literal_eval(list_ans)
+		vec_ans = np.transpose(np.matrix(list_ans))
+  		if vec_ans.shape != vec_expect.shape:
+  			ret['msg'] = 'Wrong shape of vector!'
+  		elif np.allclose(vec_ans, vec_expect,0.01,1e-08):
+  			ret['ok'] = True
+  		else:
+    		# More error message. Will improve this part
+  			ret['msg'] = 'something is wrong' 
+  	except:
+  		ret['msg'] = 'Wrong input format'
+  	return ret 
+</script>
+              <p>
+                <customresponse cfn="VectorEntry" expect="[[3],[-2]]">
+                  <textline correct_answer="[[3],[-2]]"/>
+                </customresponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue">
+                    <p>
+ We can find [mathjaxinline]z[/mathjaxinline] as a linear combination of [mathjaxinline]v_1[/mathjaxinline] and [mathjaxinline]v_2[/mathjaxinline] by row reduction. We get that [mathjaxinline]z = 3v_1 - 2v_2[/mathjaxinline], so [mathjaxinline][z]_{\mathcal{B}} = \left[\begin{array}{c} 3 \\ -2 \end{array} \right][/mathjaxinline].  </p>
+                  </font>
+                </solution>
+              </p>
+            </text>
+          </problem>
+        </vertical>
+      </sequential>
+      <sequential display_name="Dimension" linenum="612" tex_filename="testcourse.tex" refnum="3" due="2019-12-13T14:15" graded="true" format="Exercises" url_name="b3dimension-sequential">
+        <vertical display_name="Page One" refnum="1" url_name="b3dimension-vertical1">
+          <html display_name="Preliminaries" linenum="5" tex_filename="./block3/dimension.tex" url_name="b3dimension-tab1-text1">
+            <p>
+At the end of this sequence, and after some practice, you should be able to: </p>
+            <ul class="itemize">
+              <li>
+                <p>
+Find coordinates of a vector relative to a basis. </p>
+              </li>
+              <li>
+                <p>
+Dimension... </p>
+              </li>
+            </ul>
+            <p>
+For time budgeting purposes, this sequence has x videos totaling X minutes, plus some questions. </p>
+          </html>
+        </vertical>
+        <vertical display_name="Consequences of Having Coordinates" refnum="2" url_name="b3dimension-vertical2">
+          <video display_name="Consequences of Having Coordinates" youtube_id_1_0="sNoKjBJ9tpE" url_name="b3dimension-tab2-video1"/>
+          <html display_name="Coordinatization as Linear Transformation" linenum="43" tex_filename="./block3/dimension.tex" url_name="b3dimension-tab2-text1">
+            <p><span style="color:#27408C"><b class="bf">Proposition.</b></span> If [mathjaxinline]\mathcal{B} = \{ v_1; v_2; \ldots ; v_ n\}[/mathjaxinline] is a basis of [mathjaxinline]V[/mathjaxinline], then the coordinatization map [mathjaxinline]C: V \rightarrow \mathbb R^ n[/mathjaxinline] given by [mathjaxinline]C(w) = [w]_{\mathcal{B}}[/mathjaxinline] is a linear transformation which is both into and onto. </p>
+            <p>
+              <div class="hideshowbox">
+                <h4 onclick="hideshow(this);" style="margin: 0px">Proof of Proposition<span class="icon-caret-down toggleimage"/></h4>
+                <div class="hideshowcontent">
+                  <p>
+To show that [mathjaxinline]C[/mathjaxinline] is a linear transformation... </p>
+                  <p>
+In the video, we proved that [mathjaxinline]C[/mathjaxinline] is into and onto. </p>
+                </div>
+                <p class="hideshowbottom" onclick="hideshow(this);" style="margin: 0px">
+                  <a href="javascript: {return false;}">Show</a>
+                </p>
+              </div>
+            </p>
+            <p><span style="color:#27408C"><b class="bf">Proposition.</b></span> If [mathjaxinline]\mathcal{B} = \{ v_1; v_2; \ldots ; v_ n\}[/mathjaxinline] is a basis of [mathjaxinline]V[/mathjaxinline], and [mathjaxinline]k&gt;n[/mathjaxinline], then any list of [mathjaxinline]k[/mathjaxinline] vectors in [mathjaxinline]V[/mathjaxinline] must be linearly dependent. </p>
+            <SCRIPT src="/static/latex2edx.js" type="text/javascript"/>
+            <LINK href="/static/latex2edx.css" rel="stylesheet" type="text/css"/>
+          </html>
+        </vertical>
+        <vertical display_name="Further Consequences" refnum="3" url_name="b3dimension-vertical3">
+          <problem display_name="Two Bases? 1" linenum="73" tex_filename="./block3/dimension.tex" url_name="b3dimension-tab3-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
+            <text>
+              <p>
+Recall the proposition we just proved: </p>
+              <p><span style="color:#27408C"><b class="bf">Proposition.</b></span> If [mathjaxinline]\mathcal{B} = \{ v_1; v_2; \ldots ; v_ n\}[/mathjaxinline] is a basis of [mathjaxinline]V[/mathjaxinline], and [mathjaxinline]k&gt;v[/mathjaxinline], then any list of [mathjaxinline]k[/mathjaxinline] vectors in [mathjaxinline]V[/mathjaxinline] must be linearly dependent. </p>
+              <p>
+Now suppose that [mathjaxinline]\mathcal{B}[/mathjaxinline] is a basis of [mathjaxinline]V[/mathjaxinline] with 5 vectors, and let [mathjaxinline]\mathcal{C}[/mathjaxinline] be a list of 7 vectors in [mathjaxinline]V[/mathjaxinline]. Is it possible for [mathjaxinline]\mathcal{C}[/mathjaxinline] to be a basis of [mathjaxinline]V[/mathjaxinline]? </p>
+              <p>
+                <optionresponse>
+                  <optioninput options="('Yes','No')" correct="No"/>
+                </optionresponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue"/>
+                </solution>
+              </p>
+            </text>
+          </problem>
+          <problem display_name="Two Bases? 2" linenum="93" tex_filename="./block3/dimension.tex" url_name="b3dimension-tab3-problem2" showanswer="finished" attempts="1" rerandomize="per_student">
+            <text>
+              <p>
+Now suppose that [mathjaxinline]\mathcal{C}[/mathjaxinline] is a basis of [mathjaxinline]V[/mathjaxinline] with 7 vectors. Is it possible for there to be a basis [mathjaxinline]\mathcal{B}[/mathjaxinline] of [mathjaxinline]V[/mathjaxinline] with 5 vectors? </p>
+              <p>
+                <optionresponse>
+                  <optioninput options="('Yes','No')" correct="No"/>
+                </optionresponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue"/>
+                </solution>
+              </p>
+            </text>
+          </problem>
+        </vertical>
+        <vertical display_name="Dimension" refnum="4" url_name="b3dimension-vertical4">
+          <video display_name="Dimension" youtube_id_1_0="gKmyYkYB0Qo" url_name="b3dimension-tab4-video1"/>
+          <html display_name="Dimension Definition" linenum="116" tex_filename="./block3/dimension.tex" url_name="b3dimension-tab4-text1">
+            <p><span style="color:#27408C"><b class="bf">Proposition.</b></span> All bases of a vector space [mathjaxinline]V[/mathjaxinline] must have the same number of vectors. </p>
+            <p><span style="color:#27408C"><b class="bf">Definition.</b></span> The <span style="color:#99182C"><b class="bf">dimension</b></span> of a vector space [mathjaxinline]V[/mathjaxinline] is defined to be the number of vectors in a basis of [mathjaxinline]V[/mathjaxinline]. If [mathjaxinline]V[/mathjaxinline] has no finite basis, we say that [mathjaxinline]V[/mathjaxinline] is infinite-dimensional. </p>
+          </html>
+          <problem display_name="Dimension Question 1" linenum="129" tex_filename="./block3/dimension.tex" url_name="b3dimension-tab4-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
+            <text>
+              <p>
+True or False: If the dimension of [mathjaxinline]V[/mathjaxinline] is 4, then every list of 4 vectors in [mathjaxinline]V[/mathjaxinline] must be a basis of [mathjaxinline]V[/mathjaxinline]. </p>
+              <p>
+                <optionresponse>
+                  <optioninput options="('True','False')" correct="False"/>
+                </optionresponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue"/>
+                </solution>
+              </p>
+            </text>
+          </problem>
+          <problem display_name="Dimension Question 2" linenum="142" tex_filename="./block3/dimension.tex" url_name="b3dimension-tab4-problem2" showanswer="finished" attempts="1" rerandomize="per_student">
+            <text>
+              <p>
+True or False: If the dimension of [mathjaxinline]V[/mathjaxinline] is 6, then there must exist a basis of [mathjaxinline]V[/mathjaxinline] with exactly 6 vectors. </p>
+              <p>
+                <optionresponse>
+                  <optioninput options="('True','False')" correct="True"/>
+                </optionresponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue"/>
+                </solution>
+              </p>
+            </text>
+          </problem>
+          <problem display_name="Dimension Question 3" linenum="153" tex_filename="./block3/dimension.tex" url_name="b3dimension-tab4-problem3" showanswer="finished" attempts="1" rerandomize="per_student">
+            <text>
+              <p>
+Let [mathjaxinline]V = \mathbb R^2[/mathjaxinline]. What is the dimension of [mathjaxinline]V[/mathjaxinline]? </p>
+              <p>
+                <numericalresponse answer="2">
+                  <textline>
+                    <responseparam type="tolerance" default="0.00001"/>
+                  </textline>
+                </numericalresponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue"/>
+                </solution>
+              </p>
+            </text>
+          </problem>
+          <problem display_name="Dimension Question 4" linenum="165" tex_filename="./block3/dimension.tex" url_name="b3dimension-tab4-problem4" showanswer="finished" attempts="1" rerandomize="per_student">
+            <text>
+              <center>
+                <img src="/static/images/c3s2dimension.svg" width="450 px" style="margin: 10px 25px 25px 25px; border:0px"/>
+              </center>
+              <p>
+Let [mathjaxinline]W[/mathjaxinline] be the subspace of [mathjaxinline]\mathbb R^2[/mathjaxinline] drawn above. What is the dimension of [mathjaxinline]V[/mathjaxinline]? </p>
+              <p>
+                <numericalresponse answer="1">
+                  <textline>
+                    <responseparam type="tolerance" default="0.00001"/>
+                  </textline>
+                </numericalresponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue"/>
+                </solution>
+              </p>
+            </text>
+          </problem>
+        </vertical>
+        <vertical display_name="Dimension and Subspaces" refnum="5" url_name="b3dimension-vertical5">
+          <video display_name="Dimension and Subspaces" youtube_id_1_0="5mlxz2ysoEg" url_name="b3dimension-tab5-video1"/>
+          <html display_name="Dimension Propositions" linenum="195" tex_filename="./block3/dimension.tex" url_name="b3dimension-tab5-text1">
+            <p><span style="color:#27408C"><b class="bf">Proposition (A).</b></span> If [mathjaxinline]\dim V = n &lt; \infty[/mathjaxinline], and [mathjaxinline]W[/mathjaxinline] is any subspace of [mathjaxinline]V[/mathjaxinline], then any linearly independent list of vectors in [mathjaxinline]W[/mathjaxinline] can be extended to form a basis of [mathjaxinline]W[/mathjaxinline]. </p>
+            <p><span style="color:#27408C"><b class="bf">Proposition.</b></span> If [mathjaxinline]\dim V = n[/mathjaxinline], then any linearly independent list of vectors in [mathjaxinline]V[/mathjaxinline] has at most [mathjaxinline]n[/mathjaxinline] vectors. Any linearly independent list of vectors in [mathjaxinline]V[/mathjaxinline] that has exactly [mathjaxinline]n[/mathjaxinline] vectors must be a basis of [mathjaxinline]V[/mathjaxinline]. </p>
+            <p><span style="color:#27408C"><b class="bf">Proposition.</b></span> If [mathjaxinline]\dim V = n[/mathjaxinline], then any subspace [mathjaxinline]W[/mathjaxinline] of [mathjaxinline]V[/mathjaxinline] has dimension at most [mathjaxinline]n[/mathjaxinline]. If [mathjaxinline]\dim W = n[/mathjaxinline], then [mathjaxinline]W = V[/mathjaxinline]. </p>
+            <p><span style="color:#27408C"><b class="bf">Proposition (B).</b></span> Any finite list of vectors that spans a vector space [mathjaxinline]V[/mathjaxinline] contains a basis of [mathjaxinline]V[/mathjaxinline]. </p>
+            <p><span style="color:#27408C"><b class="bf">Proposition.</b></span> If [mathjaxinline]\dim V = n[/mathjaxinline], then any list of vectors that spans [mathjaxinline]V[/mathjaxinline] has at least [mathjaxinline]n[/mathjaxinline] vectors. Any list of vectors that spans [mathjaxinline]V[/mathjaxinline] that has exactly [mathjaxinline]n[/mathjaxinline] vectors must be a basis of [mathjaxinline]V[/mathjaxinline]. </p>
+            <p>
+              <div class="hideshowbox">
+                <h4 onclick="hideshow(this);" style="margin: 0px">Proof of Proposition (A)<span class="icon-caret-down toggleimage"/></h4>
+                <div class="hideshowcontent">
+                  <p>
+stuff </p>
+                </div>
+                <p class="hideshowbottom" onclick="hideshow(this);" style="margin: 0px">
+                  <a href="javascript: {return false;}">Show</a>
+                </p>
+              </div>
+            </p>
+            <p>
+              <div class="hideshowbox">
+                <h4 onclick="hideshow(this);" style="margin: 0px">Proof of Proposition (B)<span class="icon-caret-down toggleimage"/></h4>
+                <div class="hideshowcontent">
+                  <p>
+stuff </p>
+                </div>
+                <p class="hideshowbottom" onclick="hideshow(this);" style="margin: 0px">
+                  <a href="javascript: {return false;}">Show</a>
+                </p>
+              </div>
+            </p>
+            <SCRIPT src="/static/latex2edx.js" type="text/javascript"/>
+            <LINK href="/static/latex2edx.css" rel="stylesheet" type="text/css"/>
+          </html>
+        </vertical>
+      </sequential>
+      <sequential display_name="Rank and Nullity" linenum="647" tex_filename="testcourse.tex" refnum="4" due="2019-12-13T14:15" graded="true" format="Exercises" url_name="b3ranknullity-sequential">
+        <vertical display_name="Page One" refnum="1" url_name="b3ranknullity-vertical1">
+          <html display_name="Preliminaries" linenum="5" tex_filename="./block3/rankandnullity.tex" url_name="b3ranknullity-tab1-text1">
+            <p>
+At the end of this sequence, and after some practice, you should be able to: </p>
+            <ul class="itemize">
+              <li/>
+              <li/>
+              <li>
+                <p>
+Determine the rank and nullity of a linear transformation [mathjaxinline]T: \mathbb R^ n \rightarrow \mathbb R^ m[/mathjaxinline], given its standard matrix </p>
+              </li>
+              <li>
+                <p>
+Find bases for the image and kernel of a linear transformation [mathjaxinline]T: \mathbb R^ n \rightarrow \mathbb R^ m[/mathjaxinline], given its standard matrix </p>
+              </li>
+              <li>
+                <p>
+Apply the Rank-Nullity Theorem. </p>
+              </li>
+            </ul>
+            <p>
+For time budgeting purposes, this sequence has 2 videos totaling 12 minutes, plus some questions. </p>
+          </html>
+        </vertical>
+        <vertical display_name="Rank and Nullity" refnum="2" url_name="b3ranknullity-vertical2">
+          <video display_name="Defining Rank and Nullity" youtube_id_1_0="uinL2McUGAA" url_name="b3ranknullity-tab2-video1"/>
+          <html display_name="Definitions" linenum="42" tex_filename="./block3/rankandnullity.tex" url_name="b3ranknullity-tab2-text1">
+            <p><span style="color:#27408C"><b class="bf">Definitions.</b></span> Given a linear transformation [mathjaxinline]T: V\rightarrow W[/mathjaxinline], the <span style="color:#99182C"><b class="bf">nullity</b></span> of [mathjaxinline]T[/mathjaxinline] is the dimension of the kernel of [mathjaxinline]T[/mathjaxinline], and the <span style="color:#99182C"><b class="bf">rank</b></span> of [mathjaxinline]T[/mathjaxinline] is the dimension of the image of [mathjaxinline]T[/mathjaxinline]. </p>
+            <p>
+If a matrix [mathjaxinline]A[/mathjaxinline] is the standard matrix for a linear transformation [mathjaxinline]T:\mathbb R^ n \rightarrow \mathbb R^ m[/mathjaxinline], then the rank and nullity of [mathjaxinline]A[/mathjaxinline] are the same as the rank and nullity of [mathjaxinline]T[/mathjaxinline]. </p>
+          </html>
+        </vertical>
+        <vertical display_name="Rank and Nullity Questions" refnum="3" url_name="b3ranknullity-vertical3">
+          <problem display_name="Rank and Nullity 1" linenum="64" tex_filename="./block3/rankandnullity.tex" url_name="b3ranknullity-tab3-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
+            <text>
+              <p>
+Let [mathjaxinline]T: \mathbb R^2 \rightarrow \mathbb R^2[/mathjaxinline] be the transformation that rotates vectors by [mathjaxinline]90^\circ[/mathjaxinline] counterclockwise. </p>
+              <p>
+What is the rank of [mathjaxinline]T[/mathjaxinline]? </p>
+              <p>
+                <numericalresponse answer="2">
+                  <textline>
+                    <responseparam type="tolerance" default="0.00001"/>
+                  </textline>
+                </numericalresponse>
+              </p>
+              <p>
+What is the nullity of [mathjaxinline]T[/mathjaxinline]? </p>
+              <p>
+                <numericalresponse answer="0">
+                  <textline>
+                    <responseparam type="tolerance" default="0.00001"/>
+                  </textline>
+                </numericalresponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue"/>
+                </solution>
+              </p>
+            </text>
+          </problem>
+          <problem display_name="Rank and Nullity 2" linenum="86" tex_filename="./block3/rankandnullity.tex" url_name="b3ranknullity-tab3-problem2" showanswer="finished" attempts="1" rerandomize="per_student">
+            <text>
+              <p>
+Let [mathjaxinline]T: \mathbb R^2 \rightarrow \mathbb R^2[/mathjaxinline] be the transformation that sends all vectors to [mathjaxinline]\mathbf{0}[/mathjaxinline]. </p>
+              <p>
+What is the rank of [mathjaxinline]T[/mathjaxinline]? </p>
+              <p>
+                <numericalresponse answer="0">
+                  <textline>
+                    <responseparam type="tolerance" default="0.00001"/>
+                  </textline>
+                </numericalresponse>
+              </p>
+              <p>
+What is the nullity of [mathjaxinline]T[/mathjaxinline]? </p>
+              <p>
+                <numericalresponse answer="2">
+                  <textline>
+                    <responseparam type="tolerance" default="0.00001"/>
+                  </textline>
+                </numericalresponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue"/>
+                </solution>
+              </p>
+            </text>
+          </problem>
+          <problem display_name="Rank and Nullity 3" linenum="109" tex_filename="./block3/rankandnullity.tex" url_name="b3ranknullity-tab3-problem3" showanswer="finished" attempts="1" rerandomize="per_student">
+            <text>
+              <p>
+Suppose [mathjaxinline]\dim V = 5[/mathjaxinline]. Let [mathjaxinline]T: V\rightarrow V[/mathjaxinline] be a linear transformation. If we know that [mathjaxinline]T[/mathjaxinline] is not onto, what is the largest possible rank of [mathjaxinline]T[/mathjaxinline]? </p>
+              <p>
+                <numericalresponse answer="4">
+                  <textline>
+                    <responseparam type="tolerance" default="0.00001"/>
+                  </textline>
+                </numericalresponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue"/>
+                </solution>
+              </p>
+            </text>
+          </problem>
+        </vertical>
+        <vertical display_name="Rank-Nullity Theorem" refnum="4" url_name="b3ranknullity-vertical4">
+          <video display_name="Rank-Nullity Theorem" youtube_id_1_0="la7BvLezg1I" url_name="b3ranknullity-tab4-video1"/>
+          <html display_name="Rank-Nullity Theorem" linenum="131" tex_filename="./block3/rankandnullity.tex" url_name="b3ranknullity-tab4-text1">
+            <p><span style="color:#27408C"><b class="bf">Rank-Nullity Theorem.</b></span> If [mathjaxinline]T:V\rightarrow W[/mathjaxinline] is a linear transformation and [mathjaxinline]\dim V = n &lt; \infty[/mathjaxinline], then [mathjaxinline]\dim V - \mathrm{Nullity}(T) = \mathrm{Rank}(T)[/mathjaxinline]. </p>
+            <p>
+              <div class="hideshowbox">
+                <h4 onclick="hideshow(this);" style="margin: 0px">Proof of Theorem<span class="icon-caret-down toggleimage"/></h4>
+                <div class="hideshowcontent">
+                  <p>
+stuff </p>
+                </div>
+                <p class="hideshowbottom" onclick="hideshow(this);" style="margin: 0px">
+                  <a href="javascript: {return false;}">Show</a>
+                </p>
+              </div>
+            </p>
+            <SCRIPT src="/static/latex2edx.js" type="text/javascript"/>
+            <LINK href="/static/latex2edx.css" rel="stylesheet" type="text/css"/>
+          </html>
+        </vertical>
+        <vertical display_name="Examples" refnum="5" url_name="b3ranknullity-vertical5">
+          <problem display_name="Rank-Nullity Question 1" linenum="154" tex_filename="./block3/rankandnullity.tex" url_name="b3ranknullity-tab5-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
+            <text>
+              <p>
+Let [mathjaxinline]T: \mathbb R^9 \rightarrow \mathbb R^3[/mathjaxinline] be a linear transformation. If the image of [mathjaxinline]T[/mathjaxinline] is a two-dimensional subspace of [mathjaxinline]\mathbb R^3[/mathjaxinline], what is the dimension of its kernel? </p>
+              <p>
+                <numericalresponse answer="7">
+                  <textline>
+                    <responseparam type="tolerance" default="0.00001"/>
+                  </textline>
+                </numericalresponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue"/>
+                </solution>
+              </p>
+            </text>
+          </problem>
+          <problem display_name="Rank-Nullity Question 2" linenum="167" tex_filename="./block3/rankandnullity.tex" url_name="b3ranknullity-tab5-problem2" showanswer="finished" attempts="1" rerandomize="per_student">
+            <text>
+              <p>
+Let [mathjaxinline]T: P_4 \rightarrow \mathbb R^7[/mathjaxinline] be a linear transformation. What is the largest possible rank of [mathjaxinline]T[/mathjaxinline]? </p>
+              <p>
+                <numericalresponse answer="5">
+                  <textline>
+                    <responseparam type="tolerance" default="0.00001"/>
+                  </textline>
+                </numericalresponse>
+              </p>
+              <p>
+Is is possible for [mathjaxinline]T[/mathjaxinline] to be onto? </p>
+              <p>
+                <optionresponse>
+                  <optioninput options="('Yes','No')" correct="No"/>
+                </optionresponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue"/>
+                </solution>
+              </p>
+            </text>
+          </problem>
+          <problem display_name="Rank-Nullity Question 3" linenum="184" tex_filename="./block3/rankandnullity.tex" url_name="b3ranknullity-tab5-problem3" showanswer="finished" attempts="1" rerandomize="per_student">
+            <text>
+              <p>
+Let [mathjaxinline]T: \mathbb R^4 \rightarrow P_6[/mathjaxinline] be a linear transformation which is not into. What is the maximum possible dimension of the image of [mathjaxinline]T[/mathjaxinline]? </p>
+              <p>
+                <numericalresponse answer="3">
+                  <textline>
+                    <responseparam type="tolerance" default="0.00001"/>
+                  </textline>
+                </numericalresponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue"/>
+                </solution>
+              </p>
+            </text>
+          </problem>
+          <problem display_name="Rank-Nullity Question 4" linenum="198" tex_filename="./block3/rankandnullity.tex" url_name="b3ranknullity-tab5-problem4" showanswer="finished" attempts="1" rerandomize="per_student">
+            <text>
+              <p>
+Suppose [mathjaxinline]V[/mathjaxinline] and [mathjaxinline]W[/mathjaxinline] are vector spaces with the same (finite) dimension [mathjaxinline]n[/mathjaxinline]. </p>
+              <p>
+If [mathjaxinline]T: V\rightarrow W[/mathjaxinline] is a linear transformation which is onto, what is the rank of [mathjaxinline]T[/mathjaxinline]? </p>
+              <p>
+                <formularesponse type="cs" samples="n@1:2#5" answer="n">
+                  <formulaequationinput>
+                    <responseparam type="tolerance" default=".001"/>
+                  </formulaequationinput>
+                </formularesponse>
+              </p>
+              <p>
+Therefore, what is the nullity of [mathjaxinline]T[/mathjaxinline]? </p>
+              <p>
+                <formularesponse type="cs" samples="n@1:2#5" answer="0">
+                  <formulaequationinput>
+                    <responseparam type="tolerance" default=".001"/>
+                  </formulaequationinput>
+                </formularesponse>
+              </p>
+              <p>
+Therefore, we can conclude that [mathjaxinline]T[/mathjaxinline] must be what? (Answer yourself.) </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue"/>
+                </solution>
+              </p>
+            </text>
+          </problem>
+          <problem display_name="Rank-Nullity Question 5" linenum="219" tex_filename="./block3/rankandnullity.tex" url_name="b3ranknullity-tab5-problem5" showanswer="finished" attempts="1" rerandomize="per_student">
+            <text>
+              <p>
+Suppose [mathjaxinline]V[/mathjaxinline] and [mathjaxinline]W[/mathjaxinline] are vector spaces with the same (finite) dimension [mathjaxinline]n[/mathjaxinline]. </p>
+              <p>
+If [mathjaxinline]T: V\rightarrow W[/mathjaxinline] is a linear transformation which is into, what is the nullity of [mathjaxinline]T[/mathjaxinline]? </p>
+              <p>
+                <formularesponse type="cs" samples="n@1:2#5" answer="0">
+                  <formulaequationinput>
+                    <responseparam type="tolerance" default=".001"/>
+                  </formulaequationinput>
+                </formularesponse>
+              </p>
+              <p>
+Therefore, what is the rank of [mathjaxinline]T[/mathjaxinline]? </p>
+              <p>
+                <formularesponse type="cs" samples="n@1:2#5" answer="n">
+                  <formulaequationinput>
+                    <responseparam type="tolerance" default=".001"/>
+                  </formulaequationinput>
+                </formularesponse>
+              </p>
+              <p>
+Therefore, we can conclude that [mathjaxinline]T[/mathjaxinline] must be what? (Answer yourself.) </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue"/>
+                </solution>
+              </p>
+            </text>
+          </problem>
+        </vertical>
+        <vertical display_name="One Last Example" refnum="6" url_name="b3ranknullity-vertical6">
+          <video display_name="Another Rank-Nullity Example" youtube_id_1_0="EOJeHCQHxRw" url_name="b3ranknullity-tab6-video1"/>
+          <problem display_name="Question" linenum="249" tex_filename="./block3/rankandnullity.tex" url_name="b3ranknullity-tab6-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
+            <text>
+              <p>
+Suppose [mathjaxinline]\dim V = 14[/mathjaxinline] and let [mathjaxinline]W[/mathjaxinline] be a subspace of [mathjaxinline]V[/mathjaxinline]. </p>
+              <p>
+True or false: If we construct a linear transformation [mathjaxinline]T: V \rightarrow \mathbb R^2[/mathjaxinline] such that [mathjaxinline]W = \mathrm{Ker}(T)[/mathjaxinline], then [mathjaxinline]\dim W[/mathjaxinline] must be 12. </p>
+              <p>
+                <optionresponse>
+                  <optioninput options="('True','False')" correct="False"/>
+                </optionresponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue"/>
+                </solution>
+              </p>
+            </text>
+          </problem>
+        </vertical>
+        <vertical display_name="Nullity" refnum="7" url_name="b3ranknullity-vertical7">
+          <video display_name="Calculating Nullity" youtube_id_1_0="vKR7ciBTuCc" url_name="b3ranknullity-tab7-video1"/>
+          <problem display_name="Example 1" linenum="276" tex_filename="./block3/rankandnullity.tex" url_name="b3ranknullity-tab7-problem1" showanswer="finished" attempts="2" rerandomize="per_student">
+            <text>
+              <p>
+Let [mathjaxinline]T: \mathbb R^{8}\rightarrow \mathbb R^{11}[/mathjaxinline] be a linear transformation with standard matrix [mathjaxinline]A[/mathjaxinline]. If there are six pivots when [mathjaxinline]A[/mathjaxinline] is row-reduced, what is the nullity of [mathjaxinline]T[/mathjaxinline]? </p>
+              <p>
+                <numericalresponse answer="2">
+                  <textline>
+                    <responseparam type="tolerance" default="0.00001"/>
+                  </textline>
+                </numericalresponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue">
+                    <p>
+ We showed in the video that the nullity of [mathjaxinline]T[/mathjaxinline] equals the number of free variables in [mathjaxinline]A[/mathjaxinline]. [mathjaxinline]A[/mathjaxinline] has eight columns, and six pivots when row reduce, so there must be [mathjaxinline]8-6[/mathjaxinline], or 2, free variables.  </p>
+                  </font>
+                </solution>
+              </p>
+            </text>
+          </problem>
+        </vertical>
+        <vertical display_name="Rank" refnum="8" url_name="b3ranknullity-vertical8">
+          <video display_name="Calculating Rank" youtube_id_1_0="rnePz12JGvk" url_name="b3ranknullity-tab8-video1"/>
+          <problem display_name="Basis for Image" linenum="300" tex_filename="./block3/rankandnullity.tex" url_name="b3ranknullity-tab8-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
+            <text>
+              <p>
+Suppose [mathjaxinline]T[/mathjaxinline] has a standard matrix [mathjaxinline]A[/mathjaxinline] which row reduces to the matrix </p>
+              <table id="a0000000117" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+                <tr>
+                  <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]R = \left[\begin{array}{ccccc} 1 &amp;  2 &amp;  0 &amp;  0 &amp;  -3 \\ 0 &amp;  0 &amp;  1 &amp;  0 &amp;  -2 \\ 0 &amp;  0 &amp;  0 &amp;  1 &amp;  2 \\ 0 &amp;  0 &amp;  0 &amp;  0 &amp;  0 \end{array} \right].[/mathjax]</td>
+                  <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+                </tr>
+              </table>
+              <p>
+True or False: We can conclude that the list </p>
+              <table id="a0000000118" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+                <tr>
+                  <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]\left\{  \left[\begin{array}{c} 1 \\ 0 \\ 0 \\ 0 \end{array} \right]; \left[\begin{array}{c} 0 \\ 1 \\ 0 \\ 0 \end{array} \right]; \left[\begin{array}{c} 0 \\ 0 \\ 1 \\ 0 \end{array} \right] \right\}[/mathjax]</td>
+                  <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+                </tr>
+              </table>
+              <p>
+ is a basis for the image of [mathjaxinline]T[/mathjaxinline]. </p>
+              <p>
+                <optionresponse>
+                  <optioninput options="('True','False')" correct="False"/>
+                </optionresponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue">
+                    <p>
+False. The first, third, and fourth columns have pivots, but this means that the first, third, and fourth columns of [mathjaxinline]A[/mathjaxinline] will form a basis for [mathjaxinline]\mathrm{Image}(T)[/mathjaxinline], not necessarily the first, third, and fourth columns of [mathjaxinline]R[/mathjaxinline]. </p>
+                  </font>
+                </solution>
+              </p>
+            </text>
+          </problem>
+        </vertical>
+        <vertical display_name="Summary" refnum="9" url_name="b3ranknullity-vertical9">
+          <html display_name="Summary of Rank and Nullity for Linear Transformations from R^n to R^m" linenum="337" tex_filename="./block3/rankandnullity.tex" url_name="b3ranknullity-tab9-text1">
+            <p>
+Let [mathjaxinline]T: \mathbb R^{n}\rightarrow \mathbb R^{m}[/mathjaxinline] be a linear transformation with standard matrix [mathjaxinline]A[/mathjaxinline]. The nullity of [mathjaxinline]T[/mathjaxinline] will equal the number of free variables when [mathjaxinline]A[/mathjaxinline] is row reduced, and the rank of [mathjaxinline]T[/mathjaxinline] will equal the number of pivot columns when [mathjaxinline]A[/mathjaxinline] is row reduced. The columns of [mathjaxinline]A[/mathjaxinline] which correspond to the pivots will form a basis of the image of [mathjaxinline]T[/mathjaxinline]. </p>
+          </html>
+        </vertical>
+      </sequential>
     </chapter>
   </course>
 </xbundle>

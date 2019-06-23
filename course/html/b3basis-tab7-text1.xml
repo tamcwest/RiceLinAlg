@@ -1,0 +1,10 @@
+<html display_name="Subspaces" linenum="288" tex_filename="./block3/basis.tex">
+  <p><span style="color:#27408C"><b class="bf">Proposition.</b></span> If [mathjaxinline]\{ v_1; v_2; \ldots ; v_ n\}[/mathjaxinline] is a basis of [mathjaxinline]V[/mathjaxinline], then every [mathjaxinline]w\in V[/mathjaxinline] can be written as a linear combination of [mathjaxinline]v_1, v_2, \ldots v_ n[/mathjaxinline] in exactly one way. </p>
+  <p><span style="color:#27408C"><b class="bf">Definition.</b></span> If [mathjaxinline]\mathcal{B} = \{ v_1; v_2; \ldots ; v_ n\}[/mathjaxinline] is a basis of a vector space [mathjaxinline]V[/mathjaxinline] over the field [mathjaxinline]F[/mathjaxinline], and [mathjaxinline]w\in V[/mathjaxinline] can be written as [mathjaxinline]w = a_1v_1 + a_2v_2 + \ldots + a_ n v_ n[/mathjaxinline] for scalars [mathjaxinline]a_ i[/mathjaxinline], then the <span style="color:#99182C"><b class="bf">coordinates of [mathjaxinline]w[/mathjaxinline] relative to [mathjaxinline]\mathcal{B}[/mathjaxinline]</b></span> is the vector [mathjaxinline][w]_{\mathcal{B}} \in F^ n[/mathjaxinline] given by </p>
+  <table id="a0000000116" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+    <tr>
+      <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax][w]_{\mathcal{B}} = \left[ \begin{array}{c} a_1 \\ a_2 \\ \vdots \\ a_ n \end{array} \right].[/mathjax]</td>
+      <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+    </tr>
+  </table>
+</html>

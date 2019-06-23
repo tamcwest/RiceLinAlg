@@ -1,0 +1,233 @@
+
+
+\beginedxvertical{Page One}
+
+\beginedxtext{Preliminaries}
+
+
+
+
+
+At the end of this sequence, and after some practice, you should be able to:
+
+\begin{itemize} 
+\item Find coordinates of a vector relative to a basis.  
+\item Dimension... 
+\end{itemize}
+
+
+For time budgeting purposes, this sequence has x videos totaling X minutes, 
+plus some questions.  
+
+
+
+
+\endedxtext
+
+\endedxvertical
+
+
+
+
+
+
+
+
+\beginedxvertical{Consequences of Having Coordinates}
+
+
+
+\doedxvideo{Consequences of Having Coordinates}{sNoKjBJ9tpE}
+
+
+\beginedxtext{Coordinatization as Linear Transformation}
+
+{\keya{\bf{Proposition.}}}  If $\mathcal{B}  = \{v_1; v_2; \ldots ; v_n\}$ is a basis of $V$, then the
+coordinatization map $C: V \rightarrow \R^n$ given by $C(w) = [w]_{\mathcal{B}}$ is a linear transformation
+which is both into and onto.
+
+\begin{edXshowhide}{Proof of Proposition}
+
+To show that $C$ is a linear transformation...
+
+In the video, we proved that $C$ is into and onto. 
+
+\end{edXshowhide}
+
+
+
+{\keya{\bf{Proposition.}}}  If $\mathcal{B}  = \{v_1; v_2; \ldots ; v_n\}$ is a basis of $V$, and $k>n$, then any list
+of $k$ vectors in $V$ must be linearly dependent.  
+
+\endedxtext
+
+
+\endedxvertical
+
+
+
+
+\beginedxvertical{Further Consequences}
+
+
+\beginedxproblem{Two Bases? 1}{\dpa1}
+
+
+Recall the proposition we just proved: 
+
+{\keya{\bf{Proposition.}}}  If $\mathcal{B}  = \{v_1; v_2; \ldots ; v_n\}$ is a basis of $V$, and $k>v$, then any list
+of $k$ vectors in $V$ must be linearly dependent.  
+
+Now suppose that $\mathcal{B}$ is a basis of $V$ with 5 vectors, and let $\mathcal{C}$ be a list of 7 vectors
+in $V$.  Is it possible for $\mathcal{C}$ to be a basis of $V$?  
+
+
+\edXabox{expect="No" options="Yes","No"}
+
+\edXsolution{
+}
+
+\endedxproblem
+
+
+\beginedxproblem{Two Bases? 2}{\dpa1}
+
+Now suppose that  $\mathcal{C}$ is a basis of $V$ with 7 vectors.  Is it possible for there to be a basis $\mathcal{B}$ of $V$ with 5 vectors?  
+
+
+\edXabox{expect="No" options="Yes","No"}
+
+\edXsolution{
+}
+
+\endedxproblem
+
+\endedxvertical
+
+
+
+
+\beginedxvertical{Dimension}
+
+
+
+\doedxvideo{Dimension}{gKmyYkYB0Qo}
+
+\beginedxtext{Dimension Definition}
+
+{\keya{\bf{Proposition.}}}  All bases of a vector space $V$ must have the same number of vectors.  
+  
+
+{\keya{\bf{Definition.}}}  
+The {\keyb{\bf{dimension}}} of a vector space $V$ is defined to be the number of vectors in 
+a basis of $V$.  If $V$ has no finite basis, we say that $V$ is infinite-dimensional.  
+
+
+\endedxtext
+
+
+\beginedxproblem{Dimension Question 1}{\dpa1}
+
+True or False: If the dimension of $V$ is 4, then every list of 4 vectors in $V$ must be a basis of $V$.  
+
+\edXabox{expect="False" options="True","False"}
+
+\edXsolution{
+}
+
+\endedxproblem
+
+
+
+\beginedxproblem{Dimension Question 2}{\dpa1}
+
+True or False: If the dimension of $V$ is 6, then there must exist a basis of $V$ with exactly 6 vectors.
+
+\edXabox{expect="True" options="True","False"}
+
+\edXsolution{
+}
+
+\endedxproblem
+
+\beginedxproblem{Dimension Question 3}{\dpa1}
+
+Let $V = \R^2$.  What is the dimension of $V$?  
+
+\edXabox{type="numerical" expect="2"}
+
+\edXsolution{
+}
+
+\endedxproblem
+
+
+\beginedxproblem{Dimension Question 4}{\dpa1}
+
+
+\begin{center}
+\includesvg[450]{c3s2dimension}
+\end{center}
+
+Let $W$ be the subspace of $\R^2$ drawn above.  What is the dimension of $V$?  
+
+
+\edXabox{type="numerical" expect="1"}
+
+\edXsolution{
+}
+
+\endedxproblem
+
+
+\endedxvertical
+
+
+
+
+\beginedxvertical{Dimension and Subspaces}
+
+
+
+\doedxvideo{Dimension and Subspaces}{5mlxz2ysoEg}
+
+
+\beginedxtext{Dimension Propositions}
+
+{\keya{\bf{Proposition (A).}}}  If $\dim V = n < \infty$, and $W$ is any subspace of $V$, then any
+linearly independent list of vectors in $W$ can be extended to form a basis of $W$.  
+
+{\keya{\bf{Proposition.}}} If $\dim V = n$, then any linearly independent list of vectors in $V$ has
+at most $n$ vectors.  Any linearly independent list of vectors in $V$ that has exactly $n$ vectors must
+be a basis of $V$.  
+
+
+{\keya{\bf{Proposition.}}} If $\dim V = n$, then any subspace $W$ of $V$ has dimension at most $n$.  
+If $\dim W = n$, then $W = V$.  
+
+
+{\keya{\bf{Proposition (B).}}} Any finite list of vectors that spans a vector space $V$ contains a basis of $V$.  
+
+{\keya{\bf{Proposition.}}} If $\dim V = n$, then any list of vectors that spans $V$ has
+at least $n$ vectors.  Any  list of vectors that spans $V$ that has exactly $n$ vectors must
+be a basis of $V$.  
+
+
+\begin{edXshowhide}{Proof of Proposition (A)}
+
+stuff
+
+\end{edXshowhide}
+
+
+\begin{edXshowhide}{Proof of Proposition (B)}
+
+stuff
+
+\end{edXshowhide}
+
+
+
+\endedxtext
+
+\endedxvertical

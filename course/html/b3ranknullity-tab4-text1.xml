@@ -1,0 +1,17 @@
+<html display_name="Rank-Nullity Theorem" linenum="131" tex_filename="./block3/rankandnullity.tex">
+  <p><span style="color:#27408C"><b class="bf">Rank-Nullity Theorem.</b></span> If [mathjaxinline]T:V\rightarrow W[/mathjaxinline] is a linear transformation and [mathjaxinline]\dim V = n &lt; \infty[/mathjaxinline], then [mathjaxinline]\dim V - \mathrm{Nullity}(T) = \mathrm{Rank}(T)[/mathjaxinline]. </p>
+  <p>
+    <div class="hideshowbox">
+      <h4 onclick="hideshow(this);" style="margin: 0px">Proof of Theorem<span class="icon-caret-down toggleimage"/></h4>
+      <div class="hideshowcontent">
+        <p>
+stuff </p>
+      </div>
+      <p class="hideshowbottom" onclick="hideshow(this);" style="margin: 0px">
+        <a href="javascript: {return false;}">Show</a>
+      </p>
+    </div>
+  </p>
+  <SCRIPT src="/static/latex2edx.js" type="text/javascript"/>
+  <LINK href="/static/latex2edx.css" rel="stylesheet" type="text/css"/>
+</html>

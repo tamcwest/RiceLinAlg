@@ -1,0 +1,32 @@
+<problem display_name="Rank-Nullity Question 4" linenum="198" tex_filename="./block3/rankandnullity.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+  <text>
+    <p>
+Suppose [mathjaxinline]V[/mathjaxinline] and [mathjaxinline]W[/mathjaxinline] are vector spaces with the same (finite) dimension [mathjaxinline]n[/mathjaxinline]. </p>
+    <p>
+If [mathjaxinline]T: V\rightarrow W[/mathjaxinline] is a linear transformation which is onto, what is the rank of [mathjaxinline]T[/mathjaxinline]? </p>
+    <p>
+      <formularesponse type="cs" samples="n@1:2#5" answer="n">
+        <formulaequationinput>
+          <responseparam type="tolerance" default=".001"/>
+        </formulaequationinput>
+      </formularesponse>
+    </p>
+    <p>
+Therefore, what is the nullity of [mathjaxinline]T[/mathjaxinline]? </p>
+    <p>
+      <formularesponse type="cs" samples="n@1:2#5" answer="0">
+        <formulaequationinput>
+          <responseparam type="tolerance" default=".001"/>
+        </formulaequationinput>
+      </formularesponse>
+    </p>
+    <p>
+Therefore, we can conclude that [mathjaxinline]T[/mathjaxinline] must be what? (Answer yourself.) </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue"/>
+      </solution>
+    </p>
+  </text>
+</problem>

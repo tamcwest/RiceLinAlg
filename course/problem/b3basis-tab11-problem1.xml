@@ -1,0 +1,20 @@
+<problem display_name="Two Bases? 1" linenum="484" tex_filename="./block3/basisanddimension.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+  <text>
+    <p>
+Recall the proposition we just proved: </p>
+    <p><span style="color:#27408C"><b class="bf">Proposition.</b></span> If [mathjaxinline]\mathcal{B} = \{ v_1; v_2; \ldots ; v_ n\}[/mathjaxinline] is a basis of [mathjaxinline]V[/mathjaxinline], and [mathjaxinline]k&gt;v[/mathjaxinline], then any list of [mathjaxinline]k[/mathjaxinline] vectors in [mathjaxinline]V[/mathjaxinline] must be linearly dependent. </p>
+    <p>
+Now suppose that [mathjaxinline]\mathcal{B}[/mathjaxinline] is a basis of [mathjaxinline]V[/mathjaxinline] with 5 vectors, and let [mathjaxinline]\mathcal{C}[/mathjaxinline] be a list of 7 vectors in [mathjaxinline]V[/mathjaxinline]. Is it possible for [mathjaxinline]\mathcal{C}[/mathjaxinline] to be a basis of [mathjaxinline]V[/mathjaxinline]? </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('Yes','No')" correct="No"/>
+      </optionresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue"/>
+      </solution>
+    </p>
+  </text>
+</problem>

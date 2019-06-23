@@ -1,0 +1,17 @@
+<problem display_name="Dimension Question 2" linenum="553" tex_filename="./block3/basisanddimension.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+  <text>
+    <p>
+True or False: If the dimension of [mathjaxinline]V[/mathjaxinline] is 6, then there must exist a basis of [mathjaxinline]V[/mathjaxinline] with exactly 6 vectors. </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('True','False')" correct="True"/>
+      </optionresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue"/>
+      </solution>
+    </p>
+  </text>
+</problem>

@@ -1,0 +1,36 @@
+<problem display_name="Basis for Image" linenum="300" tex_filename="./block3/rankandnullity.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+  <text>
+    <p>
+Suppose [mathjaxinline]T[/mathjaxinline] has a standard matrix [mathjaxinline]A[/mathjaxinline] which row reduces to the matrix </p>
+    <table id="a0000000117" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+      <tr>
+        <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]R = \left[\begin{array}{ccccc} 1 &amp;  2 &amp;  0 &amp;  0 &amp;  -3 \\ 0 &amp;  0 &amp;  1 &amp;  0 &amp;  -2 \\ 0 &amp;  0 &amp;  0 &amp;  1 &amp;  2 \\ 0 &amp;  0 &amp;  0 &amp;  0 &amp;  0 \end{array} \right].[/mathjax]</td>
+        <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+      </tr>
+    </table>
+    <p>
+True or False: We can conclude that the list </p>
+    <table id="a0000000118" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+      <tr>
+        <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]\left\{  \left[\begin{array}{c} 1 \\ 0 \\ 0 \\ 0 \end{array} \right]; \left[\begin{array}{c} 0 \\ 1 \\ 0 \\ 0 \end{array} \right]; \left[\begin{array}{c} 0 \\ 0 \\ 1 \\ 0 \end{array} \right] \right\}[/mathjax]</td>
+        <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+      </tr>
+    </table>
+    <p>
+ is a basis for the image of [mathjaxinline]T[/mathjaxinline]. </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('True','False')" correct="False"/>
+      </optionresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue">
+          <p>
+False. The first, third, and fourth columns have pivots, but this means that the first, third, and fourth columns of [mathjaxinline]A[/mathjaxinline] will form a basis for [mathjaxinline]\mathrm{Image}(T)[/mathjaxinline], not necessarily the first, third, and fourth columns of [mathjaxinline]R[/mathjaxinline]. </p>
+        </font>
+      </solution>
+    </p>
+  </text>
+</problem>
