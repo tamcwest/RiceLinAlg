@@ -17,7 +17,10 @@ Is [mathjaxinline]\mathbb R^4[/mathjaxinline] a subspace of [mathjaxinline]\math
     <p>
       <solution>
         <font color="blue">Answer: </font>
-        <font color="blue"/>
+        <font color="blue">
+          <p>
+Elements of [mathjaxinline]\mathbb R^4[/mathjaxinline] are column vectors with 4 entries, whereas elements of [mathjaxinline]\mathbb R^5[/mathjaxinline] have 5 entries. Thus, an element of [mathjaxinline]\mathbb R^4[/mathjaxinline] is not an element of [mathjaxinline]\mathbb R^5[/mathjaxinline], so [mathjaxinline]\mathbb R^5[/mathjaxinline] is not a subset of, and thus not a subspace of, [mathjaxinline]\mathbb R^5[/mathjaxinline].  </p>
+        </font>
       </solution>
     </p>
   </text>
