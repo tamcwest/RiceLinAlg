@@ -6242,7 +6242,7 @@ Let [mathjaxinline]T: \mathbb R^3 \rightarrow \mathbb R^3[/mathjaxinline] be a l
                     <choice correct="false" name="3">
                       <text>[mathjaxinline]A[/mathjaxinline] has a free variable</text>
                     </choice>
-                    <choice correct="false" name="4">
+                    <choice correct="true" name="4">
                       <text>The equation [mathjaxinline]Ax = \left[\begin{array}{c} 1 \\ 3 \\ 5 \end{array} \right][/mathjaxinline] has exactly one solution</text>
                     </choice>
                     <choice correct="true" name="5">
@@ -6940,7 +6940,10 @@ Is [mathjaxinline]\mathbb R^4[/mathjaxinline] a subspace of [mathjaxinline]\math
               <p>
                 <solution>
                   <font color="blue">Answer: </font>
-                  <font color="blue"/>
+                  <font color="blue">
+                    <p>
+Elements of [mathjaxinline]\mathbb R^4[/mathjaxinline] are column vectors with 4 entries, whereas elements of [mathjaxinline]\mathbb R^5[/mathjaxinline] have 5 entries. Thus, an element of [mathjaxinline]\mathbb R^4[/mathjaxinline] is not an element of [mathjaxinline]\mathbb R^5[/mathjaxinline], so [mathjaxinline]\mathbb R^5[/mathjaxinline] is not a subset of, and thus not a subspace of, [mathjaxinline]\mathbb R^5[/mathjaxinline].  </p>
+                  </font>
                 </solution>
               </p>
             </text>
